@@ -1,0 +1,14 @@
+$padding: em(15px);
+
+
+
+.container {
+    padding: $padding;
+    padding-top: 27px;
+
+    &-footer {
+        padding-bottom: 27px;
+    }
+    
+    @include themes;
+}

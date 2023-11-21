@@ -3,20 +3,7 @@
 //  ================================
 
 // Calculate em values
-@function em($target, $context: $base__font-size) {
+@function em($target, $context: $font-size-base) {
 	@return calc($target / $context) * 1em;
 }
 
-@function get-service-colors($color, $modifier:null) {
-    @if $modifier == null {
-        @return map-get($services-colors, $color);
-    }
-    @else if $modifier == 'darken' {
-        $color: map-get($services-colors, $color);
-        @return darken($color, $darken);
-    }
-    @else if $modifier == 'lighten' {
-        $color: map-get($services-colors, $color);
-        @return lighten($color, $lighten);
-    }
-}

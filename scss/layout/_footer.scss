@@ -1,0 +1,35 @@
+footer {
+    // @include theme-dark;
+    h4 {
+        font-weight: $font-normal;
+        text-transform: uppercase;
+    }
+    
+    a {
+        color: $white;
+        text-decoration: none;
+        font-size: .8125rem;
+        line-height: em(22px);
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    ul {
+        padding-left: 0;
+        li {
+            list-style-type: none;
+        }
+    }
+
+    .logo {
+        width: 250px;
+    }
+
+    .license {
+        background-color: $grey-xd;
+        padding: 15px;
+        font-size: em(13px);
+        line-height: em(16px);
+        color: $white;
+    }
+}

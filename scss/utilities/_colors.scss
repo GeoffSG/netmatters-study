@@ -1,0 +1,91 @@
+//  Color variables
+
+$white: #ffffff;
+
+$grey-xl: #84858f;
+$grey-l: #999aa2;
+$grey: #333645;
+$grey-d: #272936;
+$grey-xd: #212330;
+$black: #121318;
+
+// $hoki: #67809f;
+// $blue: #4183d7;
+// $green: #2ecc71;
+// $red: #d64541;
+// $purple: #926fb1;
+// $radical-red: #f62459;
+// $punch: #ce4125;
+$gold: #ffa500;
+
+$services-colors: (
+    'bs': #67809f,            //  Bespoke Software
+    'it': #4183d7,            //  IT Support
+    'dm': #2ecc71,           //  Digital Marketing
+    'ts': #d64541,             //  Telecoms Services
+    'wd': #926fb1,          //  Web Design
+    'cs': #f62459,     //  Cyber Security
+    'dt': #ce4125            //  Developer Training
+);
+
+$social-media-colors: (
+    'facebook': #3b5998,
+    'linkedin': #0077b5,
+    'twitter': #00aced,
+    'instagram': #d93175
+);
+
+$support-color: get-services-color('bs');
+$support-hover: get-services-color('bs','darken');
+
+$google: #4387f6;
+$google-hover: #166af4;
+
+$trustpilots: #00b67b;
+$trustpilots-hover: #009b69;
+
+$darken: 10%;
+$lighten: 10%;
+
+$text-light: $black;
+$text-dark: $white;
+
+$bg-light: $white;
+$bg-dark: $grey;
+
+//  Color Functions
+
+@function get-service-color($color, $modifier:null) {
+    @if $modifier == null {
+        @return map-get($services-colors, $color);
+    }
+    @else if $modifier == 'darken' {
+        $color: map-get($services-colors, $color);
+        @return darken($color, $darken);
+    }
+    @else if $modifier == 'lighten' {
+        $color: map-get($services-colors, $color);
+        @return lighten($color, $lighten);
+    }
+}
+
+//  Themes Mixins
+@mixin dark-theme {
+    &-dark {
+        background-color: $bg-dark;
+        color: $text-dark;   
+    }
+}
+
+
+@mixin light-theme {
+    &-light {
+        background-color: $bg-light;
+        color: $text-light;
+    }
+}
+
+@mixin themes {
+    @include dark-theme;
+    @include light-theme;
+}

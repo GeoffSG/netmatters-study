@@ -311,5 +311,66 @@ template {
 
 html {
   font-family: "Poppins", sans-serif;
-  background-color: #526781;
+  background-color: #ffffff;
+  font-size: 1em;
+}
+
+body {
+  margin: 0 auto;
+  line-height: 1em;
+}
+
+nav {
+  display: block;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+footer h4 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.8125rem;
+  line-height: 22px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer ul {
+  padding-left: 0;
+}
+footer ul li {
+  list-style-type: none;
+}
+footer .logo {
+  width: 250px;
+}
+footer .license {
+  background-color: #212330;
+  padding: 15px;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.container {
+  padding: 15px;
+  padding-top: 27px;
+}
+.container-footer {
+  padding-bottom: 27px;
+}
+.container-dark {
+  background-color: #333645;
+  color: #ffffff;
+}
+.container-light {
+  background-color: #ffffff;
+  color: #121318;
 }/*# sourceMappingURL=application.css.map */
