@@ -1,0 +1,25 @@
+.case-studies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 70px;
+    width: 9586px;
+    height: 70px;
+    max-height: 70px;
+    overflow-x: hidden;
+    a {
+        width: auto;
+        height: 100%;
+        max-height: 70px;
+        
+        img {
+            width: auto;
+            height: 100%;
+            max-height: 70px;
+            filter: grayscale(1);
+            &:hover{
+                filter: grayscale(0);
+            }
+        }
+    }
+}
