@@ -1,11 +1,17 @@
-$padding: em(15px);
+
 .container {
-    padding: $padding;
+    padding: $base-padding;
     padding-top: 27px;
+
+
+    &-heading {
+        padding-top: 50px;   
+    }
 
     &-footer {
         padding-bottom: 27px;
     }
+
     
     @include themes;
 }

@@ -1,0 +1,87 @@
+.card {
+    border: solid 1px $grey-xl;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-top: 30px;
+    box-shadow: 0 3px 35px rgba(0,0,0,.1);
+
+    position: relative;
+    top:0;
+    transition: .5s ease;
+
+    &:hover{
+        top: -10px;
+        transition: .5s ease;
+    }
+
+    .cover {
+        position: relative;
+        .tag {
+            position: absolute;
+            top: 10px;
+            right:0;
+            font-size: .75rem;
+            padding: 0 10px;
+            line-height: 1.438rem;
+            z-index: 1;
+            text-transform: uppercase;
+            @include themes;
+        }
+        img {
+            position: relative;
+        }
+    }
+
+    .content {
+        padding: 30px;
+        .headline {
+            font-size: 1rem;
+            font-weight: $font-bold;
+            line-height: 1.5rem;
+            @include themes-text;
+
+            small {
+                font-weight: $font-normal;
+                text-transform: uppercase;
+                color: $grey-l;
+            }
+        }
+        p {
+            color: #666;
+            line-height: 1.375rem;
+            font-size: .8125rem;
+        }
+    }
+
+    .post-details {
+        display: table;
+        width: 100%;
+        font-size: .875rem;
+        padding-top: 30px;
+        margin-top: 30px;
+        border-top: 1px solid #ccc;
+
+        & > * {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        & > .avatar {
+            height: auto;
+        }
+
+        & > .avatar img {
+            border-radius: 50%;
+            max-width: 47px;
+        }
+        .post-text {
+            padding-left: 20px;
+            p {
+                line-height: 1.375rem;
+                margin: 0;
+            }
+        }
+
+    }
+
+    
+}

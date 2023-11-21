@@ -50,6 +50,8 @@ $lighten: 10%;
 $text-light: $black;
 $text-dark: $white;
 
+$btn-text: $white;
+
 $bg-light: $white;
 $bg-dark: $grey;
 
@@ -70,23 +72,34 @@ $bg-dark: $grey;
 }
 
 //  Themes Mixins
-@mixin dark-theme {
+
+@mixin themes {
+    @each $service, $color in $services-colors {
+        &-#{$service} {
+            background-color: $color;
+            color: $btn-text;
+        }
+    }
     &-dark {
         background-color: $bg-dark;
-        color: $text-dark;   
+        color: $text-dark;  
     }
-}
-
-
-@mixin light-theme {
     &-light {
         background-color: $bg-light;
         color: $text-light;
     }
 }
 
-@mixin themes {
-    @include dark-theme;
-    @include light-theme;
+@mixin themes-text {
+    @each $service, $color in $services-colors {
+        &-#{$service} {
+            color: $color;
+        }
+    }
+    &-dark {
+        color: $text-dark;  
+    }
+    &-light {
+        color: $text-light;
+    }
 }
-

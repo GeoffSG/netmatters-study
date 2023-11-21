@@ -311,6 +311,7 @@ template {
 
 html {
   font-size: 1em;
+  box-sizing: border-box;
 }
 
 body {
@@ -328,6 +329,12 @@ h1, h2, h3, h4 {
   line-height: 1.1;
 }
 
+h2, h3, h4 {
+  font-weight: 400;
+  margin: 0 0 15px;
+  color: #333645;
+}
+
 h1 {
   font-size: 2.25rem;
   font-weight: 400;
@@ -337,6 +344,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  font-weight: 600;
 }
 
 h3 {
@@ -345,12 +353,6 @@ h3 {
 
 h4 {
   font-size: 1rem;
-}
-
-h2, h3, h4 {
-  font-weight: 400;
-  margin: 0 0 15px;
-  color: #333645;
 }
 
 p {
@@ -424,12 +426,181 @@ footer .license {
   color: #ffffff;
 }
 
+.card {
+  border: solid 1px #dddddd;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  margin-top: 30px;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 0;
+  transition: 0.5s ease;
+}
+.card:hover {
+  top: -10px;
+  transition: 0.5s ease;
+}
+.card .cover {
+  position: relative;
+}
+.card .cover .tag {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 0.75rem;
+  padding: 0 10px;
+  line-height: 1.438rem;
+  z-index: 1;
+  text-transform: uppercase;
+}
+.card .cover .tag-bs {
+  background-color: #67809f;
+  color: #ffffff;
+}
+.card .cover .tag-it {
+  background-color: #4183d7;
+  color: #ffffff;
+}
+.card .cover .tag-dm {
+  background-color: #2ecc71;
+  color: #ffffff;
+}
+.card .cover .tag-ts {
+  background-color: #d64541;
+  color: #ffffff;
+}
+.card .cover .tag-wd {
+  background-color: #926fb1;
+  color: #ffffff;
+}
+.card .cover .tag-cs {
+  background-color: #f62459;
+  color: #ffffff;
+}
+.card .cover .tag-dt {
+  background-color: #ce4125;
+  color: #ffffff;
+}
+.card .cover .tag-dark {
+  background-color: #333645;
+  color: #ffffff;
+}
+.card .cover .tag-light {
+  background-color: #ffffff;
+  color: #121318;
+}
+.card .cover img {
+  position: relative;
+}
+.card .content {
+  padding: 30px;
+}
+.card .content .headline {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+.card .content .headline-bs {
+  color: #67809f;
+}
+.card .content .headline-it {
+  color: #4183d7;
+}
+.card .content .headline-dm {
+  color: #2ecc71;
+}
+.card .content .headline-ts {
+  color: #d64541;
+}
+.card .content .headline-wd {
+  color: #926fb1;
+}
+.card .content .headline-cs {
+  color: #f62459;
+}
+.card .content .headline-dt {
+  color: #ce4125;
+}
+.card .content .headline-dark {
+  color: #ffffff;
+}
+.card .content .headline-light {
+  color: #121318;
+}
+.card .content .headline small {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #999aa2;
+}
+.card .content p {
+  color: #666;
+  line-height: 1.375rem;
+  font-size: 0.8125rem;
+}
+.card .post-details {
+  display: table;
+  width: 100%;
+  font-size: 0.875rem;
+  padding-top: 30px;
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+}
+.card .post-details > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+.card .post-details > .avatar {
+  height: auto;
+}
+.card .post-details > .avatar img {
+  border-radius: 50%;
+  max-width: 47px;
+}
+.card .post-details .post-text {
+  padding-left: 20px;
+}
+.card .post-details .post-text p {
+  line-height: 1.375rem;
+  margin: 0;
+}
+
 .container {
   padding: 15px;
   padding-top: 27px;
 }
+.container-heading {
+  padding-top: 50px;
+}
 .container-footer {
   padding-bottom: 27px;
+}
+.container-bs {
+  background-color: #67809f;
+  color: #ffffff;
+}
+.container-it {
+  background-color: #4183d7;
+  color: #ffffff;
+}
+.container-dm {
+  background-color: #2ecc71;
+  color: #ffffff;
+}
+.container-ts {
+  background-color: #d64541;
+  color: #ffffff;
+}
+.container-wd {
+  background-color: #926fb1;
+  color: #ffffff;
+}
+.container-cs {
+  background-color: #f62459;
+  color: #ffffff;
+}
+.container-dt {
+  background-color: #ce4125;
+  color: #ffffff;
 }
 .container-dark {
   background-color: #333645;
@@ -441,12 +612,41 @@ footer .license {
 }
 
 .btn {
-  display: block;
+  display: inline-block;
   padding: 5px 15px;
   text-transform: uppercase;
+  width: auto;
   height: auto;
   line-height: 35px;
   border: none;
+}
+.btn-bs {
+  background-color: #67809f;
+  color: #ffffff;
+}
+.btn-it {
+  background-color: #4183d7;
+  color: #ffffff;
+}
+.btn-dm {
+  background-color: #2ecc71;
+  color: #ffffff;
+}
+.btn-ts {
+  background-color: #d64541;
+  color: #ffffff;
+}
+.btn-wd {
+  background-color: #926fb1;
+  color: #ffffff;
+}
+.btn-cs {
+  background-color: #f62459;
+  color: #ffffff;
+}
+.btn-dt {
+  background-color: #ce4125;
+  color: #ffffff;
 }
 .btn-dark {
   background-color: #333645;
