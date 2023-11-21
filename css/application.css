@@ -310,18 +310,56 @@ template {
 }
 
 html {
-  font-family: "Poppins", sans-serif;
-  background-color: #ffffff;
   font-size: 1em;
 }
 
 body {
-  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
   line-height: 1em;
+  letter-spacing: 0.4px;
+  color: #666;
 }
 
 nav {
   display: block;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin: 0 0 28px;
+  color: #333645;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.625rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h2, h3, h4 {
+  font-weight: 400;
+  margin: 0 0 15px;
+  color: #333645;
+}
+
+p {
+  line-height: 1.875rem;
+  margin-bottom: 25px;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
@@ -329,13 +367,15 @@ img {
   height: auto;
 }
 
+.newsletter {
+  background-color: #dddddd;
+}
 footer h4 {
   font-weight: 400;
   text-transform: uppercase;
 }
 footer a {
   color: #ffffff;
-  text-decoration: none;
   font-size: 0.8125rem;
   line-height: 22px;
 }
@@ -373,4 +413,34 @@ footer .license {
 .container-light {
   background-color: #ffffff;
   color: #121318;
+}
+
+.btn {
+  display: block;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  height: auto;
+  line-height: 35px;
+  border: none;
+}
+.btn-dark {
+  background-color: #333645;
+  color: #ffffff;
+}
+.btn-light {
+  background-color: #ffffff;
+  color: #121318;
+}
+
+.form .form-group {
+  margin-bottom: 15px;
+  line-height: 2;
+}
+.form .form-group label {
+  font-weight: 600;
+  color: #272936;
+}
+.form .form-group .required::after {
+  content: " *";
+  color: #d64541;
 }/*# sourceMappingURL=application.css.map */

@@ -2,7 +2,7 @@
 
 $white: #ffffff;
 
-$grey-xl: #84858f;
+$grey-xl: #dddddd;
 $grey-l: #999aa2;
 $grey: #333645;
 $grey-d: #272936;
@@ -12,7 +12,7 @@ $black: #121318;
 // $hoki: #67809f;
 // $blue: #4183d7;
 // $green: #2ecc71;
-// $red: #d64541;
+ $red: #d64541;
 // $purple: #926fb1;
 // $radical-red: #f62459;
 // $punch: #ce4125;
@@ -89,3 +89,4 @@ $bg-dark: $grey;
     @include dark-theme;
     @include light-theme;
 }
+

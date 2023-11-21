@@ -1,28 +1,53 @@
 html {
-    font-family: $font-family;
-    background-color: $white;
     font-size: $font-size-base;
 }
 
 body {
-    margin: 0 auto;
+    font-family: $font-family;
     line-height: em($font-size-base);
+    letter-spacing: .4px;
+    color: #666;
 }
 
 nav {
     display: block;
 }
 
-p {
-
+h1,h2,h3,h4 {
+    line-height: 1.1;
 }
 
 h1 {
-
+    font-size: 2.25rem;
+    font-weight: $font-normal;
+    margin: 0 0 28px;
+    color: $grey;
 }
 
 h2 {
+    font-size: 2rem;
+}
 
+h3 {
+    font-size: 1.625rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h2, h3, h4 {
+    font-weight: $font-normal;
+    margin: 0 0 15px;
+    color: $grey;
+}
+p {
+    line-height: 1.875rem;
+    margin-bottom: 25px;
+}
+
+a {
+    text-decoration: none;
 }
 
 img {

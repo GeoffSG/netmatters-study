@@ -1,0 +1,9 @@
+.btn {
+    display: block;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    height: auto;
+    line-height: 35px;
+    @include themes;
+    border: none;
+}
