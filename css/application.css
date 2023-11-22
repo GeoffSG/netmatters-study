@@ -337,6 +337,11 @@ nav {
   display: block;
 }
 
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 h1, h2, h3, h4 {
   line-height: 1.1;
 }
@@ -397,31 +402,6 @@ blockquote cite {
 }
 blockquote cite a {
   color: #ffffff;
-}
-
-.case-studies {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 70px;
-  width: 9586px;
-  height: 70px;
-  max-height: 70px;
-  overflow-x: hidden;
-}
-.case-studies a {
-  width: auto;
-  height: 100%;
-  max-height: 70px;
-}
-.case-studies a img {
-  width: auto;
-  height: 100%;
-  max-height: 70px;
-  filter: grayscale(1);
-}
-.case-studies a img:hover {
-  filter: grayscale(0);
 }
 
 .newsletter {
@@ -582,7 +562,6 @@ footer .license {
 
 .container {
   padding: 15px;
-  padding-top: 50px;
 }
 .container-footer {
   padding-bottom: 27px;
@@ -703,4 +682,28 @@ footer .license {
 .form .form-group .required::after {
   content: " *";
   color: #d64541;
+}
+
+.slideshow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 70px;
+  height: 70px;
+  max-height: 70px;
+  overflow-x: hidden;
+}
+.slideshow a {
+  width: auto;
+  height: 100%;
+  max-height: 70px;
+}
+.slideshow img {
+  width: auto;
+  height: 100%;
+  max-height: 70px;
+  filter: grayscale(1);
+}
+.slideshow img:hover {
+  filter: grayscale(0);
 }/*# sourceMappingURL=application.css.map */
