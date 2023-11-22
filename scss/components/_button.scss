@@ -6,5 +6,45 @@
     height: auto;
     line-height: 35px;
     border: none;
-    @include themes;
+    border-radius: 3px;
+
+    color: $btn-text;
+
+    @include service-themes;
+
+    &-dark {
+        background-color: $btn-dark;
+        &:hover {
+            background-color: #121318;
+        }
+    }
+
+    &-google {
+        background-color: $google;
+        &:hover {
+            background-color: $google-hover;
+        }
+    }
+
+    &-trustpilot {
+        background-color: $trustpilot;
+        &:hover {
+            background-color: $trustpilot-hover;
+        }
+    }
+
+    &-lg {
+        margin-top: 20px;
+        margin-right: 8px;
+        padding: 10px 30px;
+        border-radius: 6px;
+        font-size: 20px;
+    }
+
+}
+
+.btn-group {
+    &:last-child {
+        margin-bottom: 50px;
+    }
 }

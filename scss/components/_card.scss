@@ -25,7 +25,7 @@
             line-height: 1.438rem;
             z-index: 1;
             text-transform: uppercase;
-            @include themes;
+            @include service-themes;
         }
         img {
             position: relative;
@@ -38,7 +38,7 @@
             font-size: 1rem;
             font-weight: $font-bold;
             line-height: 1.5rem;
-            @include themes-text;
+            @include service-themes-text;
 
             small {
                 font-weight: $font-normal;

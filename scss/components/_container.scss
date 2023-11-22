@@ -1,17 +1,19 @@
 
 .container {
     padding: $base-padding;
-    padding-top: 27px;
-
-
-    &-heading {
-        padding-top: 50px;   
-    }
+    padding-top: 50px;
 
     &-footer {
         padding-bottom: 27px;
     }
 
-    
-    @include themes;
+    @include service-themes;
+
+    &-dark {
+        background-color: $bg-dark;
+        color: $text-dark;
+        h2 {
+            color: $text-dark;
+        }
+    }
 }

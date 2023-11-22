@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,600");
+/*
+
+    &-dark {
+        background-color: $bg-dark;
+        color: $text-dark;
+    }
+    &-light {
+        background-color: $bg-light;
+        color: $text-light;
+    }
+
+*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -343,6 +355,7 @@ h1 {
 }
 
 h2 {
+  margin: -6px 0px 40px;
   font-size: 2rem;
   font-weight: 600;
 }
@@ -367,6 +380,23 @@ a {
 img {
   width: 100%;
   height: auto;
+}
+
+blockquote {
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+}
+blockquote cite {
+  font-size: 1.1rem;
+  line-height: 30px;
+  color: #999aa2;
+}
+blockquote cite a {
+  color: #ffffff;
 }
 
 .case-studies {
@@ -481,14 +511,6 @@ footer .license {
   background-color: #ce4125;
   color: #ffffff;
 }
-.card .cover .tag-dark {
-  background-color: #333645;
-  color: #ffffff;
-}
-.card .cover .tag-light {
-  background-color: #ffffff;
-  color: #121318;
-}
 .card .cover img {
   position: relative;
 }
@@ -520,12 +542,6 @@ footer .license {
 }
 .card .content .headline-dt {
   color: #ce4125;
-}
-.card .content .headline-dark {
-  color: #ffffff;
-}
-.card .content .headline-light {
-  color: #121318;
 }
 .card .content .headline small {
   font-weight: 400;
@@ -566,9 +582,6 @@ footer .license {
 
 .container {
   padding: 15px;
-  padding-top: 27px;
-}
-.container-heading {
   padding-top: 50px;
 }
 .container-footer {
@@ -606,9 +619,8 @@ footer .license {
   background-color: #333645;
   color: #ffffff;
 }
-.container-light {
-  background-color: #ffffff;
-  color: #121318;
+.container-dark h2 {
+  color: #ffffff;
 }
 
 .btn {
@@ -619,6 +631,8 @@ footer .license {
   height: auto;
   line-height: 35px;
   border: none;
+  border-radius: 3px;
+  color: #ffffff;
 }
 .btn-bs {
   background-color: #67809f;
@@ -649,12 +663,33 @@ footer .license {
   color: #ffffff;
 }
 .btn-dark {
-  background-color: #333645;
-  color: #ffffff;
+  background-color: #272936;
 }
-.btn-light {
-  background-color: #ffffff;
-  color: #121318;
+.btn-dark:hover {
+  background-color: #121318;
+}
+.btn-google {
+  background-color: #4387f6;
+}
+.btn-google:hover {
+  background-color: #166af4;
+}
+.btn-trustpilot {
+  background-color: #00b67b;
+}
+.btn-trustpilot:hover {
+  background-color: #009b69;
+}
+.btn-lg {
+  margin-top: 20px;
+  margin-right: 8px;
+  padding: 10px 30px;
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+.btn-group:last-child {
+  margin-bottom: 50px;
 }
 
 .form .form-group {

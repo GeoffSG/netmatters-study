@@ -25,7 +25,7 @@ $services-colors: (
     'ts': #d64541,             //  Telecoms Services
     'wd': #926fb1,          //  Web Design
     'cs': #f62459,     //  Cyber Security
-    'dt': #ce4125            //  Developer Training
+    'dt': #ce4125,            //  Developer Training
 );
 
 $social-media-colors: (
@@ -41,8 +41,8 @@ $support-hover: get-services-color('bs','darken');
 $google: #4387f6;
 $google-hover: #166af4;
 
-$trustpilots: #00b67b;
-$trustpilots-hover: #009b69;
+$trustpilot: #00b67b;
+$trustpilot-hover: #009b69;
 
 $darken: 10%;
 $lighten: 10%;
@@ -51,6 +51,7 @@ $text-light: $black;
 $text-dark: $white;
 
 $btn-text: $white;
+$btn-dark: #272936;
 
 $bg-light: $white;
 $bg-dark: $grey;
@@ -73,33 +74,32 @@ $bg-dark: $grey;
 
 //  Themes Mixins
 
-@mixin themes {
+@mixin service-themes {
     @each $service, $color in $services-colors {
         &-#{$service} {
             background-color: $color;
             color: $btn-text;
         }
     }
-    &-dark {
-        background-color: $bg-dark;
-        color: $text-dark;  
-    }
-    &-light {
-        background-color: $bg-light;
-        color: $text-light;
-    }
 }
 
-@mixin themes-text {
+@mixin service-themes-text {
     @each $service, $color in $services-colors {
         &-#{$service} {
             color: $color;
         }
     }
+}
+
+/*
+
     &-dark {
-        color: $text-dark;  
+        background-color: $bg-dark;
+        color: $text-dark;
     }
     &-light {
+        background-color: $bg-light;
         color: $text-light;
     }
-}
+
+*/
