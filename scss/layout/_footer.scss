@@ -1,28 +1,40 @@
-footer {
+.footer {
     // @include theme-dark;
-    h4 {
-        font-weight: $font-normal;
-        text-transform: uppercase;
-    }
-    
-    a {
-        color: $white;
-        font-size: .8125rem;
-        line-height: em(22px);
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-    ul {
-        padding-left: 0;
-        li {
-            list-style-type: none;
-        }
-    }
-
     .logo {
         width: 250px;
     }
+    h4 {
+        color: $white;
+        font-weight: $font-normal;
+        text-transform: uppercase;
+        margin-bottom: 26px;
+    }
+
+    .company-info {
+        & h4 {
+            margin-top: 24px;
+        }
+        margin-bottom: 30px;
+    }
+
+    .site-links{
+        a {
+            color: $white;
+            font-size: .8125rem;
+            line-height: em(22px);
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        ul {
+            padding-left: 0;
+            li {
+                list-style-type: none;
+            }
+        }
+
+    }
+
 
     .license {
         background-color: $grey-xd;
