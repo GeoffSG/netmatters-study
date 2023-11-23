@@ -18,6 +18,16 @@
         }
         @include button-large('dark');
     }
+
+    &-light {
+        @extend .btn;
+        background-color: $white;
+        color: $black;
+        &:hover {
+            background-color: $white;
+        }
+        @include button-large('dark');
+    }
     
 
 
@@ -46,6 +56,10 @@
             background-color: $trustpilot-hover;
         }
         @include button-large('trustpilot');
+    }
+    
+    &-support, &-contact {
+        display: none;
     }
 }
 

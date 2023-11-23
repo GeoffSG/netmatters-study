@@ -9,26 +9,23 @@
         <link rel="stylesheet" href="css/application.css">
     </head>
     <body>
-        <header><!-- HEADER -->
-            <div id="header">
-                <div id="company-image">
-                    <a href="#"><img src="img/nm-company.webp" alt="Netmatters"></a>
+        <header class="header"><!-- HEADER -->
+            <div class="container" id="header">
+                <div class="grid">
+                    <a class="company-logo" href="#"><img src="img/nm-company.webp" alt="Netmatters"></a>
+                    <a class="btn-light btn-call" href="#">CALL</a>
+                    <a class="btn-dark btn-navmenu" href="#">NAV</a>
+                    <!-- <a class="btn-contact" href="#">CONTACT</a>
+                    <a class="btn-support" href="#">SUPPORT</a> -->
                 </div>
-                <div>
-                    <div><a href="#">CALL_MOBILE</a></div>
-                    <div><a href="#">CONTACT</a></div>
-                    <div><a href="#">SUPPORT</a></div>
-                </div>
-                <div>NAV_TOGGLE</div>
                 <form class="form-search">
-                    <input id="search-input">
-                    <button id="search-submit" type="submit">Search</button>
+                        <input class="form-search-input" id="search-input" placeholder="Search...">
+                        <button class="form-search-button" id="search-submit" type="submit">Search</button>
                 </form>
             </div>
-            
-            <nav>
-                <b>Bespoke Software</b>
+            <nav class="nav-bar">
                 <ul>
+                    <li><a href="#">Bespoke Software</a></li>
                     <li><a href="#">IT Support</a></li>
                     <li><a href="#">Digital Marketing</a></li>
                     <li><a href="#">Telecoms Services</a></li>
@@ -37,87 +34,90 @@
                     <li><a href="#">Developer Course</a></li>
                 </ul>
             </nav>
-            
             <div>
-                <b>Our Bespoke Software Services</b>
-                <ul>
-                    <li><a href="#">Bespoke CRM</a></li>
-                    <li><a href="#">Business Automation</a></li>
-                    <li><a href="#">Software Integrations</a></li>
-                    <li><a href="#">Mobile App Development</a></li>
-                    <li><a href="#">Bespoke Databases</a></li>
-                    <li><a href="#">Sharepoint Development</a></li>
-                    <li><a href="#">Operational Systems</a></li>
-                    <li><a href="#">Business Central Implementation</a></li>
-                    <li><a href="#">Internet of Things (IoT) Software</a></li>
-                    <li><a href="#">Intranet Development</a></li>
-                    <li><a href="#">Customer Portal Development</a></li>
-                    <li><a href="#">Reporting Hub</a></li>
-                </ul>
-            </div>
-            <div>
-                <b>Our IT Support Services</b>
-                <ul>
-                    <li><a href="#">Managed IT Support</a></li>
-                    <li><a href="#">Business IT Support</a></li>
-                    <li><a href="#">Office 365 for Business</a></li>
-                    <li><a href="#">IT Consultancy</a></li>
-                    <li><a href="#">Cloud Service Provider</a></li>
-                    <li><a href="#">Data Backup & Disaster Recovery</a></li>
-                </ul>
-            </div>
-            <div>
-                <b>Our Digital Marketing Services</b>
-                <ul>
-                    <li><a href="#">Search Engine Optimisation (SEO)</a></li>
-                    <li><a href="#">Pay Per Click Advertising (PPC)</a></li>
-                    <li><a href="#">Conversion Rate Optimisation (CRO)</a></li>
-                    <li><a href="#">Email Marketing</a></li>
-                    <li><a href="#">Social Media Marketing</a></li>
-                    <li><a href="#">Content Marketing</a></li>
-                </ul>
-            </div>
-            <div>
-                <b>Our Telecoms Services</b>
-                <ul>
-                    <li><a href="#">Business Mobile</a></li>
-                    <li><a href="#">Hosted VoIP Provider</a></li>
-                    <li><a href="#">Business VoIP Systems</a></li>
-                    <li><a href="#">Business Broadband</a></li>
-                    <li><a href="#">Leased Lines Provider</a></li>
-                    <li><a href="#">3CX Systems</a></li>
-                </ul>
-            </div>
-            <div>
-                <b>Our Web Design Services</b>
-                <ul>
-                    <li><a href="#">Bespoke Website Design</a></li>
-                    <li><a href="#">eCommerce Website Design</a></li>
-                    <li><a href="#">Pay Monthly Websites</a></li>
-                    <li><a href="#">Branding & Design</a></li>
-                    <li><a href="#">Mobile App Development</a></li>
-                    <li><a href="#">Web Hosting</a></li>
-                </ul>
-            </div>
-            <div>
-                <b>Our Cyber Security Services</b>
-                <ul>
-                    <li><a href="#">Cyber Security Assessment</a></li>
-                    <li><a href="#">Cyber Security Management</a></li>
-                    <li><a href="#">Cyber Penetration Testing</a></li>
-                    <li><a href="#">Cyber Essentials Certification</a></li>
-                    <li><a href="#">PCI Compliance</a></li>
-                    <li><a href="#">Hacking Prevention</a></li>
-                </ul>
-            </div>
-            <div>
-                <b>Our Developer Course Services</b>
-                <ul>
-                    <li><a href="#">Train For A Career In Tech</a></li>
-                    <li><a href="#">Skills Bootcamp</a></li>
-                    <li><a href="#">Scion Scheme Frequently Asked Questions</a></li>
-                    <li><a href="#">Scion Collaborators</a></li>
-                </ul>
+                <aside class="container-dark nav-menu">
+                    <div class="nav-section">
+                        <a class="nav-button" href="#">Our Bespoke Software Services</a>
+                        <ul class="nav-group">
+                            <li><a class="nav-button" href="#">Bespoke CRM</a></li>
+                            <li><a class="nav-button" href="#">Business Automation</a></li>
+                            <li><a class="nav-button" href="#">Software Integrations</a></li>
+                            <li><a class="nav-button" href="#">Mobile App Development</a></li>
+                            <li><a class="nav-button" href="#">Bespoke Databases</a></li>
+                            <li><a class="nav-button" href="#">Sharepoint Development</a></li>
+                            <li><a class="nav-button" href="#">Operational Systems</a></li>
+                            <li><a class="nav-button" href="#">Business Central Implementation</a></li>
+                            <li><a class="nav-button" href="#">Internet of Things (IoT) Software</a></li>
+                            <li><a class="nav-button" href="#">Intranet Development</a></li>
+                            <li><a class="nav-button" href="#">Customer Portal Development</a></li>
+                            <li><a class="nav-button" href="#">Reporting Hub</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="nav-button" href="#">Our IT Support Services</a>
+                        <ul class="nav-group">
+                            <li><a class="nav-button" href="#">Managed IT Support</a></li>
+                            <li><a class="nav-button" href="#">Business IT Support</a></li>
+                            <li><a class="nav-button" href="#">Office 365 for Business</a></li>
+                            <li><a class="nav-button" href="#">IT Consultancy</a></li>
+                            <li><a class="nav-button" href="#">Cloud Service Provider</a></li>
+                            <li><a class="nav-button" href="#">Data Backup & Disaster Recovery</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="nav-button" href="#">Our Digital Marketing Services</a>
+                        <ul class="nav-group">
+                            <li><a class="nav-button" href="#">Search Engine Optimisation (SEO)</a></li>
+                            <li><a class="nav-button" href="#">Pay Per Click Advertising (PPC)</a></li>
+                            <li><a class="nav-button" href="#">Conversion Rate Optimisation (CRO)</a></li>
+                            <li><a class="nav-button" href="#">Email Marketing</a></li>
+                            <li><a class="nav-button" href="#">Social Media Marketing</a></li>
+                            <li><a class="nav-button" href="#">Content Marketing</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="nav-button" href="#">Our Telecoms Services</a>
+                        <ul class="nav-group">
+                            <li><a class="nav-button" href="#">Business Mobile</a></li>
+                            <li><a class="nav-button" href="#">Hosted VoIP Provider</a></li>
+                            <li><a class="nav-button" href="#">Business VoIP Systems</a></li>
+                            <li><a class="nav-button" href="#">Business Broadband</a></li>
+                            <li><a class="nav-button" href="#">Leased Lines Provider</a></li>
+                            <li><a class="nav-button" href="#">3CX Systems</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="nav-button" href="#">Our Web Design Services</a>
+                        <ul class="nav-group">
+                            <li><a class="nav-button" href="#">Bespoke Website Design</a></li>
+                            <li><a class="nav-button" href="#">eCommerce Website Design</a></li>
+                            <li><a class="nav-button" href="#">Pay Monthly Websites</a></li>
+                            <li><a class="nav-button" href="#">Branding & Design</a></li>
+                            <li><a class="nav-button" href="#">Mobile App Development</a></li>
+                            <li><a class="nav-button" href="#">Web Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="nav-button" href="#">Our Cyber Security Services</a>
+                        <ul class="nav-group">
+                            <li><a class="nav-button" href="#">Cyber Security Assessment</a></li>
+                            <li><a class="nav-button" href="#">Cyber Security Management</a></li>
+                            <li><a class="nav-button" href="#">Cyber Penetration Testing</a></li>
+                            <li><a class="nav-button" href="#">Cyber Essentials Certification</a></li>
+                            <li><a class="nav-button" href="#">PCI Compliance</a></li>
+                            <li><a class="nav-button" href="#">Hacking Prevention</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="nav-button" href="#">Our Developer Course Services</a>
+                        <ul class="nav-group">
+                            <li><a class="nav-button" href="#">Train For A Career In Tech</a></li>
+                            <li><a class="nav-button" href="#">Skills Bootcamp</a></li>
+                            <li><a class="nav-button" href="#">Scion Scheme Frequently Asked Questions</a></li>
+                            <li><a class="nav-button" href="#">Scion Collaborators</a></li>
+                        </ul>
+                    </div>
+                </aside>
             </div>
         </header>
         
@@ -133,62 +133,65 @@
         </section>
         
         <section class="container" id="services">
-            <h1 class="heading">Our Services</h1>
-            <!-- The Services Grid-->
-            <div id="services-grid">
-                <div class="card card-service bespoke-software">
-                    <a href="#">
-                        <h2>Bespoke Software</h2>
-                        <p>Bespoke software solutions for all your business needs including integrations and reporting.</p>
-                        <a class="btn-bespoke-software" href="#">Read More</a>
-                    </a>
+            <div class="section">
+                <h1 class="heading">Our Services</h1>
+                <!-- The Services Grid-->
+                <div id="services-grid">
+                    <div class="card card-service bespoke-software">
+                        <a href="#">
+                            <h2>Bespoke Software</h2>
+                            <p>Bespoke software solutions for all your business needs including integrations and reporting.</p>
+                            <a class="btn-bespoke-software" href="#">Read More</a>
+                        </a>
+                    </div>
+                    <div class="card card-service it-support">
+                        <a href="#">
+                            <h2>IT Support</h2>
+                            <p>Fully managed IT support and consultancy packages tailored to meet your exact business needs.
+                            </p>
+                            <a class="btn-it-support" href="#">Read More</a>
+                        </a>
+                    </div>
+                    <div class="card card-service digital-marketing">
+                        <a href="#">
+                            <h2>Digital Marketing</h2>
+                            <p>Driven brand awareness & ROI through creative digital marketing campaigns.</p>
+                            <a class="btn-digital-marketing" href="#">Read More</a>
+                        </a>
+                    </div>
+                    <div class="card card-service telecoms-services">
+                        <a href="#">
+                            <h2>Telecoms Services</h2>
+                            <p>Business telephony solutions including mobile & connectivity solutions.
+                            </p>
+                            <a class="btn-telecoms-services" href="#">Read More</a>
+                        </a>
+                    </div>
+                    <div class="card card-service web-design">
+                        <a href="#">
+                            <h2>Web Design</h2>
+                            <p>User-centric design for businesses looking to make a lasting impression.</p>
+                            <a class="btn-web-design" href="#">Read More</a>
+                        </a>
+                    </div>
+                    <div class="card card-service cyber-security">
+                        <a href="#">
+                            <h2>Cyber Security</h2>
+                            <p>Prevention, testing, consultancy & breach management services.</p>
+                            <a class="btn-cyber-security" href="#">Read More</a>
+                        </a>
+                    </div>
+                    <div class="card card-service developer-training">
+                        <a href="#">
+                            <h2>Developer Training</h2>
+                            <p>Web design & software training courses designed to secure a job in tech.</p>
+                            <a class="btn-developer-training" href="#">Read More</a>
+                        </a>
+                    </div>
                 </div>
-                <div class="card card-service it-support">
-                    <a href="#">
-                        <h2>IT Support</h2>
-                        <p>Fully managed IT support and consultancy packages tailored to meet your exact business needs.
-                        </p>
-                        <a class="btn-it-support" href="#">Read More</a>
-                    </a>
-                </div>
-                <div class="card card-service digital-marketing">
-                    <a href="#">
-                        <h2>Digital Marketing</h2>
-                        <p>Driven brand awareness & ROI through creative digital marketing campaigns.</p>
-                        <a class="btn-digital-marketing" href="#">Read More</a>
-                    </a>
-                </div>
-                <div class="card card-service telecoms-services">
-                    <a href="#">
-                        <h2>Telecoms Services</h2>
-                        <p>Business telephony solutions including mobile & connectivity solutions.
-                        </p>
-                        <a class="btn-telecoms-services" href="#">Read More</a>
-                    </a>
-                </div>
-                <div class="card card-service web-design">
-                    <a href="#">
-                        <h2>Web Design</h2>
-                        <p>User-centric design for businesses looking to make a lasting impression.</p>
-                        <a class="btn-web-design" href="#">Read More</a>
-                    </a>
-                </div>
-                <div class="card card-service cyber-security">
-                    <a href="#">
-                        <h2>Cyber Security</h2>
-                        <p>Prevention, testing, consultancy & breach management services.</p>
-                        <a class="btn-cyber-security" href="#">Read More</a>
-                    </a>
-                </div>
-                <div class="card card-service developer-training">
-                    <a href="#">
-                        <h2>Developer Training</h2>
-                        <p>Web design & software training courses designed to secure a job in tech.</p>
-                        <a class="btn-developer-training" href="#">Read More</a>
-                    </a>
-                </div>
+                <h3><a href="#">View Our Work</a></h3>
+                    
             </div>
-            <h3><a href="#">View Our Work</a></h3>
         </section>
 
         <section  class="container" id="partners">

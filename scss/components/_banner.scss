@@ -7,7 +7,8 @@
         margin: 0 auto;
         object-fit: cover;
         overflow: hidden;
-        min-height: 601px;
+        // min-height: 601px;
+        min-height: 100%;
     }
     &-content{
         // background-color: bisque;
@@ -17,7 +18,7 @@
         color: $text-dark;
         padding: 3.75rem 15px;
 
-        background-color: rgba(1,1,1,.25);
+        background-color: rgba(1,1,1,.5);
 
         h1 {
             color: $text-dark;

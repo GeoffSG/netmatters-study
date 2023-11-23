@@ -1,0 +1,59 @@
+.nav-bar {
+    display: none;
+}
+
+
+.nav-toggle {
+    display: inline-block;
+    padding: 5px 15px;
+    width: auto;
+    height: auto;
+    border: none;
+    border-radius: 3px;
+    background-color: $btn-dark;
+    color: $btn-text;
+    text-transform: uppercase;
+    line-height: 35px;
+}
+
+//  hide the checkbox
+#nav-toggle {
+    display: none;
+}
+
+//  When nav toggle button is checked/pressed
+#nav-toggle:checked ~ .nav-menu {
+    display: block;
+}
+
+//  default style of hidable nav-menu
+.nav-menu {
+    // hide by default
+    display: none;
+    padding: 21px;
+    ul{ 
+        padding-left: 0;
+        li {
+            list-style: none;
+        }
+    }
+
+    .nav-button {
+        font-size: 1.125rem;
+        text-decoration: none;
+        padding: 19px 0 18px;
+        display: block;
+        border-radius: 5px;
+        color: $white;
+        text-align: center;
+        text-transform: uppercase;
+        outline: 1px solid rgba(0,0,0,.25);
+        border: 1px solid hsla(0, 0, 100%, .1);
+    }
+
+    .nav-group {
+        & .nav-button {
+            background-color: rgba(0,0,0,.25);
+        }
+    }
+}

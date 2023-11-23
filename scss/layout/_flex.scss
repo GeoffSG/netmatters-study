@@ -1,4 +1,6 @@
 //  Flexbox layout
 
-
-//  Todo - Grid functions & mixins for modular grids
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
