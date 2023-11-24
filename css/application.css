@@ -1,4 +1,257 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,600");
+.banner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.srt {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.centered {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../assets/fonts/icomoon.eot?8dlqtt");
+  src: url("../assets/fonts/icomoon.eot?8dlqtt#iefix") format("embedded-opentype"), url("../assets/fonts/icomoon.ttf?8dlqtt") format("truetype"), url("../assets/fonts/icomoon.woff?8dlqtt") format("woff"), url("../assets/fonts/icomoon.svg?8dlqtt#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-transfer:before {
+  content: "\e902";
+}
+
+.icon-arrows:before {
+  content: "\e902";
+}
+
+.icon-headphones:before {
+  content: "\e910";
+}
+
+.icon-bullhorn:before {
+  content: "\e91a";
+}
+
+.icon-folder-open:before {
+  content: "\e930";
+}
+
+.icon-ticket:before {
+  content: "\e939";
+}
+
+.icon-cart:before {
+  content: "\e93a";
+}
+
+.icon-phone:before {
+  content: "\e942";
+}
+
+.icon-clock:before {
+  content: "\e94e";
+}
+
+.icon-display:before {
+  content: "\e956";
+}
+
+.icon-laptop:before {
+  content: "\e957";
+}
+
+.icon-mobile:before {
+  content: "\e958";
+}
+
+.icon-drive:before {
+  content: "\e963";
+}
+
+.icon-search:before {
+  content: "\e986";
+}
+
+.icon-lock:before {
+  content: "\e98f";
+}
+
+.icon-briefcase:before {
+  content: "\e9ae";
+}
+
+.icon-shield:before {
+  content: "\e9b4";
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+
+.icon-download:before {
+  content: "\e9c7";
+}
+
+.icon-earth:before {
+  content: "\e9ca";
+}
+
+.icon-star:before {
+  content: "\e9d9";
+}
+
+.icon-arrow-right:before {
+  content: "\ea3c";
+}
+
+.icon-checkbox-checked:before {
+  content: "\ea52";
+}
+
+.icon-checkbox-unchecked:before {
+  content: "\ea53";
+}
+
+.icon-embed:before {
+  content: "\ea80";
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+.icon-twitter:before {
+  content: "\ea96";
+}
+
+.icon-linkedin:before {
+  content: "\eaca";
+}
+
+.icon-arrow-shuffle:before {
+  content: "\e903";
+}
+
+.icon-help:before {
+  content: "\e904";
+}
+
+.icon-monitor:before {
+  content: "\e905";
+}
+
+.icon-trending_up:before {
+  content: "\e906";
+}
+
+.icon-security:before {
+  content: "\e900";
+}
+
+.icon-bar-graph:before {
+  content: "\e907";
+}
+
+.icon-flask:before {
+  content: "\e908";
+}
+
+.icon-clipboard:before {
+  content: "\e909";
+}
+
+.icon-paste:before {
+  content: "\e909";
+}
+
+.icon-phone-square:before {
+  content: "\e90a";
+}
+
+.icon-dashboard:before {
+  content: "\e90b";
+}
+
+.icon-tachometer:before {
+  content: "\e90b";
+}
+
+.icon-pencil:before {
+  content: "\e90c";
+}
+
+.icon-money:before {
+  content: "\e90d";
+}
+
+.icon-envelope:before {
+  content: "\e90e";
+}
+
+.icon-cloud-download:before {
+  content: "\e90f";
+}
+
+.icon-cloud:before {
+  content: "\e911";
+}
+
+.icon-group:before {
+  content: "\e912";
+}
+
+.icon-users:before {
+  content: "\e912";
+}
+
+.icon-cogs:before {
+  content: "\e913";
+}
+
+.icon-gears:before {
+  content: "\e913";
+}
+
+.icon-graduation-cap:before {
+  content: "\e901";
+}
+
+.icon-mortar-board:before {
+  content: "\e901";
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -328,11 +581,6 @@ nav {
   display: block;
 }
 
-.section {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
 h1, h2, h3, h4 {
   line-height: 1.1;
 }
@@ -397,19 +645,69 @@ blockquote cite a {
 
 .flex {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+}
+.flex .flex-1 {
+  flex-grow: 1;
+}
+.flex .flex-2 {
+  flex-grow: 2;
+}
+.flex .flex-3 {
+  flex-grow: 3;
+}
+.flex .flex-4 {
+  flex-grow: 4;
+}
+.flex .flex-5 {
+  flex-grow: 5;
+}
+.flex .flex-6 {
+  flex-grow: 6;
+}
+.flex .flex-7 {
+  flex-grow: 7;
+}
+.flex .flex-8 {
+  flex-grow: 8;
+}
+.flex .flex-9 {
+  flex-grow: 9;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: auto auto auto;
   justify-content: center;
+  grid-gap: 30px;
 }
-.header {
-  padding-top: 20px;
+.grid-top-3 {
+  display: grid;
+  grid-gap: 30px;
 }
+@media (min-width: 991px) {
+  .grid-top-3 {
+    grid-template-columns: auto auto auto;
+  }
+}
+.grid-bottom-4 {
+  display: grid;
+  grid-gap: 30px;
+}
+@media (min-width: 770px) {
+  .grid-bottom-4 {
+    grid-template-columns: auto auto;
+  }
+}
+@media (min-width: 991px) {
+  .grid-bottom-4 {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
 .header .company-logo img {
   margin: auto 0;
+  max-height: 60px;
+  max-width: 345px;
 }
 
 .newsletter {
@@ -444,6 +742,9 @@ footer .license {
   line-height: 16px;
   color: #ffffff;
 }
+.footer .license a {
+  color: #ffffff;
+}
 
 .card {
   border: solid 1px #dddddd;
@@ -464,6 +765,40 @@ footer .license {
   top: -10px;
   transition: 0.5s ease;
 }
+.card-icon {
+  border-radius: 50%;
+  font-size: 2em;
+  line-height: 62px;
+  padding: 15px;
+}
+.card-icon.bespoke-software {
+  color: #ffffff;
+  background-color: #67809f;
+}
+.card-icon.it-support {
+  color: #ffffff;
+  background-color: #4183d7;
+}
+.card-icon.digital-marketing {
+  color: #ffffff;
+  background-color: #2ecc71;
+}
+.card-icon.telecoms-services {
+  color: #ffffff;
+  background-color: #d64541;
+}
+.card-icon.web-design {
+  color: #ffffff;
+  background-color: #926fb1;
+}
+.card-icon.cyber-security {
+  color: #ffffff;
+  background-color: #f62459;
+}
+.card-icon.developer-training {
+  color: #ffffff;
+  background-color: #ce4125;
+}
 .card.bespoke-software p, .card.bespoke-software h2 {
   font-size: 0.8125rem;
   line-height: 1.375rem;
@@ -473,7 +808,7 @@ footer .license {
 .card.bespoke-software h2 {
   font-size: 1.3rem;
   padding-bottom: 10px;
-  margin: 0 0 11px;
+  margin: 11px 0 11px;
 }
 .card.bespoke-software:hover {
   background-color: #67809f;
@@ -482,6 +817,10 @@ footer .license {
   color: #ffffff;
 }
 .card.bespoke-software:hover > .btn, .card.bespoke-software:hover > .btn-trustpilot-lg, .card.bespoke-software:hover > .btn-trustpilot, .card.bespoke-software:hover > .btn-google-lg, .card.bespoke-software:hover > .btn-google, .card.bespoke-software:hover > .btn-developer-training-lg, .card.bespoke-software:hover > .btn-developer-training, .card.bespoke-software:hover > .btn-cyber-security-lg, .card.bespoke-software:hover > .btn-cyber-security, .card.bespoke-software:hover > .btn-web-design-lg, .card.bespoke-software:hover > .btn-web-design, .card.bespoke-software:hover > .btn-telecoms-services-lg, .card.bespoke-software:hover > .btn-telecoms-services, .card.bespoke-software:hover > .btn-digital-marketing-lg, .card.bespoke-software:hover > .btn-digital-marketing, .card.bespoke-software:hover > .btn-it-support-lg, .card.bespoke-software:hover > .btn-it-support, .card.bespoke-software:hover > .btn-bespoke-software-lg, .card.bespoke-software:hover > .btn-bespoke-software, .card.bespoke-software:hover > .btn-light-lg, .card.bespoke-software:hover > .btn-light, .card.bespoke-software:hover > .btn-dark-lg, .card.bespoke-software:hover > .btn-dark {
+  background-color: #ffffff;
+  color: #67809f;
+}
+.card.bespoke-software:hover > .card-icon.bespoke-software {
   background-color: #ffffff;
   color: #67809f;
 }
@@ -494,7 +833,7 @@ footer .license {
 .card.it-support h2 {
   font-size: 1.3rem;
   padding-bottom: 10px;
-  margin: 0 0 11px;
+  margin: 11px 0 11px;
 }
 .card.it-support:hover {
   background-color: #4183d7;
@@ -503,6 +842,10 @@ footer .license {
   color: #ffffff;
 }
 .card.it-support:hover > .btn, .card.it-support:hover > .btn-trustpilot-lg, .card.it-support:hover > .btn-trustpilot, .card.it-support:hover > .btn-google-lg, .card.it-support:hover > .btn-google, .card.it-support:hover > .btn-developer-training-lg, .card.it-support:hover > .btn-developer-training, .card.it-support:hover > .btn-cyber-security-lg, .card.it-support:hover > .btn-cyber-security, .card.it-support:hover > .btn-web-design-lg, .card.it-support:hover > .btn-web-design, .card.it-support:hover > .btn-telecoms-services-lg, .card.it-support:hover > .btn-telecoms-services, .card.it-support:hover > .btn-digital-marketing-lg, .card.it-support:hover > .btn-digital-marketing, .card.it-support:hover > .btn-it-support-lg, .card.it-support:hover > .btn-it-support, .card.it-support:hover > .btn-bespoke-software-lg, .card.it-support:hover > .btn-bespoke-software, .card.it-support:hover > .btn-light-lg, .card.it-support:hover > .btn-light, .card.it-support:hover > .btn-dark-lg, .card.it-support:hover > .btn-dark {
+  background-color: #ffffff;
+  color: #4183d7;
+}
+.card.it-support:hover > .card-icon.it-support {
   background-color: #ffffff;
   color: #4183d7;
 }
@@ -515,7 +858,7 @@ footer .license {
 .card.digital-marketing h2 {
   font-size: 1.3rem;
   padding-bottom: 10px;
-  margin: 0 0 11px;
+  margin: 11px 0 11px;
 }
 .card.digital-marketing:hover {
   background-color: #2ecc71;
@@ -524,6 +867,10 @@ footer .license {
   color: #ffffff;
 }
 .card.digital-marketing:hover > .btn, .card.digital-marketing:hover > .btn-trustpilot-lg, .card.digital-marketing:hover > .btn-trustpilot, .card.digital-marketing:hover > .btn-google-lg, .card.digital-marketing:hover > .btn-google, .card.digital-marketing:hover > .btn-developer-training-lg, .card.digital-marketing:hover > .btn-developer-training, .card.digital-marketing:hover > .btn-cyber-security-lg, .card.digital-marketing:hover > .btn-cyber-security, .card.digital-marketing:hover > .btn-web-design-lg, .card.digital-marketing:hover > .btn-web-design, .card.digital-marketing:hover > .btn-telecoms-services-lg, .card.digital-marketing:hover > .btn-telecoms-services, .card.digital-marketing:hover > .btn-digital-marketing-lg, .card.digital-marketing:hover > .btn-digital-marketing, .card.digital-marketing:hover > .btn-it-support-lg, .card.digital-marketing:hover > .btn-it-support, .card.digital-marketing:hover > .btn-bespoke-software-lg, .card.digital-marketing:hover > .btn-bespoke-software, .card.digital-marketing:hover > .btn-light-lg, .card.digital-marketing:hover > .btn-light, .card.digital-marketing:hover > .btn-dark-lg, .card.digital-marketing:hover > .btn-dark {
+  background-color: #ffffff;
+  color: #2ecc71;
+}
+.card.digital-marketing:hover > .card-icon.digital-marketing {
   background-color: #ffffff;
   color: #2ecc71;
 }
@@ -536,7 +883,7 @@ footer .license {
 .card.telecoms-services h2 {
   font-size: 1.3rem;
   padding-bottom: 10px;
-  margin: 0 0 11px;
+  margin: 11px 0 11px;
 }
 .card.telecoms-services:hover {
   background-color: #d64541;
@@ -545,6 +892,10 @@ footer .license {
   color: #ffffff;
 }
 .card.telecoms-services:hover > .btn, .card.telecoms-services:hover > .btn-trustpilot-lg, .card.telecoms-services:hover > .btn-trustpilot, .card.telecoms-services:hover > .btn-google-lg, .card.telecoms-services:hover > .btn-google, .card.telecoms-services:hover > .btn-developer-training-lg, .card.telecoms-services:hover > .btn-developer-training, .card.telecoms-services:hover > .btn-cyber-security-lg, .card.telecoms-services:hover > .btn-cyber-security, .card.telecoms-services:hover > .btn-web-design-lg, .card.telecoms-services:hover > .btn-web-design, .card.telecoms-services:hover > .btn-telecoms-services-lg, .card.telecoms-services:hover > .btn-telecoms-services, .card.telecoms-services:hover > .btn-digital-marketing-lg, .card.telecoms-services:hover > .btn-digital-marketing, .card.telecoms-services:hover > .btn-it-support-lg, .card.telecoms-services:hover > .btn-it-support, .card.telecoms-services:hover > .btn-bespoke-software-lg, .card.telecoms-services:hover > .btn-bespoke-software, .card.telecoms-services:hover > .btn-light-lg, .card.telecoms-services:hover > .btn-light, .card.telecoms-services:hover > .btn-dark-lg, .card.telecoms-services:hover > .btn-dark {
+  background-color: #ffffff;
+  color: #d64541;
+}
+.card.telecoms-services:hover > .card-icon.telecoms-services {
   background-color: #ffffff;
   color: #d64541;
 }
@@ -557,7 +908,7 @@ footer .license {
 .card.web-design h2 {
   font-size: 1.3rem;
   padding-bottom: 10px;
-  margin: 0 0 11px;
+  margin: 11px 0 11px;
 }
 .card.web-design:hover {
   background-color: #926fb1;
@@ -566,6 +917,10 @@ footer .license {
   color: #ffffff;
 }
 .card.web-design:hover > .btn, .card.web-design:hover > .btn-trustpilot-lg, .card.web-design:hover > .btn-trustpilot, .card.web-design:hover > .btn-google-lg, .card.web-design:hover > .btn-google, .card.web-design:hover > .btn-developer-training-lg, .card.web-design:hover > .btn-developer-training, .card.web-design:hover > .btn-cyber-security-lg, .card.web-design:hover > .btn-cyber-security, .card.web-design:hover > .btn-web-design-lg, .card.web-design:hover > .btn-web-design, .card.web-design:hover > .btn-telecoms-services-lg, .card.web-design:hover > .btn-telecoms-services, .card.web-design:hover > .btn-digital-marketing-lg, .card.web-design:hover > .btn-digital-marketing, .card.web-design:hover > .btn-it-support-lg, .card.web-design:hover > .btn-it-support, .card.web-design:hover > .btn-bespoke-software-lg, .card.web-design:hover > .btn-bespoke-software, .card.web-design:hover > .btn-light-lg, .card.web-design:hover > .btn-light, .card.web-design:hover > .btn-dark-lg, .card.web-design:hover > .btn-dark {
+  background-color: #ffffff;
+  color: #926fb1;
+}
+.card.web-design:hover > .card-icon.web-design {
   background-color: #ffffff;
   color: #926fb1;
 }
@@ -578,7 +933,7 @@ footer .license {
 .card.cyber-security h2 {
   font-size: 1.3rem;
   padding-bottom: 10px;
-  margin: 0 0 11px;
+  margin: 11px 0 11px;
 }
 .card.cyber-security:hover {
   background-color: #f62459;
@@ -587,6 +942,10 @@ footer .license {
   color: #ffffff;
 }
 .card.cyber-security:hover > .btn, .card.cyber-security:hover > .btn-trustpilot-lg, .card.cyber-security:hover > .btn-trustpilot, .card.cyber-security:hover > .btn-google-lg, .card.cyber-security:hover > .btn-google, .card.cyber-security:hover > .btn-developer-training-lg, .card.cyber-security:hover > .btn-developer-training, .card.cyber-security:hover > .btn-cyber-security-lg, .card.cyber-security:hover > .btn-cyber-security, .card.cyber-security:hover > .btn-web-design-lg, .card.cyber-security:hover > .btn-web-design, .card.cyber-security:hover > .btn-telecoms-services-lg, .card.cyber-security:hover > .btn-telecoms-services, .card.cyber-security:hover > .btn-digital-marketing-lg, .card.cyber-security:hover > .btn-digital-marketing, .card.cyber-security:hover > .btn-it-support-lg, .card.cyber-security:hover > .btn-it-support, .card.cyber-security:hover > .btn-bespoke-software-lg, .card.cyber-security:hover > .btn-bespoke-software, .card.cyber-security:hover > .btn-light-lg, .card.cyber-security:hover > .btn-light, .card.cyber-security:hover > .btn-dark-lg, .card.cyber-security:hover > .btn-dark {
+  background-color: #ffffff;
+  color: #f62459;
+}
+.card.cyber-security:hover > .card-icon.cyber-security {
   background-color: #ffffff;
   color: #f62459;
 }
@@ -599,7 +958,7 @@ footer .license {
 .card.developer-training h2 {
   font-size: 1.3rem;
   padding-bottom: 10px;
-  margin: 0 0 11px;
+  margin: 11px 0 11px;
 }
 .card.developer-training:hover {
   background-color: #ce4125;
@@ -608,6 +967,10 @@ footer .license {
   color: #ffffff;
 }
 .card.developer-training:hover > .btn, .card.developer-training:hover > .btn-trustpilot-lg, .card.developer-training:hover > .btn-trustpilot, .card.developer-training:hover > .btn-google-lg, .card.developer-training:hover > .btn-google, .card.developer-training:hover > .btn-developer-training-lg, .card.developer-training:hover > .btn-developer-training, .card.developer-training:hover > .btn-cyber-security-lg, .card.developer-training:hover > .btn-cyber-security, .card.developer-training:hover > .btn-web-design-lg, .card.developer-training:hover > .btn-web-design, .card.developer-training:hover > .btn-telecoms-services-lg, .card.developer-training:hover > .btn-telecoms-services, .card.developer-training:hover > .btn-digital-marketing-lg, .card.developer-training:hover > .btn-digital-marketing, .card.developer-training:hover > .btn-it-support-lg, .card.developer-training:hover > .btn-it-support, .card.developer-training:hover > .btn-bespoke-software-lg, .card.developer-training:hover > .btn-bespoke-software, .card.developer-training:hover > .btn-light-lg, .card.developer-training:hover > .btn-light, .card.developer-training:hover > .btn-dark-lg, .card.developer-training:hover > .btn-dark {
+  background-color: #ffffff;
+  color: #ce4125;
+}
+.card.developer-training:hover > .card-icon.developer-training {
   background-color: #ffffff;
   color: #ce4125;
 }
@@ -699,8 +1062,34 @@ footer .license {
   margin: 0;
 }
 
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+.section .section-heading {
+  margin: 30px auto 0;
+  text-align: center;
+  font-weight: 600;
+}
+.section .section-heading a {
+  color: #121318;
+}
+
 .container {
-  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+@media (min-width: 770px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 991px) {
+  .container {
+    width: 970px;
+  }
 }
 .container .heading {
   font-weight: 600;
@@ -716,18 +1105,19 @@ footer .license {
 .container-dark h2 {
   color: #ffffff;
 }
-.container#services h3 {
-  margin: 30px auto 0;
-  text-align: center;
-  font-weight: 600;
+.container .rating {
+  font-size: 48px;
+  color: #ffa500;
 }
-.container#services h3 a {
-  color: #121318;
+
+.inner {
+  padding: 20px 0;
 }
 
 .banner {
   position: relative;
   height: 100%;
+  margin-bottom: 30px;
 }
 .banner-image {
   position: absolute;
@@ -738,6 +1128,9 @@ footer .license {
   min-height: 100%;
 }
 .banner-content {
+  background: url("../img/nm-banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
   margin: 0 auto;
   text-align: center;
@@ -927,27 +1320,6 @@ footer .license {
   display: none;
 }
 
-.nav-toggle {
-  display: inline-block;
-  padding: 5px 15px;
-  width: auto;
-  height: auto;
-  border: none;
-  border-radius: 3px;
-  background-color: #272936;
-  color: #ffffff;
-  text-transform: uppercase;
-  line-height: 35px;
-}
-
-#nav-toggle {
-  display: none;
-}
-
-#nav-toggle:checked ~ .nav-menu {
-  display: block;
-}
-
 .nav-menu {
   display: none;
   padding: 21px;
@@ -974,6 +1346,13 @@ footer .license {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
+.btn-nav-menu {
+  height: 56px;
+  line-height: 46px;
+  font-size: 1.125rem;
+  float: left;
+}
+
 .form-search {
   position: relative;
   margin-top: 11px;
@@ -990,13 +1369,15 @@ footer .license {
 }
 .form-search-button {
   position: absolute;
-  right: 0;
+  right: 10px;
   top: 0;
   height: 100%;
   border: 0;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
+  font-size: 20px;
+  color: #272936;
 }
 
 .slideshow {

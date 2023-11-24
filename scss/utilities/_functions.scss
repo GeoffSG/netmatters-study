@@ -7,3 +7,7 @@
 	@return calc($target / $context) * 1em;
 }
 
+
+@function get_icon($icon){
+	@return url("../assets/icons/#{$icon}.svg");
+}
