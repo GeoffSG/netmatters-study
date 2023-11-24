@@ -1,5 +1,48 @@
 .nav-bar {
-    display: none;
+    ul {
+        display: flex;
+        flex-direction: row;
+
+        @each $service, $color in $service-colors {
+            .#{$service} {
+                span {
+                    color: get-service-color($service);
+                }
+                &:hover{
+                    background-color: get-service-color($service, 'hover');
+                    span {
+                        color: $white;
+                    }
+                }
+            }
+            
+        }
+
+        li {
+            flex: 1;
+            list-style: none;
+            text-align: center;
+             a {
+                position: relative;
+                display: block;
+                color: $white;
+                padding: 19px 0 18px;
+                text-transform: uppercase;
+                font-size: 1.125rem;
+                text-decoration: none;
+                line-height: 1;
+
+                span {
+                    font-size: 1.438rem;
+                    display: block;
+                    padding-bottom: 10px;
+                }
+            }
+            small {
+                display: block;
+            }
+        }
+    }
 }
 
 //  default style of hidable nav-menu

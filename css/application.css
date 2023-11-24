@@ -1364,8 +1364,95 @@ blockquote cite a {
   color: #d64541;
 }
 
-.nav-bar {
-  display: none;
+.nav-bar ul {
+  display: flex;
+  flex-direction: row;
+}
+.nav-bar ul .bespoke-software span {
+  color: #67809f;
+}
+.nav-bar ul .bespoke-software:hover {
+  background-color: #526781;
+}
+.nav-bar ul .bespoke-software:hover span {
+  color: #ffffff;
+}
+.nav-bar ul .it-support span {
+  color: #4183d7;
+}
+.nav-bar ul .it-support:hover {
+  background-color: #286abd;
+}
+.nav-bar ul .it-support:hover span {
+  color: #ffffff;
+}
+.nav-bar ul .digital-marketing span {
+  color: #2ecc71;
+}
+.nav-bar ul .digital-marketing:hover {
+  background-color: #25a25a;
+}
+.nav-bar ul .digital-marketing:hover span {
+  color: #ffffff;
+}
+.nav-bar ul .telecoms-services span {
+  color: #d64541;
+}
+.nav-bar ul .telecoms-services:hover {
+  background-color: #bc2c28;
+}
+.nav-bar ul .telecoms-services:hover span {
+  color: #ffffff;
+}
+.nav-bar ul .web-design span {
+  color: #926fb1;
+}
+.nav-bar ul .web-design:hover {
+  background-color: #79539a;
+}
+.nav-bar ul .web-design:hover span {
+  color: #ffffff;
+}
+.nav-bar ul .cyber-security span {
+  color: #f62459;
+}
+.nav-bar ul .cyber-security:hover {
+  background-color: #de093f;
+}
+.nav-bar ul .cyber-security:hover span {
+  color: #ffffff;
+}
+.nav-bar ul .developer-training span {
+  color: #ce4125;
+}
+.nav-bar ul .developer-training:hover {
+  background-color: #a3331d;
+}
+.nav-bar ul .developer-training:hover span {
+  color: #ffffff;
+}
+.nav-bar ul li {
+  flex: 1;
+  list-style: none;
+  text-align: center;
+}
+.nav-bar ul li a {
+  position: relative;
+  display: block;
+  color: #ffffff;
+  padding: 19px 0 18px;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  text-decoration: none;
+  line-height: 1;
+}
+.nav-bar ul li a span {
+  font-size: 1.438rem;
+  display: block;
+  padding-bottom: 10px;
+}
+.nav-bar ul li small {
+  display: block;
 }
 
 .nav-menu {
