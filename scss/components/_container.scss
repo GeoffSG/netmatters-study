@@ -1,6 +1,28 @@
+.section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    & .section-heading {
+        margin: 30px auto 0;
+        text-align: center;
+        font-weight: $font-bold;
+        a {
+            color: $text-light;
+        }
+    }
+}
 
 .container {
-    padding: $base-padding;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 $base-padding;
+
+    @include mq('md') {
+        width: 750px;
+    }
+    @include mq('lg') {
+        width: 970px;
+    }
 
     .heading {
         font-weight: $font-bold;
@@ -21,14 +43,13 @@
         }
     }
 
-    &#services {
-        h3 {
-            margin: 30px auto 0;
-            text-align: center;
-            font-weight: $font-bold;
-            a {
-                color: $text-light;
-            }
-        }
+
+    .rating{
+        font-size: em(48px);
+        color: $gold;
     }
+}
+
+.inner {
+    padding: 20px 0;
 }

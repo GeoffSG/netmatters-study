@@ -715,25 +715,30 @@ blockquote cite a {
 }
 
 footer h4 {
+  color: #ffffff;
   font-weight: 400;
   text-transform: uppercase;
+  margin-bottom: 26px;
 }
-footer a {
+footer .company-info {
+  margin-bottom: 30px;
+}
+footer .company-info h4 {
+  margin-top: 24px;
+}
+footer .site-links a {
   color: #ffffff;
   font-size: 0.8125rem;
   line-height: 22px;
 }
-footer a:hover {
+footer .site-links a:hover {
   text-decoration: underline;
 }
-footer ul {
+footer .site-links ul {
   padding-left: 0;
 }
-footer ul li {
+footer .site-links ul li {
   list-style-type: none;
-}
-footer .logo {
-  width: 250px;
 }
 footer .license {
   background-color: #212330;
@@ -742,7 +747,7 @@ footer .license {
   line-height: 16px;
   color: #ffffff;
 }
-.footer .license a {
+footer .license a {
   color: #ffffff;
 }
 

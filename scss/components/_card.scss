@@ -19,6 +19,19 @@
         top: -10px;
         transition: .5s ease;
     }
+    
+    &-icon {
+        border-radius: 50%;
+        font-size: 2em;
+        line-height: 62px;
+        padding: 15px;
+        @each $service in $themes {
+            &.#{$service} {
+                color: $white;
+                background-color: get-service-color($service);
+            }
+        }
+    }
 
     @each $service, $color in $service-colors {
         &.#{$service} {
@@ -31,7 +44,7 @@
             & h2 {
                 font-size: 1.3rem;
                 padding-bottom: 10px;
-                margin: 0 0 11px;
+                margin: 11px 0 11px;
             }
 
             &:hover{
@@ -44,6 +57,11 @@
                     background-color: $white;
                     color: get-service-color($service);
                 }
+
+                & > .card-icon.#{$service} {
+                    background-color: $white;
+                    color: get-service-color($service);
+                }
             }
         }
     }
@@ -53,8 +71,6 @@
         border-radius: 15px;
         margin-top: 30px;
         text-align: center;
-        &:hover {
-        }
     }
 
     &-post {

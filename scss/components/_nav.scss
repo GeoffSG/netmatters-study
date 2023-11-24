@@ -2,30 +2,6 @@
     display: none;
 }
 
-
-.nav-toggle {
-    display: inline-block;
-    padding: 5px 15px;
-    width: auto;
-    height: auto;
-    border: none;
-    border-radius: 3px;
-    background-color: $btn-dark;
-    color: $btn-text;
-    text-transform: uppercase;
-    line-height: 35px;
-}
-
-//  hide the checkbox
-#nav-toggle {
-    display: none;
-}
-
-//  When nav toggle button is checked/pressed
-#nav-toggle:checked ~ .nav-menu {
-    display: block;
-}
-
 //  default style of hidable nav-menu
 .nav-menu {
     // hide by default
@@ -56,4 +32,11 @@
             background-color: rgba(0,0,0,.25);
         }
     }
+}
+
+.btn-nav-menu {
+    height: 56px;
+    line-height: 46px;
+    font-size: 1.125rem;
+    float: left;
 }
