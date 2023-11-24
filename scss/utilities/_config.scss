@@ -1,0 +1,19 @@
+//  ================================
+//  Variables
+//  ================================
+
+//  Font Variables
+
+$font-url: 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,600';
+$font-family: 'Poppins', sans-serif;
+
+@if variable-exists(font-url) {
+    @import url($font-url);
+}
+
+$font-normal: 400;
+$font-bold: 600;
+
+//  Base Vars
+$base-font-size: 1em;
+$base-padding: em(15px);

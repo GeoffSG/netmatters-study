@@ -1,0 +1,34 @@
+
+.container {
+    padding: $base-padding;
+
+    .heading {
+        font-weight: $font-bold;
+        font-size: 43.2px;
+    }
+
+    &-footer {
+        padding-bottom: 27px;
+    }
+
+    @include service-themes;
+
+    &-dark {
+        background-color: $bg-dark;
+        color: $text-dark;
+        h2 {
+            color: $text-dark;
+        }
+    }
+
+    &#services {
+        h3 {
+            margin: 30px auto 0;
+            text-align: center;
+            font-weight: $font-bold;
+            a {
+                color: $text-light;
+            }
+        }
+    }
+}

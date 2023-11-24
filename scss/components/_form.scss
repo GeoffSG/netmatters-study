@@ -1,0 +1,15 @@
+.form {
+    .form-group {
+        margin-bottom: 15px;
+        line-height: 2;
+        label {
+            font-weight: $font-bold;
+            color: $grey-d;   
+        }
+        
+        .required::after {
+            content: " *";
+            color: $red;
+        }
+    }
+}

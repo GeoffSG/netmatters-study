@@ -1,0 +1,27 @@
+
+
+.form-search {
+    position: relative;
+    margin-top: 11px;
+    line-height: 22.85px;
+    &-input {
+        background-color: rgba(0,0,0,.1);
+        outline: 1px solid hsla(0,0%,100%,.2);
+        border: 2px solid rgba(0,0,0,.1);
+        width: 100%;
+        height: 47px;
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+
+    &-button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}

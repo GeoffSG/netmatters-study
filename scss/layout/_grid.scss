@@ -1,0 +1,10 @@
+//  Grid layout
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    &#header {
+    }
+}
+
+//  Todo - Grid functions & mixins for modular grids

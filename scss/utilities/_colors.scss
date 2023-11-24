@@ -1,0 +1,116 @@
+//  Color variables
+
+$white: #ffffff;
+
+$grey-xl: #dddddd;
+$grey-l: #999aa2;
+$grey: #333645;
+$grey-d: #272936;
+$grey-xd: #212330;
+$black: #121318;
+
+$red: #d64541;
+$gold: #ffa500;
+
+$darken: 10%;
+$lighten: 10%;
+
+$service-colors: (
+    'bespoke-software': (
+        'base':#67809f,
+        'hover':darken(#67809f, $darken)
+    ),
+    'it-support':(
+        'base': #4183d7,
+        'hover':darken(#4183d7, $darken)
+    ),
+    'digital-marketing':(
+        'base': #2ecc71,
+        'hover':darken(#2ecc71, $darken)
+    ),
+    'telecoms-services':(
+        'base': #d64541,
+        'hover':darken(#d64541, $darken)
+    ),
+    'web-design':(
+        'base': #926fb1,
+        'hover':darken(#926fb1, $darken)
+    ),
+    'cyber-security':(
+        'base': #f62459,
+        'hover':darken(#f62459, $darken)
+    ),
+    'developer-training':(
+        'base': #ce4125,
+        'hover':darken(#ce4125, $darken)
+    )
+);
+
+$social-media-colors: (
+    'facebook': (
+        'base':#3b5998,
+    ),
+    'linkedin': (
+        'base':#0077b5,
+    ),
+    'twitter': (
+        'base':#00aced,
+    ),
+    'instagram': (
+        'base':#d93175
+    )  
+);
+
+$support-color: get-services-color('bs');
+$support-hover: get-services-color('bs','darken');
+
+$google: #4387f6;
+$google-hover: #166af4;
+
+$trustpilot: #00b67b;
+$trustpilot-hover: #009b69;
+
+$text-light: $black;
+$text-dark: $white;
+
+$btn-text: $white;
+$btn-dark: #272936;
+
+$bg-light: $white;
+$bg-dark: $grey;
+
+//  Color Functions
+
+@function get-service-color($service, $modifier:'base') {
+    @return map-get(map-get($service-colors, $service),$modifier);
+}
+
+
+//  Themes Mixins
+
+$themes : (
+    'bespoke-software',
+    'it-support',
+    'digital-marketing',
+    'telecoms-services',
+    'web-design',
+    'cyber-security',
+    'developer-training'
+);
+
+@mixin service-themes($color:null) {
+    @each $service in $themes {
+        $color: get-service-color($service);
+        &-#{$service} {
+            @content;
+        }
+    }
+}
+
+@mixin service-themes-text {
+    @each $service, $color in $service-colors {
+        &-#{$service} {
+            color: get-service-color($service);
+        }
+    }
+}
