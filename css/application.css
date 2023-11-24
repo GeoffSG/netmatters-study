@@ -714,7 +714,6 @@ blockquote cite a {
   background-color: #dddddd;
 }
 
-
 .footer .logo {
   width: 250px;
 }
@@ -724,7 +723,6 @@ blockquote cite a {
   text-transform: uppercase;
   margin-bottom: 26px;
 }
-
 .footer .company-info {
   margin-bottom: 30px;
 }
@@ -736,7 +734,6 @@ blockquote cite a {
   font-size: 0.8125rem;
   line-height: 22px;
 }
-
 .footer .site-links a:hover {
   text-decoration: underline;
 }
@@ -753,7 +750,7 @@ blockquote cite a {
   line-height: 16px;
   color: #ffffff;
 }
-footer .license a {
+.footer .license a {
   color: #ffffff;
 }
 
