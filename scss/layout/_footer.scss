@@ -1,4 +1,9 @@
-footer {
+
+.footer {
+    // @include theme-dark;
+    .logo {
+        width: 250px;
+    }
     h4 {
         color: $white;
         font-weight: $font-normal;
@@ -30,6 +35,7 @@ footer {
         }
 
     }
+
 
     .license {
         background-color: $grey-xd;
