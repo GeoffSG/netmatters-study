@@ -6,7 +6,7 @@
 
     ul {
         display: flex;
-        flex-direction: row;
+        // flex-direction: row;
         margin-bottom: 0;
         
         @each $service, $color in $service-colors {
@@ -19,12 +19,13 @@
                     span {
                         color: $white;
                     }
-                    li .sub-menu {
-                        display: block;
+                    &  .sub-menu-container {
+                        background-color: get-service-color($service);
                     }
+                    
                 }
+
             }
-            
         }
 
         li {
@@ -50,9 +51,45 @@
             small {
                 display: block;
             }
-            & .sub-menu {
+
+            & .sub-menu-container {
                 display: none;
+                margin: 0;
+                position: absolute;
+                left: 0;
+                min-width: 100vw;
+                z-index: 10;
+                padding-top: 50px;
+                padding-bottom: 50px;
             }
+            
+            &:hover {
+                &  .sub-menu-container {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    & .sub-menu {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        li {
+            min-width: 33%;
+            text-align: left;
+
+            h2{
+                margin-bottom: 0;
+            }
+        }
+        & li:first-child {
+            display: block;
+            min-width: 100%;
+            color: #fff !important;
+            margin-bottom: 10px;
+            margin-top: 15px;
+            font-weight: 500;
         }
     }
 }

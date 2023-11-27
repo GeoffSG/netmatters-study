@@ -1205,6 +1205,10 @@ blockquote cite a {
   margin-right: auto;
   padding: 0 15px;
 }
+.container::before {
+  content: "";
+  display: table;
+}
 @media (min-width: 770px) {
   .container {
     width: 750px;
@@ -1509,7 +1513,6 @@ blockquote cite a {
 }
 .nav-bar ul {
   display: flex;
-  flex-direction: row;
   margin-bottom: 0;
 }
 .nav-bar ul .bespoke-software span {
@@ -1521,8 +1524,8 @@ blockquote cite a {
 .nav-bar ul .bespoke-software:hover span {
   color: #ffffff;
 }
-.nav-bar ul .bespoke-software:hover li .sub-menu {
-  display: block;
+.nav-bar ul .bespoke-software:hover .sub-menu-container {
+  background-color: #67809f;
 }
 .nav-bar ul .it-support span {
   color: #4183d7;
@@ -1533,8 +1536,8 @@ blockquote cite a {
 .nav-bar ul .it-support:hover span {
   color: #ffffff;
 }
-.nav-bar ul .it-support:hover li .sub-menu {
-  display: block;
+.nav-bar ul .it-support:hover .sub-menu-container {
+  background-color: #4183d7;
 }
 .nav-bar ul .digital-marketing span {
   color: #2ecc71;
@@ -1545,8 +1548,8 @@ blockquote cite a {
 .nav-bar ul .digital-marketing:hover span {
   color: #ffffff;
 }
-.nav-bar ul .digital-marketing:hover li .sub-menu {
-  display: block;
+.nav-bar ul .digital-marketing:hover .sub-menu-container {
+  background-color: #2ecc71;
 }
 .nav-bar ul .telecoms-services span {
   color: #d64541;
@@ -1557,8 +1560,8 @@ blockquote cite a {
 .nav-bar ul .telecoms-services:hover span {
   color: #ffffff;
 }
-.nav-bar ul .telecoms-services:hover li .sub-menu {
-  display: block;
+.nav-bar ul .telecoms-services:hover .sub-menu-container {
+  background-color: #d64541;
 }
 .nav-bar ul .web-design span {
   color: #926fb1;
@@ -1569,8 +1572,8 @@ blockquote cite a {
 .nav-bar ul .web-design:hover span {
   color: #ffffff;
 }
-.nav-bar ul .web-design:hover li .sub-menu {
-  display: block;
+.nav-bar ul .web-design:hover .sub-menu-container {
+  background-color: #926fb1;
 }
 .nav-bar ul .cyber-security span {
   color: #f62459;
@@ -1581,8 +1584,8 @@ blockquote cite a {
 .nav-bar ul .cyber-security:hover span {
   color: #ffffff;
 }
-.nav-bar ul .cyber-security:hover li .sub-menu {
-  display: block;
+.nav-bar ul .cyber-security:hover .sub-menu-container {
+  background-color: #f62459;
 }
 .nav-bar ul .developer-training span {
   color: #ce4125;
@@ -1593,8 +1596,8 @@ blockquote cite a {
 .nav-bar ul .developer-training:hover span {
   color: #ffffff;
 }
-.nav-bar ul .developer-training:hover li .sub-menu {
-  display: block;
+.nav-bar ul .developer-training:hover .sub-menu-container {
+  background-color: #ce4125;
 }
 .nav-bar ul li {
   flex: 1;
@@ -1619,8 +1622,38 @@ blockquote cite a {
 .nav-bar ul li small {
   display: block;
 }
-.nav-bar ul li .sub-menu {
+.nav-bar ul li .sub-menu-container {
   display: none;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  min-width: 100vw;
+  z-index: 10;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.nav-bar ul li:hover .sub-menu-container {
+  display: block;
+}
+.nav-bar .sub-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.nav-bar .sub-menu li {
+  min-width: 33%;
+  text-align: left;
+}
+.nav-bar .sub-menu li h2 {
+  margin-bottom: 0;
+}
+.nav-bar .sub-menu li:first-child {
+  display: block;
+  min-width: 100%;
+  color: #fff !important;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-weight: 500;
 }
 
 .nav-menu {
