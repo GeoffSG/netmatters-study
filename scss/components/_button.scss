@@ -1,3 +1,31 @@
+@mixin button-base {
+    display: inline-block;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    width: auto;
+    height: auto;
+    line-height: 35px;
+    border: none;
+    border-radius: 3px;
+    color: $btn-text;
+}
+
+@mixin button-large($extend: null) {
+    &-lg{
+        @extend .btn;
+        @if ($extend != null) {
+            @extend .btn-#{$extend};
+        }
+        
+        margin-top: 20px;
+        margin-right: 8px;
+        // padding: 10px 30px;
+        border-radius: 6px;
+        font-size: 18px;
+        line-height: 46px;
+    }
+}
+
 
 .btn {
     display: inline-block;
@@ -9,6 +37,13 @@
     color: $btn-text;
     text-transform: uppercase;
     line-height: 35px;
+
+    & [class^="icon-"], & [class*=" icon-"] {
+        line-height: 45px;
+        margin-right: 5px;
+    }
+
+    @include button-large();
 
     &-dark {
         @extend .btn;
@@ -63,7 +98,11 @@
     }
 
     &-contact {
-        background-color: $grey;
+        background-color: $grey-l;
+    }
+
+    &-support, &-contact {
+
     }
 
     &-social-media {

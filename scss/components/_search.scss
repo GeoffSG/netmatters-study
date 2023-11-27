@@ -4,6 +4,7 @@
     position: relative;
     margin-top: 11px;
     line-height: 22.85px;
+
     &-input {
         background-color: rgba(0,0,0,.1);
         outline: 1px solid hsla(0,0%,100%,.2);
@@ -12,6 +13,17 @@
         height: 47px;
         padding: 5px 15px;
         font-size: 14px;
+
+        @include mq('md') {
+            height: 56px;
+            background-color: $white;
+            border: 1px solid #e5e5e5;
+            border-color: #ccc;
+            border-radius: 2px;
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            padding: 5px 15px;
+            line-height: 22.85px;
+        }
     }
 
     &-button {
@@ -25,5 +37,38 @@
         cursor: pointer;
         font-size: em(20px);
         color: $grey-d;
+
+        @include mq('md') {
+            position: relative;
+            right: 0;
+            outline: none;
+            padding: 7px 20px 3px;
+            height: 56px;
+            font-size: 1.063rem;
+            border-radius: 3px;
+            border: none;
+            vertical-align: bottom;
+            background-color: $grey-l;
+            color: $white;
+        }
+        @include mq('xl') {
+            position: absolute;
+            border-radius: 0 3px 3px 0;
+        }
     }
+
+    // &-md {
+    //     background-color: rgb(153, 36, 36);
+    //     & .form-search-input {
+    //         outline: none;
+    //         padding: 7px 20px 3px;
+    //         height: 56px;
+    //         font-size: 1.063rem;
+    //         border-radius: 0 3px 3px 0;
+    //         border: none;
+    //         vertical-align: bottom;
+    //         background-color: #999aa2;
+    //         color: #fff;
+    //     }
+    // }
 }

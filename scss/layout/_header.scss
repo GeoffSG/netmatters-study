@@ -12,7 +12,13 @@
         .buttons {
             display: flex;
             align-items: center;
+
             float: right;
+            & > *  {
+                margin-top: 0;
+                margin-left: 8px;
+            }
+            
         }
     }
 }
