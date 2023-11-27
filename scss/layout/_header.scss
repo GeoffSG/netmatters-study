@@ -1,7 +1,19 @@
 .header {
-    .company-logo img {
-        margin: auto 0;
-        max-height: 60px;
-        max-width: 345px;
+    .header-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .company-logo img {
+            margin: auto 0;
+            max-width: 100%;
+        }
+
+        .buttons {
+            display: flex;
+            align-items: center;
+            float: right;
+        }
     }
 }
+

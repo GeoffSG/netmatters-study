@@ -2,11 +2,17 @@
 
 .flex {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 
     @for $i from 1 to 10 {
-        & .flex-#{$i} {
+        &-#{$i} {
             flex-grow: $i;
         }
+    }
+
+    @include mq('md') {
+        flex-direction: row;
     }
 }

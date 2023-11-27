@@ -1,8 +1,12 @@
 .nav-bar {
+    display: none;
+    @include mq (lg){
+        display: block;
+    }
+
     ul {
         display: flex;
         flex-direction: row;
-
         @each $service, $color in $service-colors {
             .#{$service} {
                 span {
@@ -12,6 +16,9 @@
                     background-color: get-service-color($service, 'hover');
                     span {
                         color: $white;
+                    }
+                    li .sub-menu {
+                        display: block;
                     }
                 }
             }
@@ -40,6 +47,9 @@
             }
             small {
                 display: block;
+            }
+            & .sub-menu {
+                display: none;
             }
         }
     }
@@ -81,5 +91,4 @@
     height: 56px;
     line-height: 46px;
     font-size: 1.125rem;
-    float: left;
 }

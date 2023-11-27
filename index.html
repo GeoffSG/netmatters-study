@@ -12,12 +12,16 @@
         <header class="header"><!-- HEADER -->
             <div class="inner">
                 <div class="container" id="header">
-                    <div class="flex">
-                        <a class="flex-3 company-logo" href="#"><img src="img/nm-company.webp" alt="Netmatters"></a>
-                        <a class="flex-3 btn-light btn-call" href="#"><span class="icon-phone"></span> </a>
-                        <button class="flex-4 btn-dark btn-nav-menu" type="button" ><span class="icon-menu"></span></button>
-                        <!-- <a class="btn-contact" href="#">CONTACT</a>
-                        <a class="btn-support" href="#">SUPPORT</a> -->
+                    <div class="header-menu">
+                        <div class="company-logo">
+                            <a href="#"><img src="img/nm-company.webp" alt="Netmatters"></a>
+                        </div>
+                        <div class="buttons">
+                            <a class="btn btn-contact" href="#">CONTACT</a>
+                            <a class="btn btn-support" href="#">SUPPORT</a>
+                            <a class="btn-light btn-call" href="#"><span class="icon-phone"></span> </a>
+                            <button class="btn-dark btn-nav-menu" type="button" ><span class="icon-menu"></span></button>
+                        </div>
                     </div>
                     <form class="form-search">
                             <input class="form-search-input" id="search-input" placeholder="Search...">
@@ -28,11 +32,29 @@
         </header>
         <nav class="container-dark nav-bar">
             <ul>
-                <li><a class="bespoke-software" href="#">
+                <li>
+                    <a class="bespoke-software" href="#">
                     <span class="bespoke-software icon-laptop"></span>
                     <small>Bespoke</small>
                     Software
-                </a></li>
+                    </a>
+                    <div class="sub-menu-banner">
+                        <ul class="sub-menu">
+                            <li><a class="nav-button" href="#">Bespoke CRM</a></li>
+                            <li><a class="nav-button" href="#">Business Automation</a></li>
+                            <li><a class="nav-button" href="#">Software Integrations</a></li>
+                            <li><a class="nav-button" href="#">Mobile App Development</a></li>
+                            <li><a class="nav-button" href="#">Bespoke Databases</a></li>
+                            <li><a class="nav-button" href="#">Sharepoint Development</a></li>
+                            <li><a class="nav-button" href="#">Operational Systems</a></li>
+                            <li><a class="nav-button" href="#">Business Central Implementation</a></li>
+                            <li><a class="nav-button" href="#">Internet of Things (IoT) Software</a></li>
+                            <li><a class="nav-button" href="#">Intranet Development</a></li>
+                            <li><a class="nav-button" href="#">Customer Portal Development</a></li>
+                            <li><a class="nav-button" href="#">Reporting Hub</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a class="it-support" href="#">
                     <span class="icon-display"></span>
                      <small>IT</small>
@@ -165,8 +187,8 @@
         <div class="container section" id="services">
             <h1 class="heading">Our Services</h1>
             <!-- The Services Grid-->
-            <div class="grid" id="services-grid">
-                <div class="grid-top-3">
+            <div class="" id="services-grid">
+                <div class="grid-3">
                     <a class="grid-item grid-bespoke-software" href="#">
                         <div class="card card-service bespoke-software">
                                 <span class="card-icon bespoke-software icon-laptop"></span>
@@ -193,7 +215,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="grid-bottom-4">
+                <div class="grid-4">
                     <a class="grid-item grid-telecoms-services" href="#">
                         <div class="card card-service telecoms-services">
                             <span class="card-icon telecoms-services icon-phone"></span>
@@ -232,7 +254,7 @@
             <h3 class="section-heading"><a href="#">View Our Work <span class="icon-arrow-right"></span></a></h3>
                 
         </div>
-        <div class="container " id="partners">
+        <div class="container" id="partners">
             <div class="section">
                 <div class="slideshow">
                     <img src="img/partners/partner1.jpg" alt="">
@@ -244,40 +266,40 @@
             </div>
         </div>
         
-        <div class="container container-dark" id="welcome">
-            <div class="section">
-                <div>
-                    <h2>Welcome to Netmatters</h2>
-                    <p><strong>Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in the East of England with offices in London, Cambridge, Wymondham, and Great Yarmouth.</strong></p>
-                    <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.</p>
-                    <p>We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
-                    <div class="btn-group">
-                        <a class="btn-dark-lg" href="#">Why choose us? <span class="icon-arrow-right"></span></a>
-                        <a class="btn-dark-lg" href="#">Our Culture <span class="icon-arrow-right"></span></a>
+        <div class="container-dark">
+            <div class="container" id="welcome">
+                <div class="section grid-2">
+                    <div class="">
+                        <h2>Welcome to Netmatters</h2>
+                        <p><strong>Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in the East of England with offices in London, Cambridge, Wymondham, and Great Yarmouth.</strong></p>
+                        <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.</p>
+                        <p>We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
+                        <div class="btn-group">
+                            <a class="btn-dark-lg" href="#">Why choose us? <span class="icon-arrow-right"></span></a>
+                            <a class="btn-dark-lg" href="#">Our Culture <span class="icon-arrow-right"></span></a>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <h2>What Our Clients Think</h2>
-                    <div class="rating">
-                        <span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span>
-                    </div>
-                    <blockquote>
-                        <p>Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</p>
-                        <cite>Eleanor Bishop, Head of Marketing - <a href="#">Ashcroft Partnership LLP</a></cite>
-                    </blockquote>
-                    <div class="btn-group">
-                        <a class="btn-google-lg" href="#">Google Reviews <span class="icon-arrow-right"></span></a>
-                        <a class="btn-trustpilot-lg" href="#">Trustpilot Reviews <span class="icon-arrow-right"></span></a>
+                    <div>
+                        <h2>What Our Clients Think</h2>
+                        <div class="rating">
+                            <span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span>
+                        </div>
+                        <blockquote>
+                            <p>Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</p>
+                            <cite>Eleanor Bishop, Head of Marketing - <a href="#">Ashcroft Partnership LLP</a></cite>
+                        </blockquote>
+                        <div class="btn-group">
+                            <a class="btn-google-lg" href="#">Google Reviews <span class="icon-arrow-right"></span></a>
+                            <a class="btn-trustpilot-lg" href="#">Trustpilot Reviews <span class="icon-arrow-right"></span></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        
         <div class="container" id="news">
             <div class="section">
             <h2 class="container-heading">Latest News</h2>
-            <div> <!-- News Grid -->
-
+            <div class="flex grid-news"> <!-- News Grid -->
                 <div class="card card-post"><!-- News Card-->
                     <a href="#">
                         <div class="cover">
@@ -349,8 +371,8 @@
                         </div>
                     </a>
                 </div>
-                <h3 class="section-heading"><a href="#">View all <span class="icon-arrow-right"></span></a></h3>
             </div>
+            <h3 class="section-heading"><a href="#">View all <span class="icon-arrow-right"></span></a></h3>
         </div>
         </div>
         
@@ -374,32 +396,33 @@
             </div>
         </div>
         
-        <div class="container newsletter">
-            <div class="section">
-                <h2>Email Newsletter Sign-up</h2>
-                <form class="form form-newsletter">
-                    <div class="form-group">
-                        <label class="required" for="name">Your Name</label>
-                        <input type="text" name="name" id="name">
-                    </div>
-                    <div class="form-group">
-                        <label class="required" for="email">Your Email</label>
-                        <input type="email" name="email" id="email">
-                    </div>
-                    <div class="form-group">
-                    <input class="form-marketing-checkbox" type="checkbox" name="marketing" id="marketing">
-                    <label for="marketing">
-                        Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a>  for more information on how we keep your data safe.
-                    </label>
-                    </div>
-                    <button class="btn btn-dark" type="submit">Subscribe</button>
-                </form>
-            </div>    
-        </div>
-        <footer class="footer"> <!-- Footer -->
-            <div class="container container-dark">
+        <div class="newsletter">
+            <div class="container">
                 <div class="section">
-
+                    <h2>Email Newsletter Sign-up</h2>
+                    <form class="form form-newsletter">
+                        <div class="form-group">
+                            <label class="required" for="name">Your Name</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label class="required" for="email">Your Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form-group">
+                        <input class="form-marketing-checkbox" type="checkbox" name="marketing" id="marketing">
+                        <label for="marketing">
+                            Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a>  for more information on how we keep your data safe.
+                        </label>
+                        </div>
+                        <button class="btn btn-dark" type="submit">Subscribe</button>
+                    </form>
+                </div>    
+            </div>
+        </div>
+        <footer class="footer container-dark"> <!-- Footer -->
+            <div class="container">
+                <div class="section">
                 <div class="company-info">
                     <img class="logo" src="img/nm-company-white.webp" alt="Netmatters">
                     
@@ -414,7 +437,7 @@
                 </div>
 
                 </div>
-                <div class="site-links">
+                <div class="site-links grid-4">
                     <div>
                         <h4>About Netmatters</h4>
                         <ul>

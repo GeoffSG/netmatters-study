@@ -2,26 +2,40 @@
 //  Grid layout
 .grid {
     display: grid;
-    justify-content: center;
+    
     grid-gap: 30px;
-    &-top-3 {
-        display: grid;
-        grid-gap: 30px;
-        @include mq('lg') {
-            grid-template-columns: auto auto auto;
+    &-2 {
+        @extend .grid;
+        @include mq('lg'){
+            grid-template-columns: repeat(2, 1fr);
         }
     }
-    &-bottom-4 {
-        display: grid;
-        grid-gap: 30px;
+    &-3 {
+        @extend .grid;
+        @include mq('lg') {
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: stretch;
+        }
+    }
+    &-4 {
+        @extend .grid;
         @include mq('md') {
-            grid-template-columns: auto auto;
+            grid-template-columns: repeat(2, 1fr);
         }
 
         @include mq('lg') {
-            grid-template-columns: auto auto auto auto;
+            grid-template-columns: repeat(4, 1fr);
         }
     }
 }
 
 //  Todo - Grid functions & mixins for modular grids
+
+.grid-news .card:last-child {
+    @include mq('md') {
+        display: none;
+    }
+    @include mq('xl') {
+        display: block;
+    }
+}

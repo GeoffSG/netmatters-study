@@ -58,8 +58,12 @@
         @include button-large('trustpilot');
     }
     
-    &-support, &-contact {
-        display: none;
+    &-support {
+        background-color: get-service-color('it-support');
+    }
+
+    &-contact {
+        background-color: $grey;
     }
 
     &-social-media {
