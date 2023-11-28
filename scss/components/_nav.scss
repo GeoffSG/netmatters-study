@@ -6,7 +6,7 @@
 
     ul {
         display: flex;
-        // flex-direction: row;
+        justify-content: center;
         margin-bottom: 0;
         
         @each $service, $color in $service-colors {
@@ -78,9 +78,12 @@
         li {
             min-width: 33%;
             text-align: left;
-
             h2{
                 margin-bottom: 0;
+            }
+            span {
+                display: inline-block;
+                margin-right: 10px;
             }
         }
         & li:first-child {
