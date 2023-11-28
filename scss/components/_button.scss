@@ -101,10 +101,6 @@
         background-color: $grey-l;
     }
 
-    &-support, &-contact {
-
-    }
-
     &-social-media {
         @each $social-media, $color in $social-media-colors {
             &-#{$social-media} {

@@ -1,24 +1,42 @@
+%grid {
+    display: grid;
+    gap: 30px;
+    
+    &:first-child {
+        padding-bottom: 15px;       
+    }
+
+    &:last-child {
+        padding-top: 15px;
+    }
+}
+
 
 //  Grid layout
 .grid {
-    display: grid;
     
-    grid-gap: 30px;
+    .grid-item {
+        align-self: stretch;
+        .card {
+            margin: 0;
+        }
+    }
+
     &-2 {
-        @extend .grid;
+        @extend %grid;
         @include mq('lg'){
             grid-template-columns: repeat(2, 1fr);
         }
     }
     &-3 {
-        @extend .grid;
+        @extend %grid;
         @include mq('lg') {
             grid-template-columns: repeat(3, 1fr);
             justify-content: stretch;
         }
     }
     &-4 {
-        @extend .grid;
+        @extend %grid;
         @include mq('md') {
             grid-template-columns: repeat(2, 1fr);
         }
@@ -28,6 +46,8 @@
         }
     }
 }
+
+
 
 //  Todo - Grid functions & mixins for modular grids
 

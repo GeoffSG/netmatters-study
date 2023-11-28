@@ -50,6 +50,7 @@
             vertical-align: bottom;
             background-color: $grey-l;
             color: $white;
+            font-size: 23px;
         }
         @include mq('xl') {
             position: absolute;

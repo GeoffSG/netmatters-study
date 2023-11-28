@@ -3,11 +3,13 @@
     padding-bottom: 50px;
     position: relative;
     & .section-heading {
-        margin: 30px auto 0;
         text-align: center;
         font-weight: $font-bold;
         a {
             color: $text-light;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }
