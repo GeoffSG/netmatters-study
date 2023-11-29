@@ -24,7 +24,9 @@
                                 <input class="form-search-input appear-md hidden-lg appear-xl" id="search-input" placeholder="Search...">
                                 <button class="form-search-button appear-md" id="search-submit" type="submit"><span class="icon-search"></span></button>
                             </form>
-                            <button class="btn-dark btn-nav-menu" type="button" ><span class="icon-menu"></span></button>
+                            <button class="btn-dark btn-nav-menu" type="button" >
+                                <span class="hamburger-outer"><span class="hamburger-inner"></span></span>
+                            </button>
                         </div>
                     </div>
                     <form class="form-search hidden-md">
@@ -44,7 +46,7 @@
                     </a>
                     <div class="sub-menu-container">
                         <ul class="container sub-menu">
-                            <li><h2>Our SERVICE Services</h2></li>
+                            <li><h2>Our Bespoke Software Services</h2></li>
                             <li><a class="nav-button" href="#"><span class="icon-cogs"></span> Bespoke CRM</a></li>
                             <li><a class="nav-button" href="#"><span class="icon-briefcase"></span> Business Automation</a></li>
                             <li><a class="nav-button" href="#"><span class="icon2-shuffle1"></span> Software Integrations</a></li>
@@ -168,8 +170,11 @@
                 </li>
             </ul>
         </nav>
-        <div class="banner" id="banner">
-            <div class="banner-content">
+        <div class="banner flex" id="banner">
+            <div class="banner-image">
+                <img src="img/nm-banner.png" alt="The East of England's Leading Technology Company">
+            </div>
+            <div class="container banner-content">
                 <h1 class="banner-heading">The East of England's Leading Technology Company</h1>
                 <p class="banner-caption">Performance-driven digital and technology services with complete transparency.</p>
                 <a class="btn-web-design-lg" href="#">Find out more <span class="icon-arrow-right"></span></a>
@@ -489,7 +494,9 @@
             </div>
             </div>
             <div class="license">
-                © Copyright Netmatters 2023.<br>All rights reserved.<br><a href="#"">Sitemap</a>
+                <div class="container">
+                    © Copyright Netmatters 2023.<br class="hidden-md"> All rights reserved. <span class="hidden-sm visible-md">&dash;</span> <br class="hidden-md"><a href="#">Sitemap</a>
+                </div>
             </div>
         </footer>
     </body>
