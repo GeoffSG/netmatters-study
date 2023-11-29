@@ -2412,6 +2412,9 @@ blockquote cite a {
 .footer .license a {
   color: #ffffff;
 }
+.footer .license span {
+  display: inline !important;
+}
 
 .card {
   border: solid 1px #dddddd;
@@ -2807,27 +2810,25 @@ blockquote cite a {
 
 .banner {
   position: relative;
-  height: 100%;
+  min-height: 550px;
   margin-bottom: 30px;
 }
-.banner-image {
+.banner-image img {
   position: absolute;
   margin: 0 auto;
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
 }
 .banner-content {
-  background: url("../img/nm-banner.png");
-  background-size: cover;
-  background-repeat: no-repeat;
   position: relative;
-  margin: 0 auto;
+  margin: auto auto;
   text-align: center;
   color: #ffffff;
-  padding: 3.75rem 15px;
-  background-color: rgba(1, 1, 1, 0.5);
+  padding: 60px 15px;
 }
 .banner-content h1 {
   color: #ffffff;
@@ -2843,6 +2844,19 @@ blockquote cite a {
 .banner-content a {
   margin-top: 1.938rem;
   margin-bottom: 1.125rem;
+}
+@media (min-width: 991px) {
+  .banner-content {
+    text-align: left;
+  }
+  .banner-content h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  .banner-content p {
+    font-size: 1.625rem;
+    line-height: 2.5rem;
+  }
 }
 
 .btn, .btn-social-media-instagram, .btn-social-media-twitter, .btn-social-media-linkedin, .btn-social-media-facebook, .btn-trustpilot-lg, .btn-trustpilot, .btn-google-lg, .btn-google, .btn-developer-training-lg, .btn-developer-training, .btn-cyber-security-lg, .btn-cyber-security, .btn-web-design-lg, .btn-web-design, .btn-telecoms-services-lg, .btn-telecoms-services, .btn-digital-marketing-lg, .btn-digital-marketing, .btn-it-support-lg, .btn-it-support, .btn-bespoke-software-lg, .btn-bespoke-software, .btn-light-lg, .btn-light, .btn-dark-lg, .btn-dark, .btn-lg {
@@ -3077,86 +3091,170 @@ blockquote cite a {
 .nav-bar ul .bespoke-software span {
   color: #67809f;
 }
+.nav-bar ul .bespoke-software:hover > a::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 35px 83.5px 0;
+  border-color: #67809f transparent transparent transparent;
+  transform: rotate(0deg) translateX(-50%);
+  position: absolute;
+  bottom: -35px;
+  z-index: 90;
+}
 .nav-bar ul .bespoke-software:hover {
-  background-color: #526781;
+  background-color: #67809f;
 }
 .nav-bar ul .bespoke-software:hover span {
   color: #ffffff;
 }
 .nav-bar ul .bespoke-software:hover .sub-menu-container {
-  background-color: #67809f;
+  background-color: #526781;
 }
 .nav-bar ul .it-support span {
   color: #4183d7;
 }
+.nav-bar ul .it-support:hover > a::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 35px 83.5px 0;
+  border-color: #4183d7 transparent transparent transparent;
+  transform: rotate(0deg) translateX(-50%);
+  position: absolute;
+  bottom: -35px;
+  z-index: 90;
+}
 .nav-bar ul .it-support:hover {
-  background-color: #286abd;
+  background-color: #4183d7;
 }
 .nav-bar ul .it-support:hover span {
   color: #ffffff;
 }
 .nav-bar ul .it-support:hover .sub-menu-container {
-  background-color: #4183d7;
+  background-color: #286abd;
 }
 .nav-bar ul .digital-marketing span {
   color: #2ecc71;
 }
+.nav-bar ul .digital-marketing:hover > a::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 35px 83.5px 0;
+  border-color: #2ecc71 transparent transparent transparent;
+  transform: rotate(0deg) translateX(-50%);
+  position: absolute;
+  bottom: -35px;
+  z-index: 90;
+}
 .nav-bar ul .digital-marketing:hover {
-  background-color: #25a25a;
+  background-color: #2ecc71;
 }
 .nav-bar ul .digital-marketing:hover span {
   color: #ffffff;
 }
 .nav-bar ul .digital-marketing:hover .sub-menu-container {
-  background-color: #2ecc71;
+  background-color: #25a25a;
 }
 .nav-bar ul .telecoms-services span {
   color: #d64541;
 }
+.nav-bar ul .telecoms-services:hover > a::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 35px 83.5px 0;
+  border-color: #d64541 transparent transparent transparent;
+  transform: rotate(0deg) translateX(-50%);
+  position: absolute;
+  bottom: -35px;
+  z-index: 90;
+}
 .nav-bar ul .telecoms-services:hover {
-  background-color: #bc2c28;
+  background-color: #d64541;
 }
 .nav-bar ul .telecoms-services:hover span {
   color: #ffffff;
 }
 .nav-bar ul .telecoms-services:hover .sub-menu-container {
-  background-color: #d64541;
+  background-color: #bc2c28;
 }
 .nav-bar ul .web-design span {
   color: #926fb1;
 }
+.nav-bar ul .web-design:hover > a::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 35px 83.5px 0;
+  border-color: #926fb1 transparent transparent transparent;
+  transform: rotate(0deg) translateX(-50%);
+  position: absolute;
+  bottom: -35px;
+  z-index: 90;
+}
 .nav-bar ul .web-design:hover {
-  background-color: #79539a;
+  background-color: #926fb1;
 }
 .nav-bar ul .web-design:hover span {
   color: #ffffff;
 }
 .nav-bar ul .web-design:hover .sub-menu-container {
-  background-color: #926fb1;
+  background-color: #79539a;
 }
 .nav-bar ul .cyber-security span {
   color: #f62459;
 }
+.nav-bar ul .cyber-security:hover > a::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 35px 83.5px 0;
+  border-color: #f62459 transparent transparent transparent;
+  transform: rotate(0deg) translateX(-50%);
+  position: absolute;
+  bottom: -35px;
+  z-index: 90;
+}
 .nav-bar ul .cyber-security:hover {
-  background-color: #de093f;
+  background-color: #f62459;
 }
 .nav-bar ul .cyber-security:hover span {
   color: #ffffff;
 }
 .nav-bar ul .cyber-security:hover .sub-menu-container {
-  background-color: #f62459;
+  background-color: #de093f;
 }
 .nav-bar ul .developer-training span {
   color: #ce4125;
 }
+.nav-bar ul .developer-training:hover > a::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 35px 83.5px 0;
+  border-color: #ce4125 transparent transparent transparent;
+  transform: rotate(0deg) translateX(-50%);
+  position: absolute;
+  bottom: -35px;
+  z-index: 90;
+}
 .nav-bar ul .developer-training:hover {
-  background-color: #a3331d;
+  background-color: #ce4125;
 }
 .nav-bar ul .developer-training:hover span {
   color: #ffffff;
 }
 .nav-bar ul .developer-training:hover .sub-menu-container {
-  background-color: #ce4125;
+  background-color: #a3331d;
 }
 .nav-bar ul li {
   flex: 1;
@@ -3174,12 +3272,13 @@ blockquote cite a {
   line-height: 1;
 }
 .nav-bar ul li a span {
-  font-size: 1.438rem;
   display: block;
   padding-bottom: 10px;
+  font-size: 1.438rem;
 }
 .nav-bar ul li small {
   display: block;
+  font-size: 0.625rem;
 }
 .nav-bar ul li .sub-menu-container {
   display: none;
@@ -3251,6 +3350,23 @@ blockquote cite a {
   font-size: 1.438rem;
 }
 
+.hamburger-outer {
+  position: relative;
+  display: block;
+  width: 33px;
+  height: 24px;
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+}
+.hamburger-outer .hamburger-inner {
+  position: absolute;
+  top: calc(50% - 2px);
+  display: block;
+  width: 33px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
 .form-search {
   position: relative;
   margin-top: 11px;
@@ -3319,7 +3435,7 @@ blockquote cite a {
   gap: 70px;
   height: 70px;
   max-height: 70px;
-  overflow-x: hidden;
+  overflow-y: visible;
 }
 .slideshow a {
   width: auto;
