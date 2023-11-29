@@ -1,9 +1,41 @@
 
 .footer {
     // @include theme-dark;
+
+
+    & &-content {
+        @include mq('xl') {
+            display: flex;
+            justify-content: space-between;
+        }
+        .grid-4 {
+            gap: 0;
+        }
+    }
+
     .logo {
         width: 250px;
+        @include mq('480') {
+            width:320px;
+        }
     }
+    .social-media-section {
+        width: 400px;
+        .social-media {
+            display: flex;
+            width: auto;
+            a {
+                text-align: center;
+                text-decoration: none;
+                font-size: 26px;
+                line-height: 26px;
+                padding: 12px 22px 16px;
+                margin-right: 7px;
+            }
+            
+        }
+    }
+
     h4 {
         color: $white;
         font-weight: $font-normal;
@@ -19,6 +51,10 @@
     }
 
     .site-links{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 40px;
+
         a {
             color: $white;
             font-size: .8125rem;

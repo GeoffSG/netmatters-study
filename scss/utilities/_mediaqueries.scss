@@ -1,5 +1,6 @@
 $breakpoints: (
   'sm': 320px,
+  '480': 480px,
   'md': 769px,
   'lg': 990px,
   'xl': 1260px
@@ -14,6 +15,11 @@ $breakpoints: (
 
 	@if $break == "sm" {
 		@media (min-width: get-breakpoint($break)) and (max-width: get-breakpoint('md')) {
+			@content;
+		}
+	}
+	@else if $break == "480" {
+		@media (min-width: (get-breakpoint($break) + 1)) {
 			@content;
 		}
 	}

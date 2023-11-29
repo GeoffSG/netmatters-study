@@ -2118,6 +2118,14 @@ template {
     display: none !important;
   }
 }
+.hidden-480 {
+  display: inherit !important;
+}
+@media (min-width: 481px) {
+  .hidden-480 {
+    display: none !important;
+  }
+}
 .hidden-md {
   display: inherit !important;
 }
@@ -2148,6 +2156,14 @@ template {
 }
 @media (min-width: 320px) and (max-width: 769px) {
   .appear-sm {
+    display: inherit !important;
+  }
+}
+.appear-480 {
+  display: none !important;
+}
+@media (min-width: 481px) {
+  .appear-480 {
     display: inherit !important;
   }
 }
@@ -2255,6 +2271,10 @@ blockquote cite {
 }
 blockquote cite a {
   color: #ffffff;
+}
+
+footer {
+  padding: 47px 0 0;
 }
 
 .flex {
@@ -2373,8 +2393,37 @@ blockquote cite a {
   background-color: #dddddd;
 }
 
+@media (min-width: 1261px) {
+  .footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.footer .footer-content .grid-4 {
+  gap: 0;
+}
 .footer .logo {
   width: 250px;
+}
+@media (min-width: 481px) {
+  .footer .logo {
+    width: 320px;
+  }
+}
+.footer .social-media-section {
+  width: 400px;
+}
+.footer .social-media-section .social-media {
+  display: flex;
+  width: auto;
+}
+.footer .social-media-section .social-media a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 26px;
+  padding: 12px 22px 16px;
+  margin-right: 7px;
 }
 .footer h4 {
   color: #ffffff;
@@ -2387,6 +2436,11 @@ blockquote cite a {
 }
 .footer .company-info h4 {
   margin-top: 24px;
+}
+.footer .site-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 40px;
 }
 .footer .site-links a {
   color: #ffffff;
