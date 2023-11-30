@@ -2323,6 +2323,7 @@ footer {
 .grid-4, .grid-3, .grid-2 {
   display: grid;
   gap: 30px;
+  align-items: stretch;
 }
 .grid-4:first-child, .grid-3:first-child, .grid-2:first-child {
   padding-bottom: 15px;
@@ -2386,7 +2387,7 @@ footer {
 }
 .header .header-menu .buttons > * {
   margin-top: 0;
-  margin-left: 8px;
+  margin-left: 20px;
 }
 
 .newsletter {
@@ -2531,6 +2532,10 @@ footer {
   position: relative;
   top: 0;
   transition: 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 .card p {
   color: #121318;
@@ -2542,7 +2547,7 @@ footer {
   transition: 0.5s ease;
 }
 .card .card-button {
-  margin-top: auto;
+  margin: auto auto 0;
 }
 .card-icon {
   display: block;
@@ -2595,7 +2600,7 @@ footer {
 .card.bespoke-software h2 {
   font-size: 1.3rem;
   padding-bottom: 10px;
-  margin: 11px 0 11px;
+  margin: 0 0 11px;
 }
 .card.bespoke-software:hover {
   background-color: #67809f;
@@ -2620,7 +2625,7 @@ footer {
 .card.it-support h2 {
   font-size: 1.3rem;
   padding-bottom: 10px;
-  margin: 11px 0 11px;
+  margin: 0 0 11px;
 }
 .card.it-support:hover {
   background-color: #4183d7;
@@ -2645,7 +2650,7 @@ footer {
 .card.digital-marketing h2 {
   font-size: 1.3rem;
   padding-bottom: 10px;
-  margin: 11px 0 11px;
+  margin: 0 0 11px;
 }
 .card.digital-marketing:hover {
   background-color: #2ecc71;
@@ -2670,7 +2675,7 @@ footer {
 .card.telecoms-services h2 {
   font-size: 1.3rem;
   padding-bottom: 10px;
-  margin: 11px 0 11px;
+  margin: 0 0 11px;
 }
 .card.telecoms-services:hover {
   background-color: #d64541;
@@ -2695,7 +2700,7 @@ footer {
 .card.web-design h2 {
   font-size: 1.3rem;
   padding-bottom: 10px;
-  margin: 11px 0 11px;
+  margin: 0 0 11px;
 }
 .card.web-design:hover {
   background-color: #926fb1;
@@ -2720,7 +2725,7 @@ footer {
 .card.cyber-security h2 {
   font-size: 1.3rem;
   padding-bottom: 10px;
-  margin: 11px 0 11px;
+  margin: 0 0 11px;
 }
 .card.cyber-security:hover {
   background-color: #f62459;
@@ -2745,7 +2750,7 @@ footer {
 .card.developer-training h2 {
   font-size: 1.3rem;
   padding-bottom: 10px;
-  margin: 11px 0 11px;
+  margin: 0 0 11px;
 }
 .card.developer-training:hover {
   background-color: #ce4125;
@@ -2981,8 +2986,9 @@ footer {
 .btn-lg {
   margin-top: 20px;
   margin-right: 8px;
+  padding: 5px 20px;
   border-radius: 6px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 46px;
 }
 .btn-dark, .btn-light-lg, .btn-dark-lg {
@@ -2994,8 +3000,9 @@ footer {
 .btn-dark-lg {
   margin-top: 20px;
   margin-right: 8px;
+  padding: 5px 20px;
   border-radius: 6px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 46px;
 }
 .btn-light {
@@ -3008,8 +3015,9 @@ footer {
 .btn-light-lg {
   margin-top: 20px;
   margin-right: 8px;
+  padding: 5px 20px;
   border-radius: 6px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 46px;
 }
 .btn-bespoke-software, .btn-bespoke-software-lg {
@@ -3019,9 +3027,13 @@ footer {
 .btn-bespoke-software-lg {
   margin-top: 20px;
   margin-right: 8px;
+  padding: 5px 20px;
   border-radius: 6px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 46px;
+}
+.btn-bespoke-software-lg:hover {
+  background-color: #526781;
 }
 .btn-it-support, .btn-it-support-lg {
   background-color: #4183d7;
@@ -3030,9 +3042,13 @@ footer {
 .btn-it-support-lg {
   margin-top: 20px;
   margin-right: 8px;
+  padding: 5px 20px;
   border-radius: 6px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 46px;
+}
+.btn-it-support-lg:hover {
+  background-color: #286abd;
 }
 .btn-digital-marketing, .btn-digital-marketing-lg {
   background-color: #2ecc71;
@@ -3041,9 +3057,13 @@ footer {
 .btn-digital-marketing-lg {
   margin-top: 20px;
   margin-right: 8px;
+  padding: 5px 20px;
   border-radius: 6px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 46px;
+}
+.btn-digital-marketing-lg:hover {
+  background-color: #25a25a;
 }
 .btn-telecoms-services, .btn-telecoms-services-lg {
   background-color: #d64541;
@@ -3052,9 +3072,13 @@ footer {
 .btn-telecoms-services-lg {
   margin-top: 20px;
   margin-right: 8px;
+  padding: 5px 20px;
   border-radius: 6px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 46px;
+}
+.btn-telecoms-services-lg:hover {
+  background-color: #bc2c28;
 }
 .btn-web-design, .btn-web-design-lg {
   background-color: #926fb1;
@@ -3063,9 +3087,13 @@ footer {
 .btn-web-design-lg {
   margin-top: 20px;
   margin-right: 8px;
+  padding: 5px 20px;
   border-radius: 6px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 46px;
+}
+.btn-web-design-lg:hover {
+  background-color: #79539a;
 }
 .btn-cyber-security, .btn-cyber-security-lg {
   background-color: #f62459;
@@ -3074,9 +3102,13 @@ footer {
 .btn-cyber-security-lg {
   margin-top: 20px;
   margin-right: 8px;
+  padding: 5px 20px;
   border-radius: 6px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 46px;
+}
+.btn-cyber-security-lg:hover {
+  background-color: #de093f;
 }
 .btn-developer-training, .btn-developer-training-lg {
   background-color: #ce4125;
@@ -3085,9 +3117,13 @@ footer {
 .btn-developer-training-lg {
   margin-top: 20px;
   margin-right: 8px;
+  padding: 5px 20px;
   border-radius: 6px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 46px;
+}
+.btn-developer-training-lg:hover {
+  background-color: #a3331d;
 }
 .btn-google, .btn-google-lg {
   background-color: #4387f6;
@@ -3098,8 +3134,9 @@ footer {
 .btn-google-lg {
   margin-top: 20px;
   margin-right: 8px;
+  padding: 5px 20px;
   border-radius: 6px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 46px;
 }
 .btn-trustpilot, .btn-trustpilot-lg {
@@ -3111,15 +3148,24 @@ footer {
 .btn-trustpilot-lg {
   margin-top: 20px;
   margin-right: 8px;
+  padding: 5px 20px;
   border-radius: 6px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 46px;
 }
 .btn-support {
   background-color: #4183d7;
+  border-radius: 3px;
+}
+.btn-support:hover {
+  background-color: #286abd;
 }
 .btn-contact {
   background-color: #999aa2;
+  border-radius: 3px;
+}
+.btn-contact:hover {
+  background-color: #7e808a;
 }
 .btn-social-media-facebook {
   padding: 12px 22px 16px;
@@ -3160,6 +3206,9 @@ footer {
 }
 .btn-social-media-instagram:hover {
   background-color: #d93175;
+}
+.btn-call {
+  font-size: 32px;
 }
 
 .btn-group:last-child {
@@ -3475,6 +3524,7 @@ footer {
   position: relative;
   margin-top: 11px;
   line-height: 22.85px;
+  width: 303px;
 }
 .form-search-input {
   background-color: rgba(0, 0, 0, 0.1);
@@ -3484,6 +3534,11 @@ footer {
   height: 47px;
   padding: 5px 15px;
   font-size: 14px;
+}
+.form-search-input:focus {
+  border-color: #5bc0de;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 @media (min-width: 770px) {
   .form-search-input {
@@ -3523,6 +3578,9 @@ footer {
     background-color: #999aa2;
     color: #ffffff;
     font-size: 23px;
+  }
+  .form-search-button:hover {
+    background-color: #7e808a;
   }
 }
 @media (min-width: 1261px) {
