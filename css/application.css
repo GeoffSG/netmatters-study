@@ -2382,8 +2382,14 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+.header .header-menu .company-logo {
+  vertical-align: middle;
+}
+.header .header-menu .company-logo a {
+  display: block;
+}
 .header .header-menu .company-logo img {
-  margin: auto 0;
+  margin: auto;
   max-width: 100%;
 }
 .header .header-menu .buttons {
@@ -2407,6 +2413,15 @@ footer {
 }
 .header .header-menu .buttons .btn.btn-call span, .header .header-menu .buttons .btn-call.btn-social-media-instagram span, .header .header-menu .buttons .btn-call.btn-social-media-twitter span, .header .header-menu .buttons .btn-call.btn-social-media-linkedin span, .header .header-menu .buttons .btn-call.btn-social-media-facebook span, .header .header-menu .buttons .btn-call.btn-trustpilot-lg span, .header .header-menu .buttons .btn-call.btn-trustpilot span, .header .header-menu .buttons .btn-call.btn-google-lg span, .header .header-menu .buttons .btn-call.btn-google span, .header .header-menu .buttons .btn-call.btn-developer-training-lg span, .header .header-menu .buttons .btn-call.btn-developer-training span, .header .header-menu .buttons .btn-call.btn-cyber-security-lg span, .header .header-menu .buttons .btn-call.btn-cyber-security span, .header .header-menu .buttons .btn-call.btn-web-design-lg span, .header .header-menu .buttons .btn-call.btn-web-design span, .header .header-menu .buttons .btn-call.btn-telecoms-services-lg span, .header .header-menu .buttons .btn-call.btn-telecoms-services span, .header .header-menu .buttons .btn-call.btn-digital-marketing-lg span, .header .header-menu .buttons .btn-call.btn-digital-marketing span, .header .header-menu .buttons .btn-call.btn-it-support-lg span, .header .header-menu .buttons .btn-call.btn-it-support span, .header .header-menu .buttons .btn-call.btn-bespoke-software-lg span, .header .header-menu .buttons .btn-call.btn-bespoke-software span, .header .header-menu .buttons .btn-call.btn-light-lg span, .header .header-menu .buttons .btn-call.btn-light span, .header .header-menu .buttons .btn-call.btn-dark-lg span, .header .header-menu .buttons .btn-call.btn-dark span, .header .header-menu .buttons .btn-call.btn-lg span {
   font-size: 32px;
+  padding: 0;
+}
+@media (min-width: 320px) and (max-width: 769px) {
+  .header .header-menu > * {
+    vertical-align: middle;
+  }
+  .header .header-menu .buttons * {
+    margin-left: 0;
+  }
 }
 
 .newsletter {
@@ -3559,7 +3574,7 @@ footer {
 
 .form-search {
   position: relative;
-  margin-top: 11px;
+  margin-top: 25px;
   line-height: 22.85px;
 }
 .form-search-input {
