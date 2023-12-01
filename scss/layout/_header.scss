@@ -1,5 +1,5 @@
 .header {
-    padding-top: 20px;
+    
     
     .header-menu {
         display: flex;
@@ -29,7 +29,10 @@
                 span {
                     font-size: 1.438rem;
                     line-height: 45px;
-                    // margin-right: 0;
+                    
+                }
+                &.btn-call span{
+                    font-size: 32px;
                 }
             }
             

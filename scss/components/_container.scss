@@ -15,9 +15,13 @@
 }
 
 .container {
-    &::before{
-        content: '';   
-        display: table;
+    // &::before{
+    //     content: '';   
+    //     display: table;
+    // }
+
+    &::after{
+        clear: both;
     }
 
     margin-left: auto;
@@ -58,4 +62,8 @@
         font-size: em(48px);
         color: $gold;
     }
+}
+
+.inner {
+    padding: 20px 0;
 }

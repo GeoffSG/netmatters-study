@@ -2377,9 +2377,6 @@ footer {
   }
 }
 
-.header {
-  padding-top: 20px;
-}
 .header .header-menu {
   display: flex;
   justify-content: space-between;
@@ -2407,6 +2404,9 @@ footer {
 .header .header-menu .buttons .btn span, .header .header-menu .buttons .btn-social-media-instagram span, .header .header-menu .buttons .btn-social-media-twitter span, .header .header-menu .buttons .btn-social-media-linkedin span, .header .header-menu .buttons .btn-social-media-facebook span, .header .header-menu .buttons .btn-trustpilot-lg span, .header .header-menu .buttons .btn-trustpilot span, .header .header-menu .buttons .btn-google-lg span, .header .header-menu .buttons .btn-google span, .header .header-menu .buttons .btn-developer-training-lg span, .header .header-menu .buttons .btn-developer-training span, .header .header-menu .buttons .btn-cyber-security-lg span, .header .header-menu .buttons .btn-cyber-security span, .header .header-menu .buttons .btn-web-design-lg span, .header .header-menu .buttons .btn-web-design span, .header .header-menu .buttons .btn-telecoms-services-lg span, .header .header-menu .buttons .btn-telecoms-services span, .header .header-menu .buttons .btn-digital-marketing-lg span, .header .header-menu .buttons .btn-digital-marketing span, .header .header-menu .buttons .btn-it-support-lg span, .header .header-menu .buttons .btn-it-support span, .header .header-menu .buttons .btn-bespoke-software-lg span, .header .header-menu .buttons .btn-bespoke-software span, .header .header-menu .buttons .btn-light-lg span, .header .header-menu .buttons .btn-light span, .header .header-menu .buttons .btn-dark-lg span, .header .header-menu .buttons .btn-dark span, .header .header-menu .buttons .btn-lg span {
   font-size: 1.438rem;
   line-height: 45px;
+}
+.header .header-menu .buttons .btn.btn-call span, .header .header-menu .buttons .btn-call.btn-social-media-instagram span, .header .header-menu .buttons .btn-call.btn-social-media-twitter span, .header .header-menu .buttons .btn-call.btn-social-media-linkedin span, .header .header-menu .buttons .btn-call.btn-social-media-facebook span, .header .header-menu .buttons .btn-call.btn-trustpilot-lg span, .header .header-menu .buttons .btn-call.btn-trustpilot span, .header .header-menu .buttons .btn-call.btn-google-lg span, .header .header-menu .buttons .btn-call.btn-google span, .header .header-menu .buttons .btn-call.btn-developer-training-lg span, .header .header-menu .buttons .btn-call.btn-developer-training span, .header .header-menu .buttons .btn-call.btn-cyber-security-lg span, .header .header-menu .buttons .btn-call.btn-cyber-security span, .header .header-menu .buttons .btn-call.btn-web-design-lg span, .header .header-menu .buttons .btn-call.btn-web-design span, .header .header-menu .buttons .btn-call.btn-telecoms-services-lg span, .header .header-menu .buttons .btn-call.btn-telecoms-services span, .header .header-menu .buttons .btn-call.btn-digital-marketing-lg span, .header .header-menu .buttons .btn-call.btn-digital-marketing span, .header .header-menu .buttons .btn-call.btn-it-support-lg span, .header .header-menu .buttons .btn-call.btn-it-support span, .header .header-menu .buttons .btn-call.btn-bespoke-software-lg span, .header .header-menu .buttons .btn-call.btn-bespoke-software span, .header .header-menu .buttons .btn-call.btn-light-lg span, .header .header-menu .buttons .btn-call.btn-light span, .header .header-menu .buttons .btn-call.btn-dark-lg span, .header .header-menu .buttons .btn-call.btn-dark span, .header .header-menu .buttons .btn-call.btn-lg span {
+  font-size: 32px;
 }
 
 .newsletter {
@@ -2894,9 +2894,8 @@ footer {
   margin-right: auto;
   padding: 0 15px;
 }
-.container::before {
-  content: "";
-  display: table;
+.container::after {
+  clear: both;
 }
 @media (min-width: 770px) {
   .container {
@@ -2930,6 +2929,10 @@ footer {
 .container .rating {
   font-size: 48px;
   color: #ffa500;
+}
+
+.inner {
+  padding: 20px 0;
 }
 
 .banner {
@@ -3243,9 +3246,6 @@ footer {
 .btn-social-media-instagram:hover {
   background-color: #d93175;
 }
-.btn-call {
-  font-size: 32px;
-}
 
 .btn-group:last-child {
   margin-bottom: 50px;
@@ -3275,6 +3275,7 @@ footer {
 .nav-bar ul {
   display: flex;
   justify-content: center;
+  margin-top: 0;
   margin-bottom: 0;
 }
 .nav-bar ul .bespoke-software span {
