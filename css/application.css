@@ -3514,6 +3514,9 @@ footer {
   display: inline-block;
   margin-right: 10px;
 }
+.nav-bar .sub-menu li a:hover {
+  text-decoration: underline;
+}
 .nav-bar .sub-menu li:first-child {
   display: block;
   min-width: 100%;
