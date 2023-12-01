@@ -2874,6 +2874,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
+  overflow-x: hidden;
 }
 .container::before {
   content: "";
@@ -3599,16 +3600,23 @@ footer {
   flex-wrap: nowrap;
   align-items: end;
   gap: 70px;
+  overflow-x: hidden;
 }
 .slideshow-stage .slideshow-item {
-  display: inline-block;
-  position: relative;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 .slideshow-stage .slideshow-item a {
   display: block;
 }
 .slideshow-stage .slideshow-item .slideshow-tooltip {
+  visibility: hidden;
+}
+.slideshow-stage .slideshow-item .slideshow-tooltip {
+  visibility: hidden;
   position: absolute;
   bottom: 100%;
   left: -200px;
@@ -3616,6 +3624,7 @@ footer {
   padding: 20px;
   margin: 0 auto 50px;
   max-width: 280px;
+  align-self: center;
   background-color: #333645;
   color: #ffffff;
   font-size: 0.875rem;
@@ -3626,6 +3635,9 @@ footer {
   font-size: 0.8125rem;
   line-height: 1.375;
   margin-bottom: 0;
+}
+.slideshow-stage .slideshow-item .slideshow-tooltip p a {
+  display: inline;
 }
 .slideshow-stage .slideshow-item .slideshow-tooltip h3 {
   position: relative;
@@ -3638,9 +3650,16 @@ footer {
   margin-top: 11px;
   font-size: 16px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  font-size: 0.8125rem;
+  line-height: 1.375;
+  margin-bottom: 0;
+  font-weight: 600;
 }
 .slideshow-stage .slideshow-item:hover > .slideshow-tooltip {
-  display: block;
+  visibility: visible;
 }
 .slideshow-stage .slideshow-item img {
   position: relative;
