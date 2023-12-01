@@ -34,6 +34,13 @@
     &-content{
         // background: ;
         // linear-gradient($black, transparent);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        min-height: 550px;
+        // width: 100%;
         position: relative;
         margin: auto auto;
         text-align: center;
@@ -47,11 +54,14 @@
             font-weight: $font-bold;
             font-size: 2.5rem;
             line-height: 3rem;
+            margin: 0 0 1.25rem;
         }
         p {
             font-weight: $font-bold;
             font-size: 1.25rem;
             line-height: 1.75rem;
+            margin-top: 0;
+            margin-bottom: 6px;
         }
 
         a {
@@ -61,6 +71,8 @@
 
         @include mq('lg'){
             text-align: left;
+            align-content: start;
+            align-items: start;
             h1 {
                 font-size: 4rem;
                 line-height: 5rem;

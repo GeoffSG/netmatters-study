@@ -21,7 +21,7 @@
         margin-right: 8px;
         padding: 5px 20px;
         font-size: 20px;
-        line-height: 46px;
+        line-height: 50px;
         @content;
     }
 }
@@ -37,6 +37,7 @@
     color: $btn-text;
     text-transform: uppercase;
     line-height: 35px;
+
 
     & [class^="icon-"], & [class*=" icon-"] {
         line-height: 45px;

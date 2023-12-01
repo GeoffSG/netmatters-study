@@ -2976,6 +2976,12 @@ footer {
   background-image: linear-gradient(270deg, transparent 25%, black);
 }
 .banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-height: 550px;
   position: relative;
   margin: auto auto;
   text-align: center;
@@ -2987,11 +2993,14 @@ footer {
   font-weight: 600;
   font-size: 2.5rem;
   line-height: 3rem;
+  margin: 0 0 1.25rem;
 }
 .banner-content p {
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.75rem;
+  margin-top: 0;
+  margin-bottom: 6px;
 }
 .banner-content a {
   margin-top: 1.938rem;
@@ -3000,6 +3009,8 @@ footer {
 @media (min-width: 991px) {
   .banner-content {
     text-align: left;
+    align-content: start;
+    align-items: start;
   }
   .banner-content h1 {
     font-size: 4rem;
@@ -3031,7 +3042,7 @@ footer {
   margin-right: 8px;
   padding: 5px 20px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 50px;
 }
 .btn-dark, .btn-light-lg, .btn-dark-lg {
   background-color: #272936;
@@ -3044,7 +3055,7 @@ footer {
   margin-right: 8px;
   padding: 5px 20px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 50px;
 }
 .btn-light {
   background-color: #ffffff;
@@ -3058,7 +3069,7 @@ footer {
   margin-right: 8px;
   padding: 5px 20px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 50px;
   border-radius: 6px;
 }
 .btn-bespoke-software, .btn-bespoke-software-lg {
@@ -3073,7 +3084,7 @@ footer {
   margin-right: 8px;
   padding: 5px 20px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 50px;
 }
 .btn-bespoke-software-lg:hover {
   background-color: #526781;
@@ -3090,7 +3101,7 @@ footer {
   margin-right: 8px;
   padding: 5px 20px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 50px;
 }
 .btn-it-support-lg:hover {
   background-color: #286abd;
@@ -3107,7 +3118,7 @@ footer {
   margin-right: 8px;
   padding: 5px 20px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 50px;
 }
 .btn-digital-marketing-lg:hover {
   background-color: #25a25a;
@@ -3124,7 +3135,7 @@ footer {
   margin-right: 8px;
   padding: 5px 20px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 50px;
 }
 .btn-telecoms-services-lg:hover {
   background-color: #bc2c28;
@@ -3141,7 +3152,7 @@ footer {
   margin-right: 8px;
   padding: 5px 20px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 50px;
 }
 .btn-web-design-lg:hover {
   background-color: #79539a;
@@ -3158,7 +3169,7 @@ footer {
   margin-right: 8px;
   padding: 5px 20px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 50px;
 }
 .btn-cyber-security-lg:hover {
   background-color: #de093f;
@@ -3175,7 +3186,7 @@ footer {
   margin-right: 8px;
   padding: 5px 20px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 50px;
 }
 .btn-developer-training-lg:hover {
   background-color: #a3331d;
@@ -3191,7 +3202,7 @@ footer {
   margin-right: 8px;
   padding: 5px 20px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 50px;
   border-radius: 6px;
 }
 .btn-trustpilot, .btn-trustpilot-lg {
@@ -3205,7 +3216,7 @@ footer {
   margin-right: 8px;
   padding: 5px 20px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 50px;
   border-radius: 6px;
 }
 .btn-support {
