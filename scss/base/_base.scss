@@ -4,7 +4,6 @@
 
 html {
     font-size: $base-font-size;
-    
     overflow-x: hidden;
 }
 
@@ -56,6 +55,11 @@ p {
 
 a {
     text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
 }
 
 img {
