@@ -20,7 +20,6 @@
         margin-top: 20px;
         margin-right: 8px;
         padding: 5px 20px;
-        border-radius: 6px;
         font-size: 20px;
         line-height: 46px;
         @content;
@@ -62,7 +61,9 @@
         &:hover {
             background-color: $white;
         }
-        @include button-large('dark');
+        @include button-large('dark') {
+            border-radius: 6px;
+        }
     }
     
 
@@ -90,7 +91,9 @@
         &:hover {
             background-color: $google-hover;
         }
-        @include button-large('google');
+        @include button-large('google') {
+            border-radius: 6px;
+        }
     }
 
     &-trustpilot {
@@ -99,7 +102,9 @@
         &:hover {
             background-color: $trustpilot-hover;
         }
-        @include button-large('trustpilot');
+        @include button-large('trustpilot') {
+            border-radius: 6px;
+        }
     }
     
     &-support {
