@@ -3586,11 +3586,6 @@ footer {
   padding: 5px 15px;
   font-size: 14px;
 }
-.form-search-input:focus {
-  border-color: #5bc0de;
-  outline: 0;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
-}
 @media (min-width: 770px) {
   .form-search-input {
     width: 303px;
@@ -3602,6 +3597,11 @@ footer {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     padding: 5px 15px;
     line-height: 22.85px;
+  }
+  .form-search-input:focus {
+    border-color: #5bc0de;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
   }
 }
 .form-search-button {
