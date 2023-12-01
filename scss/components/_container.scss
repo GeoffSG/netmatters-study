@@ -23,6 +23,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
+    overflow-x: hidden;
 
     @include mq('md') {
         width: 750px;

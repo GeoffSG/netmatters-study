@@ -19,10 +19,11 @@
         
         margin-top: 20px;
         margin-right: 8px;
-        // padding: 10px 30px;
+        padding: 5px 20px;
         border-radius: 6px;
-        font-size: 18px;
+        font-size: 20px;
         line-height: 46px;
+        @content;
     }
 }
 
@@ -71,7 +72,12 @@
             @extend .btn;
             background-color: get-service-color($service);
             color: $btn-text;
-            @include button-large($service);
+            @include button-large($service) {
+                
+                &:hover {
+                    background-color: get-service-color($service, hover);
+                }
+            }
         }
     }
 
@@ -95,10 +101,18 @@
     
     &-support {
         background-color: get-service-color('it-support');
+        border-radius: 3px;
+        &:hover {
+            background-color: get-service-color('it-support', hover);
+        }
     }
 
     &-contact {
         background-color: $grey-l;
+        border-radius: 3px;
+        &:hover {
+            background-color: darken($grey-l, 10%);
+        }
     }
 
     &-social-media {
@@ -116,6 +130,12 @@
             }
         }
     }
+
+    &-call {
+        font-size: 32px;
+    }
+
+
 }
 
 .btn-group {

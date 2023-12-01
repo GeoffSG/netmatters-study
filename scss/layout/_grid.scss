@@ -1,6 +1,7 @@
 %grid {
     display: grid;
     gap: 30px;
+    align-items: stretch;
     
     &:first-child {
         padding-bottom: 15px;       
@@ -14,7 +15,6 @@
 
 //  Grid layout
 .grid {
-    
     .grid-item {
         align-self: stretch;
         .card {
