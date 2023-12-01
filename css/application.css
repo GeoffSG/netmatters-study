@@ -2360,7 +2360,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 1261px) {
   .grid-4 {
     grid-template-columns: repeat(4, 1fr);
   }
