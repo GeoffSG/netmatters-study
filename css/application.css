@@ -2198,6 +2198,7 @@ template {
 
 html {
   font-size: 1em;
+  overflow-x: hidden;
 }
 
 body {
@@ -2874,7 +2875,6 @@ footer {
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
-  overflow-x: hidden;
 }
 .container::before {
   content: "";
@@ -3025,6 +3025,9 @@ footer {
   background-color: #67809f;
   color: #ffffff;
 }
+.btn-bespoke-software:hover, .btn-bespoke-software-lg:hover {
+  background-color: #526781;
+}
 .btn-bespoke-software-lg {
   margin-top: 20px;
   margin-right: 8px;
@@ -3039,6 +3042,9 @@ footer {
 .btn-it-support, .btn-it-support-lg {
   background-color: #4183d7;
   color: #ffffff;
+}
+.btn-it-support:hover, .btn-it-support-lg:hover {
+  background-color: #286abd;
 }
 .btn-it-support-lg {
   margin-top: 20px;
@@ -3055,6 +3061,9 @@ footer {
   background-color: #2ecc71;
   color: #ffffff;
 }
+.btn-digital-marketing:hover, .btn-digital-marketing-lg:hover {
+  background-color: #25a25a;
+}
 .btn-digital-marketing-lg {
   margin-top: 20px;
   margin-right: 8px;
@@ -3069,6 +3078,9 @@ footer {
 .btn-telecoms-services, .btn-telecoms-services-lg {
   background-color: #d64541;
   color: #ffffff;
+}
+.btn-telecoms-services:hover, .btn-telecoms-services-lg:hover {
+  background-color: #bc2c28;
 }
 .btn-telecoms-services-lg {
   margin-top: 20px;
@@ -3085,6 +3097,9 @@ footer {
   background-color: #926fb1;
   color: #ffffff;
 }
+.btn-web-design:hover, .btn-web-design-lg:hover {
+  background-color: #79539a;
+}
 .btn-web-design-lg {
   margin-top: 20px;
   margin-right: 8px;
@@ -3100,6 +3115,9 @@ footer {
   background-color: #f62459;
   color: #ffffff;
 }
+.btn-cyber-security:hover, .btn-cyber-security-lg:hover {
+  background-color: #de093f;
+}
 .btn-cyber-security-lg {
   margin-top: 20px;
   margin-right: 8px;
@@ -3114,6 +3132,9 @@ footer {
 .btn-developer-training, .btn-developer-training-lg {
   background-color: #ce4125;
   color: #ffffff;
+}
+.btn-developer-training:hover, .btn-developer-training-lg:hover {
+  background-color: #a3331d;
 }
 .btn-developer-training-lg {
   margin-top: 20px;
@@ -3600,7 +3621,6 @@ footer {
   flex-wrap: nowrap;
   align-items: end;
   gap: 70px;
-  overflow-x: hidden;
 }
 .slideshow-stage .slideshow-item {
   padding: 0 20px;
@@ -3611,9 +3631,6 @@ footer {
 }
 .slideshow-stage .slideshow-item a {
   display: block;
-}
-.slideshow-stage .slideshow-item .slideshow-tooltip {
-  visibility: hidden;
 }
 .slideshow-stage .slideshow-item .slideshow-tooltip {
   visibility: hidden;
@@ -3634,6 +3651,7 @@ footer {
   color: #ffffff;
   font-size: 0.8125rem;
   line-height: 1.375;
+  margin-top: 0;
   margin-bottom: 0;
 }
 .slideshow-stage .slideshow-item .slideshow-tooltip p a {
@@ -3648,15 +3666,32 @@ footer {
 }
 .slideshow-stage .slideshow-item .slideshow-tooltip a {
   margin-top: 11px;
-  font-size: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: 600;
   color: #ffffff;
-  font-size: 0.8125rem;
+}
+.slideshow-stage .slideshow-item .slideshow-tooltip .btn, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-lg, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-dark, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-dark-lg, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-light, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-light-lg, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-bespoke-software, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-bespoke-software-lg, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-it-support, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-it-support-lg, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-digital-marketing, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-digital-marketing-lg, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-telecoms-services, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-telecoms-services-lg, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-web-design, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-web-design-lg, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-cyber-security, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-cyber-security-lg, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-developer-training, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-developer-training-lg, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-google, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-google-lg, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-trustpilot, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-trustpilot-lg, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-social-media-facebook, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-social-media-linkedin, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-social-media-twitter, .slideshow-stage .slideshow-item .slideshow-tooltip .btn-social-media-instagram {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
   line-height: 1.375;
   margin-bottom: 0;
-  font-weight: 600;
+}
+.slideshow-stage .slideshow-item .slideshow-tooltip .tooltip-pointer {
+  position: absolute;
+  bottom: -38px;
+  left: 50%;
+  margin-left: -36px;
+}
+.slideshow-stage .slideshow-item .slideshow-tooltip .tooltip-pointer::after {
+  content: "";
+  margin: auto;
+  display: inline-block;
+  border-color: #333645 transparent transparent;
+  border-style: solid;
+  border-width: 35px 36px 0;
 }
 .slideshow-stage .slideshow-item:hover > .slideshow-tooltip {
   visibility: visible;
