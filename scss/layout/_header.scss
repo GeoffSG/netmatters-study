@@ -1,4 +1,6 @@
 .header {
+    padding-top: 20px;
+    
     .header-menu {
         display: flex;
         justify-content: space-between;
@@ -17,6 +19,18 @@
             & > *  {
                 margin-top: 0;
                 margin-left: 20px;
+            }
+
+            & .btn {
+                height: 56px;
+                line-height: 46px;
+                font-size: 1.125rem;
+                float: left;
+                span {
+                    font-size: 1.438rem;
+                    line-height: 45px;
+                    // margin-right: 0;
+                }
             }
             
         }

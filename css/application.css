@@ -2377,6 +2377,9 @@ footer {
   }
 }
 
+.header {
+  padding-top: 20px;
+}
 .header .header-menu {
   display: flex;
   justify-content: space-between;
@@ -2394,6 +2397,16 @@ footer {
 .header .header-menu .buttons > * {
   margin-top: 0;
   margin-left: 20px;
+}
+.header .header-menu .buttons .btn, .header .header-menu .buttons .btn-social-media-instagram, .header .header-menu .buttons .btn-social-media-twitter, .header .header-menu .buttons .btn-social-media-linkedin, .header .header-menu .buttons .btn-social-media-facebook, .header .header-menu .buttons .btn-trustpilot-lg, .header .header-menu .buttons .btn-trustpilot, .header .header-menu .buttons .btn-google-lg, .header .header-menu .buttons .btn-google, .header .header-menu .buttons .btn-developer-training-lg, .header .header-menu .buttons .btn-developer-training, .header .header-menu .buttons .btn-cyber-security-lg, .header .header-menu .buttons .btn-cyber-security, .header .header-menu .buttons .btn-web-design-lg, .header .header-menu .buttons .btn-web-design, .header .header-menu .buttons .btn-telecoms-services-lg, .header .header-menu .buttons .btn-telecoms-services, .header .header-menu .buttons .btn-digital-marketing-lg, .header .header-menu .buttons .btn-digital-marketing, .header .header-menu .buttons .btn-it-support-lg, .header .header-menu .buttons .btn-it-support, .header .header-menu .buttons .btn-bespoke-software-lg, .header .header-menu .buttons .btn-bespoke-software, .header .header-menu .buttons .btn-light-lg, .header .header-menu .buttons .btn-light, .header .header-menu .buttons .btn-dark-lg, .header .header-menu .buttons .btn-dark, .header .header-menu .buttons .btn-lg {
+  height: 56px;
+  line-height: 46px;
+  font-size: 1.125rem;
+  float: left;
+}
+.header .header-menu .buttons .btn span, .header .header-menu .buttons .btn-social-media-instagram span, .header .header-menu .buttons .btn-social-media-twitter span, .header .header-menu .buttons .btn-social-media-linkedin span, .header .header-menu .buttons .btn-social-media-facebook span, .header .header-menu .buttons .btn-trustpilot-lg span, .header .header-menu .buttons .btn-trustpilot span, .header .header-menu .buttons .btn-google-lg span, .header .header-menu .buttons .btn-google span, .header .header-menu .buttons .btn-developer-training-lg span, .header .header-menu .buttons .btn-developer-training span, .header .header-menu .buttons .btn-cyber-security-lg span, .header .header-menu .buttons .btn-cyber-security span, .header .header-menu .buttons .btn-web-design-lg span, .header .header-menu .buttons .btn-web-design span, .header .header-menu .buttons .btn-telecoms-services-lg span, .header .header-menu .buttons .btn-telecoms-services span, .header .header-menu .buttons .btn-digital-marketing-lg span, .header .header-menu .buttons .btn-digital-marketing span, .header .header-menu .buttons .btn-it-support-lg span, .header .header-menu .buttons .btn-it-support span, .header .header-menu .buttons .btn-bespoke-software-lg span, .header .header-menu .buttons .btn-bespoke-software span, .header .header-menu .buttons .btn-light-lg span, .header .header-menu .buttons .btn-light span, .header .header-menu .buttons .btn-dark-lg span, .header .header-menu .buttons .btn-dark span, .header .header-menu .buttons .btn-lg span {
+  font-size: 1.438rem;
+  line-height: 45px;
 }
 
 .newsletter {
@@ -2917,10 +2930,6 @@ footer {
 .container .rating {
   font-size: 48px;
   color: #ffa500;
-}
-
-.inner {
-  padding: 20px 0;
 }
 
 .banner {
