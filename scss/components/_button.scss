@@ -72,6 +72,9 @@
             @extend .btn;
             background-color: get-service-color($service);
             color: $btn-text;
+            &:hover {
+                background-color: get-service-color($service, hover);
+            }
             @include button-large($service) {
                 
                 &:hover {
