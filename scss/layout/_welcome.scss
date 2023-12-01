@@ -1,0 +1,44 @@
+#welcome.container{
+
+    .grid-2{
+        gap: 50px;
+        > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    .rating {
+        margin-bottom: 25px;
+        span {
+            margin-right: 4px;
+        }
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+
+    .quote {
+        font-size: 1.3rem;
+        font-weight: $font-bold;
+        font-style: italic;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .author {
+        font-size: 1.1rem;
+        font-weight: $font-bold;
+        line-height: em(30px);
+        color:$grey-l;
+        a {
+            color: $text-dark;
+        }
+    }
+    .btn-group a {
+        margin-top: 0;
+        margin-bottom: 17px;
+    }
+}

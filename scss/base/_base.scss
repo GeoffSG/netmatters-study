@@ -67,24 +67,6 @@ img {
     height: auto;
 }
 
-blockquote {
-    font-size: 1.3rem;
-    font-weight: $font-bold;
-    font-style: italic;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 25px;
-
-    cite {
-        font-size: 1.1rem;
-        line-height: em(30px);
-        color:$grey-l;
-        a {
-            color: $text-dark;
-        }
-    }
-}
-
 footer {
     padding: 47px 0 0;
 }

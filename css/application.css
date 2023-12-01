@@ -2262,23 +2262,6 @@ img {
   height: auto;
 }
 
-blockquote {
-  font-size: 1.3rem;
-  font-weight: 600;
-  font-style: italic;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 25px;
-}
-blockquote cite {
-  font-size: 1.1rem;
-  line-height: 30px;
-  color: #999aa2;
-}
-blockquote cite a {
-  color: #ffffff;
-}
-
 footer {
   padding: 47px 0 0;
 }
@@ -2422,6 +2405,46 @@ footer {
   .header .header-menu .buttons * {
     margin-left: 0;
   }
+}
+
+#welcome.container .grid-2 {
+  gap: 50px;
+}
+#welcome.container .grid-2 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#welcome.container .rating {
+  margin-bottom: 25px;
+}
+#welcome.container .rating span {
+  margin-right: 4px;
+}
+#welcome.container p {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+#welcome.container .quote {
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+}
+#welcome.container .author {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 30px;
+  color: #999aa2;
+}
+#welcome.container .author a {
+  color: #ffffff;
+}
+#welcome.container .btn-group a {
+  margin-top: 0;
+  margin-bottom: 17px;
 }
 
 .newsletter {
@@ -3272,10 +3295,6 @@ footer {
 }
 .btn-social-media-instagram:hover {
   background-color: #d93175;
-}
-
-.btn-group:last-child {
-  margin-bottom: 50px;
 }
 
 .form .form-group {
