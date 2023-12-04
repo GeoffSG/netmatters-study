@@ -34,66 +34,65 @@
 
                 position: absolute;
                 bottom: 100%;
-                left: -200px;
-                right: -200px;
-                padding: 20px;
-                margin: 0 auto 50px;
+                margin: 0 auto 3rem;
                 max-width: 280px;
-
-                align-self: center;
-        
-                background-color: $bg-dark;
-                color: $white;
-                font-size: .875rem;
-                text-align: center;
-                p {
+                
+                &-box{
+                    width: 17.5rem;
+                    padding: 20px;
+                    background-color: $bg-dark;
                     color: $white;
-                    font-size: .8125rem;
-                    line-height: 1.375;
-                    margin-top: 0;
-                    margin-bottom: 0;
-                    a {
-                        display: inline;
+                    font-size: .875rem;
+                    text-align: center;
+                    p {
+                        color: $white;
+                        font-size: .8125rem;
+                        line-height: 1.375;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        a {
+                            display: inline;
+                        }
                     }
-                }
-                h3 {
-                    position: relative;
-                    color: $white;
-                    font-size: 1.125rem;
-                    padding-bottom: 17px;
-                    margin: 0;
-                }
-                a {
-                    margin-top: 11px;
+                    h3 {
+                        position: relative;
+                        color: $white;
+                        font-size: 1.125rem;
+                        padding-bottom: 17px;
+                        margin: 0;
+                    }
+                    a {
+                        margin-top: 11px;
 
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    font-weight: $font-bold;
-                    color: $white;
-                    
-                }
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-weight: $font-bold;
+                        color: $white;
+                        
+                    }
 
-                .btn {
-                    font-size: 16px;
-                    font-weight: $font-normal;
-                    text-transform: uppercase;
-                    line-height: 1.375;
-                    margin-bottom: 0;
-                }
+                    .btn {
+                        font-size: 16px;
+                        font-weight: $font-normal;
+                        text-transform: uppercase;
+                        line-height: 1.375;
+                        margin-bottom: 0;
+                    }
 
-                .tooltip-pointer {
-                    position: absolute;
-                    bottom: -38px;
-                    left: 50%;
-                    margin-left: -36px;
-                    &::after{
-                        content: "";
-                        margin: auto;
-                        display: inline-block;
-                        border-color: #333645 transparent transparent;
-                        border-style: solid;
-                        border-width: 35px 36px 0;
+                    .tooltip-pointer {
+                        position: absolute;
+                        bottom: -38px;
+                        left: 50%;
+                        margin-left: -36px;
+                        &::after{
+                            content: "";
+                            margin: auto;
+                            display: inline-block;
+                            border-color: #333645 transparent transparent;
+                            border-style: solid;
+                            border-width: 35px 36px 0;
+                        }
                     }
                 }
             }
