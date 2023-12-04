@@ -124,10 +124,20 @@
         }
     }
 
+    
+    // a {
+    //     text-align: center;
+    //     text-decoration: none;
+    //     font-size: 26px;
+    //     line-height: 26px;
+    //     padding: 12px 22px 16px;
+    //     margin-right: 7px;
+    // }
     &-social-media {
         @each $social-media, $color in $social-media-colors {
             &-#{$social-media} {
                 @extend .btn;
+                // height: 56px;
                 padding: 12px 22px 16px;
                 margin-right: 10px;
                 margin-bottom: 10px;
@@ -135,6 +145,11 @@
                 font-size: 26px;
                 &:hover {
                     background-color: map-get($color, 'base');
+                }
+                span {
+                    position: relative;
+                    top: 4px;
+                    line-height: 26px !important;
                 }
             }
         }
