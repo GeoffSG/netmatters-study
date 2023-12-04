@@ -24,15 +24,13 @@
         .social-media {
             display: flex;
             width: auto;
-            a {
-                text-align: center;
-                text-decoration: none;
-                font-size: 26px;
-                line-height: 26px;
-                padding: 12px 22px 16px;
-                margin-right: 7px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+
+            @include mq('md') {
+                flex-wrap: nowrap;
+                width: 90%;
             }
-            
         }
     }
 
@@ -47,13 +45,18 @@
         & h4 {
             margin-top: 24px;
         }
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
     }
 
     .site-links{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        // display: grid;
+        // grid-template-columns: repeat(4, 1fr);
         margin-bottom: 40px;
+
+        div {
+            // padding: 0 15px;
+            margin-bottom: 30px;
+        }
 
         a {
             color: $white;
@@ -65,8 +68,11 @@
         }
         ul {
             padding-left: 0;
+            margin: 0;
             li {
                 list-style-type: none;
+                font-size: .8125rem;
+                line-height: 1.375rem;
             }
         }
 

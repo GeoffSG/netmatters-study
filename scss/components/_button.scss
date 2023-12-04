@@ -20,9 +20,8 @@
         margin-top: 20px;
         margin-right: 8px;
         padding: 5px 20px;
-        border-radius: 6px;
         font-size: 20px;
-        line-height: 46px;
+        line-height: 50px;
         @content;
     }
 }
@@ -38,6 +37,7 @@
     color: $btn-text;
     text-transform: uppercase;
     line-height: 35px;
+
 
     & [class^="icon-"], & [class*=" icon-"] {
         line-height: 45px;
@@ -62,7 +62,9 @@
         &:hover {
             background-color: $white;
         }
-        @include button-large('dark');
+        @include button-large('dark') {
+            border-radius: 6px;
+        }
     }
     
 
@@ -90,7 +92,9 @@
         &:hover {
             background-color: $google-hover;
         }
-        @include button-large('google');
+        @include button-large('google') {
+            border-radius: 6px;
+        }
     }
 
     &-trustpilot {
@@ -99,7 +103,9 @@
         &:hover {
             background-color: $trustpilot-hover;
         }
-        @include button-large('trustpilot');
+        @include button-large('trustpilot') {
+            border-radius: 6px;
+        }
     }
     
     &-support {
@@ -118,10 +124,20 @@
         }
     }
 
+    
+    // a {
+    //     text-align: center;
+    //     text-decoration: none;
+    //     font-size: 26px;
+    //     line-height: 26px;
+    //     padding: 12px 22px 16px;
+    //     margin-right: 7px;
+    // }
     &-social-media {
         @each $social-media, $color in $social-media-colors {
             &-#{$social-media} {
                 @extend .btn;
+                // height: 56px;
                 padding: 12px 22px 16px;
                 margin-right: 10px;
                 margin-bottom: 10px;
@@ -130,19 +146,12 @@
                 &:hover {
                     background-color: map-get($color, 'base');
                 }
+                span {
+                    position: relative;
+                    top: 4px;
+                    line-height: 26px !important;
+                }
             }
         }
-    }
-
-    &-call {
-        font-size: 32px;
-    }
-
-
-}
-
-.btn-group {
-    &:last-child {
-        margin-bottom: 50px;
     }
 }

@@ -1,12 +1,20 @@
 .header {
+    
+    
     .header-menu {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        .company-logo img {
-            margin: auto 0;
-            max-width: 100%;
+        .company-logo { 
+            vertical-align: middle;
+            a {
+                display: block;
+            }
+            img {
+                margin: auto;
+                max-width: 100%;
+            }
         }
 
         .buttons {
@@ -18,7 +26,31 @@
                 margin-top: 0;
                 margin-left: 20px;
             }
-            
+
+            & .btn {
+                height: 56px;
+                line-height: 46px;
+                font-size: 1.125rem;
+                float: left;
+                span {
+                    font-size: 1.438rem;
+                    line-height: 45px;
+                    
+                }
+                &.btn-call span{
+                    font-size: 32px;
+                    padding: 0;
+                }
+            }
+        }
+
+        @include mq('sm') {
+            & > * {
+                vertical-align: middle;
+            }
+            .buttons *{
+                margin-left: 0;
+            }
         }
     }
 }

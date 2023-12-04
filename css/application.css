@@ -2113,7 +2113,7 @@ template {
 .hidden-sm {
   display: inherit !important;
 }
-@media (min-width: 320px) and (max-width: 769px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .hidden-sm {
     display: none !important;
   }
@@ -2121,7 +2121,7 @@ template {
 .hidden-480 {
   display: inherit !important;
 }
-@media (min-width: 481px) {
+@media (min-width: 480px) {
   .hidden-480 {
     display: none !important;
   }
@@ -2129,7 +2129,7 @@ template {
 .hidden-md {
   display: inherit !important;
 }
-@media (min-width: 770px) {
+@media (min-width: 768px) {
   .hidden-md {
     display: none !important;
   }
@@ -2137,7 +2137,7 @@ template {
 .hidden-lg {
   display: inherit !important;
 }
-@media (min-width: 991px) {
+@media (min-width: 990px) {
   .hidden-lg {
     display: none !important;
   }
@@ -2145,7 +2145,7 @@ template {
 .hidden-xl {
   display: inherit !important;
 }
-@media (min-width: 1261px) {
+@media (min-width: 1260px) {
   .hidden-xl {
     display: none !important;
   }
@@ -2154,7 +2154,7 @@ template {
 .appear-sm {
   display: none !important;
 }
-@media (min-width: 320px) and (max-width: 769px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .appear-sm {
     display: inherit !important;
   }
@@ -2162,7 +2162,7 @@ template {
 .appear-480 {
   display: none !important;
 }
-@media (min-width: 481px) {
+@media (min-width: 480px) {
   .appear-480 {
     display: inherit !important;
   }
@@ -2170,7 +2170,7 @@ template {
 .appear-md {
   display: none !important;
 }
-@media (min-width: 770px) {
+@media (min-width: 768px) {
   .appear-md {
     display: inherit !important;
   }
@@ -2178,7 +2178,7 @@ template {
 .appear-lg {
   display: none !important;
 }
-@media (min-width: 991px) {
+@media (min-width: 990px) {
   .appear-lg {
     display: inherit !important;
   }
@@ -2186,7 +2186,7 @@ template {
 .appear-xl {
   display: none !important;
 }
-@media (min-width: 1261px) {
+@media (min-width: 1260px) {
   .appear-xl {
     display: inherit !important;
   }
@@ -2250,28 +2250,16 @@ p {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
 
 img {
   width: 100%;
   height: auto;
-}
-
-blockquote {
-  font-size: 1.3rem;
-  font-weight: 600;
-  font-style: italic;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 25px;
-}
-blockquote cite {
-  font-size: 1.1rem;
-  line-height: 30px;
-  color: #999aa2;
-}
-blockquote cite a {
-  color: #ffffff;
 }
 
 footer {
@@ -2311,7 +2299,7 @@ footer {
 .flex-9 {
   flex-grow: 9;
 }
-@media (min-width: 770px) {
+@media (min-width: 768px) {
   .flex {
     flex-direction: row;
   }
@@ -2339,34 +2327,34 @@ footer {
 .grid .grid-item .card {
   margin: 0;
 }
-@media (min-width: 991px) {
+@media (min-width: 990px) {
   .grid-2 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 990px) {
   .grid-3 {
     grid-template-columns: repeat(3, 1fr);
     justify-content: stretch;
   }
 }
-@media (min-width: 770px) {
+@media (min-width: 768px) {
   .grid-4 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 1260px) {
   .grid-4 {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-@media (min-width: 770px) {
+@media (min-width: 768px) {
   .grid-news .card:last-child {
     display: none;
   }
 }
-@media (min-width: 1261px) {
+@media (min-width: 1260px) {
   .grid-news .card:last-child {
     display: block;
   }
@@ -2377,8 +2365,14 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+.header .header-menu .company-logo {
+  vertical-align: middle;
+}
+.header .header-menu .company-logo a {
+  display: block;
+}
 .header .header-menu .company-logo img {
-  margin: auto 0;
+  margin: auto;
   max-width: 100%;
 }
 .header .header-menu .buttons {
@@ -2389,6 +2383,68 @@ footer {
 .header .header-menu .buttons > * {
   margin-top: 0;
   margin-left: 20px;
+}
+.header .header-menu .buttons .btn, .header .header-menu .buttons .btn-social-media-instagram, .header .header-menu .buttons .btn-social-media-twitter, .header .header-menu .buttons .btn-social-media-linkedin, .header .header-menu .buttons .btn-social-media-facebook, .header .header-menu .buttons .btn-trustpilot-lg, .header .header-menu .buttons .btn-trustpilot, .header .header-menu .buttons .btn-google-lg, .header .header-menu .buttons .btn-google, .header .header-menu .buttons .btn-developer-training-lg, .header .header-menu .buttons .btn-developer-training, .header .header-menu .buttons .btn-cyber-security-lg, .header .header-menu .buttons .btn-cyber-security, .header .header-menu .buttons .btn-web-design-lg, .header .header-menu .buttons .btn-web-design, .header .header-menu .buttons .btn-telecoms-services-lg, .header .header-menu .buttons .btn-telecoms-services, .header .header-menu .buttons .btn-digital-marketing-lg, .header .header-menu .buttons .btn-digital-marketing, .header .header-menu .buttons .btn-it-support-lg, .header .header-menu .buttons .btn-it-support, .header .header-menu .buttons .btn-bespoke-software-lg, .header .header-menu .buttons .btn-bespoke-software, .header .header-menu .buttons .btn-light-lg, .header .header-menu .buttons .btn-light, .header .header-menu .buttons .btn-dark-lg, .header .header-menu .buttons .btn-dark, .header .header-menu .buttons .btn-lg {
+  height: 56px;
+  line-height: 46px;
+  font-size: 1.125rem;
+  float: left;
+}
+.header .header-menu .buttons .btn span, .header .header-menu .buttons .btn-social-media-instagram span, .header .header-menu .buttons .btn-social-media-twitter span, .header .header-menu .buttons .btn-social-media-linkedin span, .header .header-menu .buttons .btn-social-media-facebook span, .header .header-menu .buttons .btn-trustpilot-lg span, .header .header-menu .buttons .btn-trustpilot span, .header .header-menu .buttons .btn-google-lg span, .header .header-menu .buttons .btn-google span, .header .header-menu .buttons .btn-developer-training-lg span, .header .header-menu .buttons .btn-developer-training span, .header .header-menu .buttons .btn-cyber-security-lg span, .header .header-menu .buttons .btn-cyber-security span, .header .header-menu .buttons .btn-web-design-lg span, .header .header-menu .buttons .btn-web-design span, .header .header-menu .buttons .btn-telecoms-services-lg span, .header .header-menu .buttons .btn-telecoms-services span, .header .header-menu .buttons .btn-digital-marketing-lg span, .header .header-menu .buttons .btn-digital-marketing span, .header .header-menu .buttons .btn-it-support-lg span, .header .header-menu .buttons .btn-it-support span, .header .header-menu .buttons .btn-bespoke-software-lg span, .header .header-menu .buttons .btn-bespoke-software span, .header .header-menu .buttons .btn-light-lg span, .header .header-menu .buttons .btn-light span, .header .header-menu .buttons .btn-dark-lg span, .header .header-menu .buttons .btn-dark span, .header .header-menu .buttons .btn-lg span {
+  font-size: 1.438rem;
+  line-height: 45px;
+}
+.header .header-menu .buttons .btn.btn-call span, .header .header-menu .buttons .btn-call.btn-social-media-instagram span, .header .header-menu .buttons .btn-call.btn-social-media-twitter span, .header .header-menu .buttons .btn-call.btn-social-media-linkedin span, .header .header-menu .buttons .btn-call.btn-social-media-facebook span, .header .header-menu .buttons .btn-call.btn-trustpilot-lg span, .header .header-menu .buttons .btn-call.btn-trustpilot span, .header .header-menu .buttons .btn-call.btn-google-lg span, .header .header-menu .buttons .btn-call.btn-google span, .header .header-menu .buttons .btn-call.btn-developer-training-lg span, .header .header-menu .buttons .btn-call.btn-developer-training span, .header .header-menu .buttons .btn-call.btn-cyber-security-lg span, .header .header-menu .buttons .btn-call.btn-cyber-security span, .header .header-menu .buttons .btn-call.btn-web-design-lg span, .header .header-menu .buttons .btn-call.btn-web-design span, .header .header-menu .buttons .btn-call.btn-telecoms-services-lg span, .header .header-menu .buttons .btn-call.btn-telecoms-services span, .header .header-menu .buttons .btn-call.btn-digital-marketing-lg span, .header .header-menu .buttons .btn-call.btn-digital-marketing span, .header .header-menu .buttons .btn-call.btn-it-support-lg span, .header .header-menu .buttons .btn-call.btn-it-support span, .header .header-menu .buttons .btn-call.btn-bespoke-software-lg span, .header .header-menu .buttons .btn-call.btn-bespoke-software span, .header .header-menu .buttons .btn-call.btn-light-lg span, .header .header-menu .buttons .btn-call.btn-light span, .header .header-menu .buttons .btn-call.btn-dark-lg span, .header .header-menu .buttons .btn-call.btn-dark span, .header .header-menu .buttons .btn-call.btn-lg span {
+  font-size: 32px;
+  padding: 0;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .header .header-menu > * {
+    vertical-align: middle;
+  }
+  .header .header-menu .buttons * {
+    margin-left: 0;
+  }
+}
+
+#welcome.container .grid-2 {
+  gap: 50px;
+}
+#welcome.container .grid-2 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#welcome.container .rating {
+  margin-bottom: 25px;
+}
+#welcome.container .rating span {
+  margin-right: 4px;
+}
+#welcome.container p {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+#welcome.container .quote {
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+}
+#welcome.container .author {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 30px;
+  color: #999aa2;
+}
+#welcome.container .author a {
+  color: #ffffff;
+}
+#welcome.container .btn-group a {
+  margin-top: 0;
+  margin-bottom: 17px;
 }
 
 .newsletter {
@@ -2445,7 +2501,7 @@ footer {
   text-decoration: underline;
 }
 
-@media (min-width: 1261px) {
+@media (min-width: 1260px) {
   .footer .footer-content {
     display: flex;
     justify-content: space-between;
@@ -2457,7 +2513,7 @@ footer {
 .footer .logo {
   width: 250px;
 }
-@media (min-width: 481px) {
+@media (min-width: 480px) {
   .footer .logo {
     width: 320px;
   }
@@ -2468,14 +2524,14 @@ footer {
 .footer .social-media-section .social-media {
   display: flex;
   width: auto;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
 }
-.footer .social-media-section .social-media a {
-  text-align: center;
-  text-decoration: none;
-  font-size: 26px;
-  line-height: 26px;
-  padding: 12px 22px 16px;
-  margin-right: 7px;
+@media (min-width: 768px) {
+  .footer .social-media-section .social-media {
+    flex-wrap: nowrap;
+    width: 90%;
+  }
 }
 .footer h4 {
   color: #ffffff;
@@ -2483,16 +2539,14 @@ footer {
   text-transform: uppercase;
   margin-bottom: 26px;
 }
-.footer .company-info {
-  margin-bottom: 30px;
-}
 .footer .company-info h4 {
   margin-top: 24px;
 }
 .footer .site-links {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
   margin-bottom: 40px;
+}
+.footer .site-links div {
+  margin-bottom: 30px;
 }
 .footer .site-links a {
   color: #ffffff;
@@ -2504,9 +2558,12 @@ footer {
 }
 .footer .site-links ul {
   padding-left: 0;
+  margin: 0;
 }
 .footer .site-links ul li {
   list-style-type: none;
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
 }
 .footer .license {
   background-color: #212330;
@@ -2781,10 +2838,33 @@ footer {
   top: 10px;
   right: 0;
   font-size: 0.75rem;
+  font-weight: 600;
   padding: 0 10px;
   line-height: 1.438rem;
   z-index: 1;
   text-transform: uppercase;
+  color: #ffffff;
+}
+.card-post .cover .tag-bespoke-software {
+  background-color: #67809f;
+}
+.card-post .cover .tag-it-support {
+  background-color: #4183d7;
+}
+.card-post .cover .tag-digital-marketing {
+  background-color: #2ecc71;
+}
+.card-post .cover .tag-telecoms-services {
+  background-color: #d64541;
+}
+.card-post .cover .tag-web-design {
+  background-color: #926fb1;
+}
+.card-post .cover .tag-cyber-security {
+  background-color: #f62459;
+}
+.card-post .cover .tag-developer-training {
+  background-color: #ce4125;
 }
 .card-post .cover img {
   position: relative;
@@ -2840,15 +2920,15 @@ footer {
   display: table-cell;
   vertical-align: middle;
 }
-.card-post .post-details > .avatar {
+.card-post .post-details .avatar {
   height: auto;
 }
-.card-post .post-details > .avatar img {
+.card-post .post-details .avatar img {
   border-radius: 50%;
   max-width: 47px;
 }
-.card-post .post-details .post-text {
-  padding-left: 20px;
+.card-post .post-details .post-text .post-author {
+  color: #121318;
 }
 .card-post .post-details .post-text p {
   line-height: 1.375rem;
@@ -2876,21 +2956,20 @@ footer {
   margin-right: auto;
   padding: 0 15px;
 }
-.container::before {
-  content: "";
-  display: table;
+.container::after {
+  clear: both;
 }
-@media (min-width: 770px) {
+@media (min-width: 768px) {
   .container {
     width: 750px;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 990px) {
   .container {
     width: 970px;
   }
 }
-@media (min-width: 1261px) {
+@media (min-width: 1260px) {
   .container {
     width: 1200px;
   }
@@ -2931,9 +3010,25 @@ footer {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  filter: brightness(50%);
+}
+.banner-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.banner-image-effect::after {
+  background-image: linear-gradient(270deg, transparent 25%, black);
 }
 .banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-height: 550px;
   position: relative;
   margin: auto auto;
   text-align: center;
@@ -2945,19 +3040,24 @@ footer {
   font-weight: 600;
   font-size: 2.5rem;
   line-height: 3rem;
+  margin: 0 0 1.25rem;
 }
 .banner-content p {
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.75rem;
+  margin-top: 0;
+  margin-bottom: 6px;
 }
 .banner-content a {
   margin-top: 1.938rem;
   margin-bottom: 1.125rem;
 }
-@media (min-width: 991px) {
+@media (min-width: 990px) {
   .banner-content {
     text-align: left;
+    align-content: start;
+    align-items: start;
   }
   .banner-content h1 {
     font-size: 4rem;
@@ -2988,9 +3088,8 @@ footer {
   margin-top: 20px;
   margin-right: 8px;
   padding: 5px 20px;
-  border-radius: 6px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 50px;
 }
 .btn-dark, .btn-light-lg, .btn-dark-lg {
   background-color: #272936;
@@ -3002,9 +3101,8 @@ footer {
   margin-top: 20px;
   margin-right: 8px;
   padding: 5px 20px;
-  border-radius: 6px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 50px;
 }
 .btn-light {
   background-color: #ffffff;
@@ -3017,9 +3115,9 @@ footer {
   margin-top: 20px;
   margin-right: 8px;
   padding: 5px 20px;
-  border-radius: 6px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 50px;
+  border-radius: 6px;
 }
 .btn-bespoke-software, .btn-bespoke-software-lg {
   background-color: #67809f;
@@ -3032,9 +3130,8 @@ footer {
   margin-top: 20px;
   margin-right: 8px;
   padding: 5px 20px;
-  border-radius: 6px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 50px;
 }
 .btn-bespoke-software-lg:hover {
   background-color: #526781;
@@ -3050,9 +3147,8 @@ footer {
   margin-top: 20px;
   margin-right: 8px;
   padding: 5px 20px;
-  border-radius: 6px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 50px;
 }
 .btn-it-support-lg:hover {
   background-color: #286abd;
@@ -3068,9 +3164,8 @@ footer {
   margin-top: 20px;
   margin-right: 8px;
   padding: 5px 20px;
-  border-radius: 6px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 50px;
 }
 .btn-digital-marketing-lg:hover {
   background-color: #25a25a;
@@ -3086,9 +3181,8 @@ footer {
   margin-top: 20px;
   margin-right: 8px;
   padding: 5px 20px;
-  border-radius: 6px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 50px;
 }
 .btn-telecoms-services-lg:hover {
   background-color: #bc2c28;
@@ -3104,9 +3198,8 @@ footer {
   margin-top: 20px;
   margin-right: 8px;
   padding: 5px 20px;
-  border-radius: 6px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 50px;
 }
 .btn-web-design-lg:hover {
   background-color: #79539a;
@@ -3122,9 +3215,8 @@ footer {
   margin-top: 20px;
   margin-right: 8px;
   padding: 5px 20px;
-  border-radius: 6px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 50px;
 }
 .btn-cyber-security-lg:hover {
   background-color: #de093f;
@@ -3140,9 +3232,8 @@ footer {
   margin-top: 20px;
   margin-right: 8px;
   padding: 5px 20px;
-  border-radius: 6px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 50px;
 }
 .btn-developer-training-lg:hover {
   background-color: #a3331d;
@@ -3157,9 +3248,9 @@ footer {
   margin-top: 20px;
   margin-right: 8px;
   padding: 5px 20px;
-  border-radius: 6px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 50px;
+  border-radius: 6px;
 }
 .btn-trustpilot, .btn-trustpilot-lg {
   background-color: #00b67b;
@@ -3171,9 +3262,9 @@ footer {
   margin-top: 20px;
   margin-right: 8px;
   padding: 5px 20px;
-  border-radius: 6px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 50px;
+  border-radius: 6px;
 }
 .btn-support {
   background-color: #4183d7;
@@ -3199,6 +3290,11 @@ footer {
 .btn-social-media-facebook:hover {
   background-color: #3b5998;
 }
+.btn-social-media-facebook span {
+  position: relative;
+  top: 4px;
+  line-height: 26px !important;
+}
 .btn-social-media-linkedin {
   padding: 12px 22px 16px;
   margin-right: 10px;
@@ -3208,6 +3304,11 @@ footer {
 }
 .btn-social-media-linkedin:hover {
   background-color: #0077b5;
+}
+.btn-social-media-linkedin span {
+  position: relative;
+  top: 4px;
+  line-height: 26px !important;
 }
 .btn-social-media-twitter {
   padding: 12px 22px 16px;
@@ -3219,6 +3320,11 @@ footer {
 .btn-social-media-twitter:hover {
   background-color: #00aced;
 }
+.btn-social-media-twitter span {
+  position: relative;
+  top: 4px;
+  line-height: 26px !important;
+}
 .btn-social-media-instagram {
   padding: 12px 22px 16px;
   margin-right: 10px;
@@ -3229,12 +3335,10 @@ footer {
 .btn-social-media-instagram:hover {
   background-color: #d93175;
 }
-.btn-call {
-  font-size: 32px;
-}
-
-.btn-group:last-child {
-  margin-bottom: 50px;
+.btn-social-media-instagram span {
+  position: relative;
+  top: 4px;
+  line-height: 26px !important;
 }
 
 .form .form-group {
@@ -3249,11 +3353,14 @@ footer {
   content: " *";
   color: #d64541;
 }
+.form-checkbox-label {
+  display: flex;
+}
 
 .nav-bar {
   display: none;
 }
-@media (min-width: 991px) {
+@media (min-width: 990px) {
   .nav-bar {
     display: block;
   }
@@ -3261,6 +3368,7 @@ footer {
 .nav-bar ul {
   display: flex;
   justify-content: center;
+  margin-top: 0;
   margin-bottom: 0;
 }
 .nav-bar ul .bespoke-software span {
@@ -3484,6 +3592,9 @@ footer {
   display: inline-block;
   margin-right: 10px;
 }
+.nav-bar .sub-menu li a:hover {
+  text-decoration: underline;
+}
 .nav-bar .sub-menu li:first-child {
   display: block;
   min-width: 100%;
@@ -3544,7 +3655,7 @@ footer {
 
 .form-search {
   position: relative;
-  margin-top: 11px;
+  margin-top: 25px;
   line-height: 22.85px;
 }
 .form-search-input {
@@ -3556,12 +3667,7 @@ footer {
   padding: 5px 15px;
   font-size: 14px;
 }
-.form-search-input:focus {
-  border-color: #5bc0de;
-  outline: 0;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
-}
-@media (min-width: 770px) {
+@media (min-width: 768px) {
   .form-search-input {
     width: 303px;
     height: 56px;
@@ -3572,6 +3678,11 @@ footer {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     padding: 5px 15px;
     line-height: 22.85px;
+  }
+  .form-search-input:focus {
+    border-color: #5bc0de;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
   }
 }
 .form-search-button {
@@ -3586,7 +3697,7 @@ footer {
   font-size: 20px;
   color: #272936;
 }
-@media (min-width: 770px) {
+@media (min-width: 768px) {
   .form-search-button {
     position: relative;
     right: 0;
@@ -3605,7 +3716,7 @@ footer {
     background-color: #7e808a;
   }
 }
-@media (min-width: 1261px) {
+@media (min-width: 1260px) {
   .form-search-button {
     position: absolute;
     border-radius: 0 3px 3px 0;
@@ -3623,7 +3734,6 @@ footer {
   gap: 70px;
 }
 .slideshow-stage .slideshow-item {
-  padding: 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3632,8 +3742,11 @@ footer {
 .slideshow-stage .slideshow-item a {
   display: block;
 }
+.slideshow-stage .slideshow-item:hover .slideshow-tooltip, .slideshow-stage .slideshow-item:focus .slideshow-tooltip, .slideshow-stage .slideshow-item:active .slideshow-tooltip {
+  display: block;
+}
 .slideshow-stage .slideshow-item .slideshow-tooltip {
-  visibility: hidden;
+  display: none;
   position: absolute;
   bottom: 100%;
   left: -200px;
@@ -3692,9 +3805,6 @@ footer {
   border-color: #333645 transparent transparent;
   border-style: solid;
   border-width: 35px 36px 0;
-}
-.slideshow-stage .slideshow-item:hover > .slideshow-tooltip {
-  visibility: visible;
 }
 .slideshow-stage .slideshow-item img {
   position: relative;
