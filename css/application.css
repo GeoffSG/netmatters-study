@@ -3749,7 +3749,7 @@ footer {
   display: none;
   position: absolute;
   bottom: 100%;
-  margin: 0 auto 3rem;
+  margin: 0 auto 2.25rem;
   max-width: 280px;
 }
 .slideshow-stage .slideshow-item .slideshow-tooltip-box {
