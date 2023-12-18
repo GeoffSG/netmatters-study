@@ -2957,6 +2957,9 @@ footer {
 .section .section-heading a:hover {
   text-decoration: underline;
 }
+.section .section-heading.view-all {
+  padding-top: 30px;
+}
 
 .container {
   margin-left: auto;

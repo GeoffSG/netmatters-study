@@ -11,14 +11,14 @@
                 text-decoration: underline;
             }
         }
+
+        &.view-all{
+            padding-top: 30px;
+        }
     }
 }
 
 .container {
-    // &::before{
-    //     content: '';   
-    //     display: table;
-    // }
 
     &::after{
         clear: both;
