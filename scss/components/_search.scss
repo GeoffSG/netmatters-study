@@ -14,12 +14,8 @@
         padding: 5px 15px;
         font-size: 14px;
 
-
-        
-        
-
         @include mq('md') {
-            width: 303px;
+            width: 174px;
             height: 56px;
             background-color: $white;
             border: 1px solid #e5e5e5;
@@ -70,19 +66,4 @@
             border-radius: 0 3px 3px 0;
         }
     }
-
-    // &-md {
-    //     background-color: rgb(153, 36, 36);
-    //     & .form-search-input {
-    //         outline: none;
-    //         padding: 7px 20px 3px;
-    //         height: 56px;
-    //         font-size: 1.063rem;
-    //         border-radius: 0 3px 3px 0;
-    //         border: none;
-    //         vertical-align: bottom;
-    //         background-color: #999aa2;
-    //         color: #fff;
-    //     }
-    // }
 }
