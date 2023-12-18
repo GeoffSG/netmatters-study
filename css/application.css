@@ -2198,7 +2198,6 @@ template {
 
 html {
   font-size: 1em;
-  overflow-x: hidden;
 }
 
 body {
@@ -2264,6 +2263,10 @@ img {
 
 footer {
   padding: 47px 0 0;
+}
+
+.wrapper {
+  overflow-x: hidden;
 }
 
 .flex {

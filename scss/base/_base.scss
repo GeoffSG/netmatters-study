@@ -4,7 +4,6 @@
 
 html {
     font-size: $base-font-size;
-    overflow-x: hidden;
 }
 
 body {
@@ -69,4 +68,8 @@ img {
 
 footer {
     padding: 47px 0 0;
+}
+
+.wrapper {
+    overflow-x: hidden;
 }
