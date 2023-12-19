@@ -3696,7 +3696,18 @@ footer {
   }
 }
 .form-search-button {
+  position: relative;
+  right: 0;
+  outline: none;
+  padding: 7px 20px 3px;
+  height: 56px;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  border: none;
+  vertical-align: bottom;
   background-color: #999aa2;
+  color: #ffffff;
+  font-size: 23px;
 }
 .form-search-button:hover {
   background-color: #7e808a;
@@ -3712,31 +3723,6 @@ footer {
   cursor: pointer;
   font-size: 20px;
   color: #272936;
-}
-@media (min-width: 768px) {
-  .form-search-button-mob {
-    position: relative;
-    right: 0;
-    outline: none;
-    padding: 7px 20px 3px;
-    height: 56px;
-    font-size: 1.063rem;
-    border-radius: 3px;
-    border: none;
-    vertical-align: bottom;
-    background-color: #999aa2;
-    color: #ffffff;
-    font-size: 23px;
-  }
-  .form-search-button-mob:hover {
-    background-color: #7e808a;
-  }
-}
-@media (min-width: 1260px) {
-  .form-search-button-mob {
-    position: absolute;
-    border-radius: 0 3px 3px 0;
-  }
 }
 
 .slideshow {
