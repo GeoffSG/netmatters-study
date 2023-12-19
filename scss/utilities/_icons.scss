@@ -9,11 +9,11 @@ $path-fonts: '../assets/fonts';
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('#{$path-fonts}/icomoon.eot?clkmoj');
-  src:  url('#{$path-fonts}/icomoon.eot?clkmoj#iefix') format('embedded-opentype'),
-    url('#{$path-fonts}/icomoon.ttf?clkmoj') format('truetype'),
-    url('#{$path-fonts}/icomoon.woff?clkmoj') format('woff'),
-    url('#{$path-fonts}/icomoon.svg?clkmoj#icomoon') format('svg');
+  src:  url('#{$path-fonts}/icomoon.eot?dpmlxa');
+  src:  url('#{$path-fonts}/icomoon.eot?dpmlxa#iefix') format('embedded-opentype'),
+    url('#{$path-fonts}/icomoon.ttf?dpmlxa') format('truetype'),
+    url('#{$path-fonts}/icomoon.woff?dpmlxa') format('woff'),
+    url('#{$path-fonts}/icomoon.svg?dpmlxa#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -72,25 +72,19 @@ $path-fonts: '../assets/fonts';
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-paperplane:before {
-  content: "\e900";
+.icon-phone:before {
+  content: "\e902";
 }
-.icon-send:before {
-  content: "\e900";
+.icon-check:before {
+  content: "\e918";
 }
-.icon-flight:before {
-  content: "\e900";
-}
-.icon-email:before {
-  content: "\e900";
-}
-.icon-bar-graph:before {
-  content: "\e907";
+.icon-phone_in_talk:before {
+  content: "\e903";
 }
 .icon-school:before {
   content: "\e901";
 }
-.icon-phone:before {
+.icon-phone1:before {
   content: "\e919";
 }
 .icon-menu:before {
@@ -110,6 +104,21 @@ $path-fonts: '../assets/fonts';
 }
 .icon-trending_up:before {
   content: "\e906";
+}
+.icon-paperplane:before {
+  content: "\e900";
+}
+.icon-send:before {
+  content: "\e900";
+}
+.icon-flight:before {
+  content: "\e900";
+}
+.icon-email:before {
+  content: "\e900";
+}
+.icon-bar-graph:before {
+  content: "\e907";
 }
 .icon-handshake:before {
   content: "\e917";
@@ -207,12 +216,6 @@ $path-fonts: '../assets/fonts';
 .icon-arrow-right:before {
   content: "\ea3c";
 }
-.icon-checkbox-checked:before {
-  content: "\ea52";
-}
-.icon-checkbox-unchecked:before {
-  content: "\ea53";
-}
 .icon-embed:before {
   content: "\ea80";
 }
@@ -228,6 +231,7 @@ $path-fonts: '../assets/fonts';
 .icon-linkedin:before {
   content: "\eaca";
 }
+
 
 
 /* icomoon-2 */

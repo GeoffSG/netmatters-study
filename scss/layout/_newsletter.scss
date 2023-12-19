@@ -38,28 +38,45 @@
             .form-checkbox-input {
                 display: none;
                 
-                &:checked + .form-checkbox-label .form-checkbox-icon::before{
-                    font-family: 'icomoon';
-                    content: "\ea52";
+                &:checked { 
+                    &+ .form-checkbox-label .form-checkbox-icon::before {
+                        font-family: 'icomoon';
+                        content: "\e918";
+                    }
+                    &+ .form-checkbox-label .form-checkbox-button {
+                        background-color: #333645;
+                    }
                 }
             }
 
             .form-checkbox-label {
-                // display: flex;
-                .form-checkbox-icon {
-                    &::before {
-                        font-family: 'icomoon';
-                        content: "\ea53";
-                    }
-                    display: inline-block;
-                    font-size: 32px;
-                    line-height: 32px;
-                    margin-right: 20px;
-                    color: $grey-xd;
+                cursor: pointer;
+                .media-left {
+                    display: table-cell;
+                    vertical-align: top;
+
                 }
-                a {
-                    color: $text-light;
-                    text-decoration: underline;
+                .form-checkbox-button {
+                    border-radius: 3px;
+                    border: 3px solid #333645;
+                    height: 32px;
+                    width: 32px;
+                    position: relative;
+                    float: left;
+                    margin-right: 20px;
+
+                    .form-checkbox-icon {
+                        font-weight: 400;
+                        line-height: 26px;
+                        text-align: center;
+                        font-size: 22px;
+                        color: #fff;
+                        display: block;
+                    }
+                    a {
+                        color: $text-light;
+                        text-decoration: underline;
+                    }
                 }
             }
         }
