@@ -2461,6 +2461,11 @@ footer {
 .newsletter {
   background-color: #dddddd;
 }
+.newsletter h2 {
+  font-weight: 400;
+  margin: 0 0 15px;
+  color: #333645;
+}
 .newsletter .form-newsletter .form-text-group {
   display: flex;
   flex-wrap: wrap;

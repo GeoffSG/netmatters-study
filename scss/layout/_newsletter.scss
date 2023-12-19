@@ -1,7 +1,11 @@
 .newsletter {
     background-color: $grey-xl;
+    h2 {
+        font-weight: 400;
+        margin: 0 0 15px;
+        color: #333645;
+    }
     .form-newsletter {
-
         .form-text-group {
 
             display: flex;
