@@ -2117,7 +2117,7 @@ template {
 .hidden-sm {
   display: inherit !important;
 }
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .hidden-sm {
     display: none !important;
   }
@@ -2166,7 +2166,7 @@ template {
 .appear-sm {
   display: none !important;
 }
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .appear-sm {
     display: inherit !important;
   }
@@ -2422,7 +2422,7 @@ footer {
 .header .header-menu .buttons .btn.btn-nav-menu, .header .header-menu .buttons .btn-nav-menu.btn-social-media-instagram, .header .header-menu .buttons .btn-nav-menu.btn-social-media-twitter, .header .header-menu .buttons .btn-nav-menu.btn-social-media-linkedin, .header .header-menu .buttons .btn-nav-menu.btn-social-media-facebook, .header .header-menu .buttons .btn-nav-menu.btn-trustpilot-lg, .header .header-menu .buttons .btn-nav-menu.btn-trustpilot, .header .header-menu .buttons .btn-nav-menu.btn-google-lg, .header .header-menu .buttons .btn-nav-menu.btn-google, .header .header-menu .buttons .btn-nav-menu.btn-developer-training-lg, .header .header-menu .buttons .btn-nav-menu.btn-developer-training, .header .header-menu .buttons .btn-nav-menu.btn-cyber-security-lg, .header .header-menu .buttons .btn-nav-menu.btn-cyber-security, .header .header-menu .buttons .btn-nav-menu.btn-web-design-lg, .header .header-menu .buttons .btn-nav-menu.btn-web-design, .header .header-menu .buttons .btn-nav-menu.btn-telecoms-services-lg, .header .header-menu .buttons .btn-nav-menu.btn-telecoms-services, .header .header-menu .buttons .btn-nav-menu.btn-digital-marketing-lg, .header .header-menu .buttons .btn-nav-menu.btn-digital-marketing, .header .header-menu .buttons .btn-nav-menu.btn-it-support-lg, .header .header-menu .buttons .btn-nav-menu.btn-it-support, .header .header-menu .buttons .btn-nav-menu.btn-bespoke-software-lg, .header .header-menu .buttons .btn-nav-menu.btn-bespoke-software, .header .header-menu .buttons .btn-nav-menu.btn-light-lg, .header .header-menu .buttons .btn-nav-menu.btn-light, .header .header-menu .buttons .btn-nav-menu.btn-dark-lg, .header .header-menu .buttons .btn-nav-menu.btn-dark, .header .header-menu .buttons .btn-nav-menu.btn-lg {
   margin-left: 20px;
 }
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .header .header-menu > * {
     vertical-align: middle;
   }
@@ -3335,6 +3335,7 @@ footer {
   border-radius: 0;
   background-color: #212330;
   font-size: 26px;
+  text-align: center;
 }
 .btn-social-media-facebook:hover {
   background-color: #3b5998;
@@ -3344,6 +3345,11 @@ footer {
   top: 4px;
   line-height: 26px !important;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .btn-social-media-facebook {
+    width: 35%;
+  }
+}
 .btn-social-media-linkedin {
   padding: 12px 22px 16px;
   margin-right: 10px;
@@ -3351,6 +3357,7 @@ footer {
   border-radius: 0;
   background-color: #212330;
   font-size: 26px;
+  text-align: center;
 }
 .btn-social-media-linkedin:hover {
   background-color: #0077b5;
@@ -3360,6 +3367,11 @@ footer {
   top: 4px;
   line-height: 26px !important;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .btn-social-media-linkedin {
+    width: 35%;
+  }
+}
 .btn-social-media-twitter {
   padding: 12px 22px 16px;
   margin-right: 10px;
@@ -3367,6 +3379,7 @@ footer {
   border-radius: 0;
   background-color: #212330;
   font-size: 26px;
+  text-align: center;
 }
 .btn-social-media-twitter:hover {
   background-color: #00aced;
@@ -3376,6 +3389,11 @@ footer {
   top: 4px;
   line-height: 26px !important;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .btn-social-media-twitter {
+    width: 35%;
+  }
+}
 .btn-social-media-instagram {
   padding: 12px 22px 16px;
   margin-right: 10px;
@@ -3383,6 +3401,7 @@ footer {
   border-radius: 0;
   background-color: #212330;
   font-size: 26px;
+  text-align: center;
 }
 .btn-social-media-instagram:hover {
   background-color: #d93175;
@@ -3391,6 +3410,11 @@ footer {
   position: relative;
   top: 4px;
   line-height: 26px !important;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .btn-social-media-instagram {
+    width: 35%;
+  }
 }
 
 .form .form-group {

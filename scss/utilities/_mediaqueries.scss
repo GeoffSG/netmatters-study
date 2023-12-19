@@ -15,7 +15,7 @@ $breakpoints: (
 @mixin mq($break) {
 
 	@if $break == "sm" {
-		@media (min-width: get-breakpoint($break)) and (max-width: (get-breakpoint('md'))) {
+		@media (min-width: get-breakpoint($break)) and (max-width: (get-breakpoint('480'))) {
 			@content;
 		}
 	}

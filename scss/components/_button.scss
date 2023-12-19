@@ -144,6 +144,7 @@
                 border-radius: 0;
                 background-color: $grey-xd;
                 font-size: 26px;
+                text-align: center;
                 &:hover {
                     background-color: map-get($color, 'base');
                 }
@@ -151,6 +152,9 @@
                     position: relative;
                     top: 4px;
                     line-height: 26px !important;
+                }
+                @include mq('sm'){
+                    width: 35%;
                 }
             }
         }
