@@ -3696,6 +3696,12 @@ footer {
   }
 }
 .form-search-button {
+  background-color: #999aa2;
+}
+.form-search-button:hover {
+  background-color: #7e808a;
+}
+.form-search-button-mob {
   position: absolute;
   right: 10px;
   top: 0;
@@ -3708,7 +3714,7 @@ footer {
   color: #272936;
 }
 @media (min-width: 768px) {
-  .form-search-button {
+  .form-search-button-mob {
     position: relative;
     right: 0;
     outline: none;
@@ -3722,12 +3728,12 @@ footer {
     color: #ffffff;
     font-size: 23px;
   }
-  .form-search-button:hover {
+  .form-search-button-mob:hover {
     background-color: #7e808a;
   }
 }
 @media (min-width: 1260px) {
-  .form-search-button {
+  .form-search-button-mob {
     position: absolute;
     border-radius: 0 3px 3px 0;
   }

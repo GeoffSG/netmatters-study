@@ -31,8 +31,14 @@
             }
         }
     }
-
     &-button {
+        background-color: $grey-l;
+        &:hover {
+            background-color: darken($grey-l, 10%);
+        }
+    }
+
+    &-button-mob {
         position: absolute;
         right: 10px;
         top: 0;
