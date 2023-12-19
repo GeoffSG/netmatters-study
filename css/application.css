@@ -2146,6 +2146,14 @@ template {
     display: none !important;
   }
 }
+.hidden-1024 {
+  display: inherit !important;
+}
+@media (min-width: 1024px) {
+  .hidden-1024 {
+    display: none !important;
+  }
+}
 .hidden-xl {
   display: inherit !important;
 }
@@ -2184,6 +2192,14 @@ template {
 }
 @media (min-width: 990px) {
   .appear-lg {
+    display: inherit !important;
+  }
+}
+.appear-1024 {
+  display: none !important;
+}
+@media (min-width: 1024px) {
+  .appear-1024 {
     display: inherit !important;
   }
 }
@@ -2323,9 +2339,6 @@ footer {
 }
 .grid-4:first-child, .grid-3:first-child, .grid-2:first-child {
   padding-bottom: 15px;
-}
-.grid-4:last-child, .grid-3:last-child, .grid-2:last-child {
-  padding-top: 15px;
 }
 
 .grid .grid-item {
@@ -2537,10 +2550,13 @@ footer {
   .footer .footer-content {
     display: flex;
     justify-content: space-between;
+    gap: 80px;
   }
 }
-.footer .footer-content .grid-4 {
-  gap: 0;
+@media (min-width: 1024px) {
+  .footer .footer-content .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .footer .logo {
   width: 250px;
@@ -2551,7 +2567,7 @@ footer {
   }
 }
 .footer .social-media-section {
-  width: 400px;
+  display: flex;
 }
 .footer .social-media-section .social-media {
   display: flex;
@@ -2573,9 +2589,6 @@ footer {
 }
 .footer .company-info h4 {
   margin-top: 24px;
-}
-.footer .site-links {
-  margin-bottom: 40px;
 }
 .footer .site-links div {
   margin-bottom: 30px;
@@ -3319,6 +3332,7 @@ footer {
   padding: 12px 22px 16px;
   margin-right: 10px;
   margin-bottom: 10px;
+  border-radius: 0;
   background-color: #212330;
   font-size: 26px;
 }
@@ -3334,6 +3348,7 @@ footer {
   padding: 12px 22px 16px;
   margin-right: 10px;
   margin-bottom: 10px;
+  border-radius: 0;
   background-color: #212330;
   font-size: 26px;
 }
@@ -3349,6 +3364,7 @@ footer {
   padding: 12px 22px 16px;
   margin-right: 10px;
   margin-bottom: 10px;
+  border-radius: 0;
   background-color: #212330;
   font-size: 26px;
 }
@@ -3364,6 +3380,7 @@ footer {
   padding: 12px 22px 16px;
   margin-right: 10px;
   margin-bottom: 10px;
+  border-radius: 0;
   background-color: #212330;
   font-size: 26px;
 }

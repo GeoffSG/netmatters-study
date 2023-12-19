@@ -3,6 +3,7 @@ $breakpoints: (
   '480': 480px,
   'md': 768px,
   'lg': 990px,
+  '1024':1024px,
   'xl': 1260px
 );
 
@@ -29,6 +30,11 @@ $breakpoints: (
 		}
 	}
 	@else if $break == "lg" {
+		@media (min-width: (get-breakpoint($break))) {
+			@content;
+		}
+	}
+	@else if $break == "1024" {
 		@media (min-width: (get-breakpoint($break))) {
 			@content;
 		}
