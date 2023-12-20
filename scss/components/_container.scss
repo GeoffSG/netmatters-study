@@ -1,6 +1,6 @@
 .section {
     padding-top: 50px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     position: relative;
     & .section-heading {
         text-align: center;
@@ -11,9 +11,17 @@
                 text-decoration: underline;
             }
         }
+    }
+}
 
-        &.view-all{
-            padding-top: 30px;
+.section-heading {
+    text-align: center;
+    font-weight: $font-bold;
+    a {
+        
+        color: #333645;
+        &:hover {
+            text-decoration: underline;
         }
     }
 }
@@ -40,7 +48,14 @@
 
     .heading {
         font-weight: $font-bold;
-        font-size: 43.2px;
+        font-size: 2.25rem;//43.2px;
+        align-self: flex-start;
+        text-align: left;
+        margin: 0 0 28px;
+
+        @include mq('md'){
+            
+        }
     }
 
     &-footer {

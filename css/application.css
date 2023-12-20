@@ -2331,6 +2331,10 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+.flex.grid-news {
+  gap: 30px;
+  margin-bottom: 50px;
+}
 
 .grid-4, .grid-3, .grid-2 {
   display: grid;
@@ -2628,9 +2632,6 @@ footer {
   border: solid 1px #dddddd;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-top: 30px;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   position: relative;
   top: 0;
@@ -2982,7 +2983,7 @@ footer {
 
 .section {
   padding-top: 50px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   position: relative;
 }
 .section .section-heading {
@@ -2995,8 +2996,16 @@ footer {
 .section .section-heading a:hover {
   text-decoration: underline;
 }
-.section .section-heading.view-all {
-  padding-top: 30px;
+
+.section-heading {
+  text-align: center;
+  font-weight: 600;
+}
+.section-heading a {
+  color: #333645;
+}
+.section-heading a:hover {
+  text-decoration: underline;
 }
 
 .container {
@@ -3024,7 +3033,10 @@ footer {
 }
 .container .heading {
   font-weight: 600;
-  font-size: 43.2px;
+  font-size: 2.25rem;
+  align-self: flex-start;
+  text-align: left;
+  margin: 0 0 28px;
 }
 .container-footer {
   padding-bottom: 27px;
@@ -3765,7 +3777,7 @@ footer {
   position: relative;
   right: 0;
   outline: none;
-  padding: 7px 20px 3px;
+  padding: 5px 20px;
   height: 56px;
   font-size: 1.063rem;
   border-radius: 3px;
@@ -3800,6 +3812,7 @@ footer {
   flex-wrap: nowrap;
   align-items: end;
   gap: 70px;
+  overflow-x: hidden;
 }
 .slideshow-stage .slideshow-item {
   display: flex;
