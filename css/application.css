@@ -2384,6 +2384,11 @@ footer {
   }
 }
 
+.header {
+  background: #ffffff;
+  z-index: 10;
+  transition: 0.25s;
+}
 .header .header-menu {
   display: flex;
   justify-content: space-between;
@@ -3812,7 +3817,6 @@ footer {
   flex-wrap: nowrap;
   align-items: end;
   gap: 70px;
-  overflow-x: hidden;
 }
 .slideshow-stage .slideshow-item {
   display: flex;
