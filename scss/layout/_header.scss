@@ -1,4 +1,9 @@
 .header {
+    $header-h: 203.5px;
+    background: $white;
+    z-index: 10;
+    transition: .25s;
+    
     .header-menu {
         display: flex;
         justify-content: space-between;
@@ -57,4 +62,3 @@
         }
     }
 }
-
