@@ -1,0 +1,18 @@
+.btn-cookie {
+    position: fixed;
+    bottom: 0;
+    z-index: 89;
+    
+    background-color: #75788a;
+    color: $white;
+    border: 0;
+    padding: 0 10px;
+    font-size: .8rem;
+    font-weight: 600;
+    line-height: 22px;
+    border-top-right-radius: 10px;
+    &:hover {
+        background-color: #999aa2;
+        cursor: pointer;
+    }
+}

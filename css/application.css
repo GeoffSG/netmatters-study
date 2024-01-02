@@ -3345,6 +3345,9 @@ footer {
 .btn-contact:hover {
   background-color: #7e808a;
 }
+.btn-default {
+  background-color: #999aa2;
+}
 .btn-social-media-facebook {
   padding: 12px 22px 16px;
   margin-right: 10px;
@@ -3434,6 +3437,24 @@ footer {
   }
 }
 
+.btn-cookie {
+  position: fixed;
+  bottom: 0;
+  z-index: 89;
+  background-color: #75788a;
+  color: #ffffff;
+  border: 0;
+  padding: 0 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 22px;
+  border-top-right-radius: 10px;
+}
+.btn-cookie:hover {
+  background-color: #999aa2;
+  cursor: pointer;
+}
+
 .form .form-group {
   margin-bottom: 15px;
   line-height: 2;
@@ -3448,6 +3469,49 @@ footer {
 }
 .form-checkbox-label {
   display: flex;
+}
+
+.modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 90;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal .modal-box {
+  width: 600px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+.modal .modal-box .modal-header, .modal .modal-box .modal-body, .modal .modal-box .modal-footer {
+  padding: 15px 20px;
+}
+.modal .modal-box .modal-header {
+  border-bottom: 1px solid #e5e5e5;
+}
+.modal .modal-box .modal-header .modal-title {
+  margin: 0;
+}
+.modal .modal-box .modal-body a {
+  color: #333645;
+  text-decoration: none;
+}
+.modal .modal-box .modal-body a:hover {
+  text-decoration: underline;
+}
+.modal .modal-box .modal-footer {
+  border-top: 1px solid #e5e5e5;
+}
+.modal .modal-box .modal-footer .modal-button-group {
+  display: flex;
+  gap: 30px;
+}
+.modal .modal-box .modal-footer .modal-button-group > * {
+  flex: 1;
+  text-align: center;
 }
 
 .nav-bar {
