@@ -27,28 +27,6 @@ function stickyHeader(header) {
     }
     prevScrollY = window.scrollY;
   });
-
-  //   function slideHeader(from, to) {
-  //     let headerTop = from;
-  //     const timer = setInterval(() => {
-  //       if (from > to) {
-  //         console.log("down");
-  //         if (headerTop > to) {
-  //             headerTop -= 1;
-  //         }
-  //       } else {
-  //         console.log("up");
-  //         if (headerTop < to) {
-  //             headerTop += 1;
-  //         }
-  //       }
-  //       header.css("top", headerTop+"px");
-  //       if (headerTop === to) {
-  //         console.log("end timer");
-  //         clearInterval(timer);
-  //       }
-  //     }, 10);
-  //   }
 }
 
 export default stickyHeader;
