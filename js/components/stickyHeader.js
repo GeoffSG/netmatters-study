@@ -7,7 +7,6 @@ function stickyHeader(header) {
     //  Check if the user has scrolled up or down.
     if (currentScrollY > prevScrollY) {
       //  Scrolled down
-      console.log("scroll down");
       if (header.parent().hasClass("sticky-wrapper")) {
         //  Deactivate/hide header
         if(window.scrollY > header.height())
@@ -17,7 +16,6 @@ function stickyHeader(header) {
       }
     } else {
       //  Scrolled up
-      console.log("scroll up");
       if (!header.parent().hasClass("sticky-wrapper")) {
         header.sticky();
         header.css("top", -header.height());
