@@ -1,704 +1,1546 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Netmatters</title>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/application.css">
-</head>
-<body>
-<div class="wrapper">
-    <div class="cookie-policy">
-        <button class="btn-cookie" type="button">
-            Manage Consent
-        </button>
-        <div class="cookie-modal">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="./css/hamburger/hamburgers.min.css"> -->
+    <link rel="stylesheet" href="./css/application.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="main">
+        <div class="cookie-policy">
+          <button class="btn-cookie" type="button">Manage Consent</button>
+          <div class="cookie-modal">
             <div class="modal">
-                <div class="modal-box">
-                    <div class="modal-header"><h3 class="modal-title">Cookies Policy</h3></div>
-                    <div class="modal-body">
-                        <p>
-                            Our website uses cookies. This helps us provide you with a good experience on our website. To see what cookies we use and what they do, and to opt-in on non-essential cookies click "change settings". For a detailed explanation, click on "<a href="">Privacy Policy</a>" otherwise click "Accept Cookies" to enter.
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <div class="modal-button-group">
-                            <a class="btn btn-default" id="cookie-settings">Change Settings</a>
-                            <a class="btn btn-web-design" id="cookie-accept">Accept Cookies</a>
-                        </div>
-                    </div>
+              <div class="modal-box">
+                <div class="modal-header">
+                  <h3 class="modal-title">Cookies Policy</h3>
                 </div>
+                <div class="modal-body">
+                  <p>
+                    Our website uses cookies. This helps us provide you with a
+                    good experience on our website. To see what cookies we use
+                    and what they do, and to opt-in on non-essential cookies
+                    click "change settings". For a detailed explanation, click
+                    on "<a href="">Privacy Policy</a>" otherwise click "Accept
+                    Cookies" to enter.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <div class="modal-button-group">
+                    <a class="btn btn-default" id="cookie-settings"
+                      >Change Settings</a
+                    >
+                    <a class="btn btn-web-design" id="cookie-accept"
+                      >Accept Cookies</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <header class="header animsition"><!-- HEADER -->
-        <div class="container" id="header">
+        <header class="header">
+          <!-- HEADER -->
+          <div class="container" id="header">
             <div class="inner">
-                <div class="header-menu">
-                    <div class="company-logo">
-                        <a href="#"><img src="./assets/img/nm-company.webp" alt="Netmatters"></a>
-                    </div>
-                    <div class="buttons">
-                        <a class="btn btn-support appear-lg" href="#"><span class="icon-mouse pull-left"></span> SUPPORT</a>
-                        <a class="btn btn-contact appear-lg" href="#"><span class="icon-send pull-left"></span> CONTACT</a>
-                        <a class="btn btn-light btn-call hidden-md" href="#"><span class="icon2-phone_in_talk"></span> </a>
-                        <form class="appear-md form-search">
-                            <input class="form-search-input hidden-lg" id="search-input" placeholder="Search..." type="search">
-                            <button class="btn form-search-button appear-md" id="search-submit" type="submit"><span class="glyphicon-search"></span></button>
-                        </form>
-                        <button class="btn btn-dark btn-nav-menu" type="button" >
-                            <span class="hamburger-outer"><span class="hamburger-inner"></span></span>
-                        </button>
-                    </div>
+              <div class="header-menu">
+                <div class="company-logo">
+                  <a href="#"
+                    ><img src="./assets/img/nm-company.webp" alt="Netmatters"
+                  /></a>
                 </div>
-                <div class="hidden-md form-search">
-                    <form>
-                        <input class="form-search-input" id="search-input-mob" placeholder="Search..." type="search">
-                        <button class="form-search-button-mob" id="search-submit-mob" type="submit"><span class="glyphicon-search"></span></button>
-                    </form>
+                <div class="buttons">
+                  <a class="btn btn-support appear-lg" href="#"
+                    ><span class="icon-mouse pull-left"></span> SUPPORT</a
+                  >
+                  <a class="btn btn-contact appear-lg" href="#"
+                    ><span class="icon-send pull-left"></span> CONTACT</a
+                  >
+                  <a class="btn btn-light btn-call hidden-md" href="#"
+                    ><span class="icon2-phone_in_talk"></span>
+                  </a>
+                  <form class="appear-md form-search">
+                    <input
+                      class="form-search-input hidden-lg"
+                      id="search-input"
+                      placeholder="Search..."
+                      type="search"
+                    />
+                    <button
+                      class="btn form-search-button appear-md"
+                      id="search-submit"
+                      type="submit"
+                    >
+                      <span class="glyphicon-search"></span>
+                    </button>
+                  </form>
+                  <!-- <button class="btn btn-dark btn-nav-menu" type="button">
+                    <span class="hamburger-outer">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button> -->
+                  <button class="hamburger hamburger--spin" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>
                 </div>
+              </div>
+              <div class="hidden-md form-search">
+                <form>
+                  <input
+                    class="form-search-input"
+                    id="search-input-mob"
+                    placeholder="Search..."
+                    type="search"
+                  />
+                  <button
+                    class="form-search-button-mob"
+                    id="search-submit-mob"
+                    type="submit"
+                  >
+                    <span class="glyphicon-search"></span>
+                  </button>
+                </form>
+              </div>
             </div>
-        </div>
-        <nav class="container-dark nav-bar">
+          </div>
+          <nav class="container-dark nav-bar">
             <ul class="container">
-                <li class="bespoke-software">
-                    <a href="#">
-                        <span class="bespoke-software icon2-apps"></span>
-                        <small>Bespoke</small>
-                        Software
-                    </a>
-                    <div class="sub-menu-container">
-                        <ul class="container sub-menu">
-                            <li><h2>Our Bespoke Software Services</h2></li>
-                            <li><a class="nav-button" href="#"><span class="icon-cogs"></span> Bespoke CRM</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-briefcase"></span> Business Automation</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon2-shuffle1"></span> Software Integrations</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-mobile"></span> Mobile App Development</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-folder-open"></span> Bespoke Databases</a></li>
-                            <li><a class="nav-button" href="#"><span class="glyphicon-transfer"></span> Sharepoint Development</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-download"></span> Operational Systems</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-group"></span> Business Central Implementation</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon2-laptop1"></span> Internet of Things (IoT) Software</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-cloud"></span> Intranet Development</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-cloud-download"></span> Customer Portal Development</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-earth"></span> Reporting Hub</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="it-support">
-                    <a class="it-support" href="#">
-                        <span class="icon-display"></span>
-                        <small>IT</small>
-                        Support
-                    </a>
-                    <div class="sub-menu-container">
-                        <ul class="container sub-menu">
-                            <li><h2>Our IT Support Services</h2></li>
-                            <li><a class="nav-button" href="#"><span class="icon-headphones"></span> Managed IT Support</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-briefcase"></span> Business IT Support</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon2-laptop1"></span> Office 365 for Business</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-school"></span> IT Consultancy</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-cloud"></span> Cloud Service Provider</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-drive"></span> Data Backup &amp; Disaster Recovery</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="digital-marketing">
-                    <a class="digital-marketing" href="#">
-                        <span class="icon-bar-graph"></span>
-                        <small>Digital</small>
-                        Marketing
-                    </a>
-                    <div class="sub-menu-container">
-                        <ul class="container sub-menu">
-                            <li><h2>Our Digital Marketing Services</h2></li>
-                            <li><a class="nav-button" href="#"><span class="icon-search"></span> Search Engine Optimisation (SEO)</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-money"></span> Pay Per Click Advertising (PPC)</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-trending_up"></span> Conversion Rate Optimisation (CRO)</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-envelope"></span> Email Marketing</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-group"></span> Social Media Marketing</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-pencil"></span> Content Marketing</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="telecoms-services">
-                    <a href="#">
-                        <span class="icon2-phone_in_talk"></span>
-                        <small>Telecoms</small>
-                        Services
-                    </a>
-                    <div class="sub-menu-container">
-                        <ul class="container sub-menu">
-                            <li><h2>Our Telecoms Services</h2></li>
-                            <li><a class="nav-button" href="#"><span class="icon-ticket"></span> Business Mobile</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-phone"></span> Hosted VoIP Provider</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-phone-square"></span> Business VoIP Systems</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-dashboard"></span> Business Broadband</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-handshake"></span> Leased Lines Provider</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon2-phone_in_talk"></span> 3CX Systems</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="web-design">
-                    <a class="web-design" href="#">
-                        <span class="icon-embed"></span>
-                        <small>Web</small>
-                        Design
-                    </a>
-                    <div class="sub-menu-container">
-                        <ul class="container sub-menu">
-                            <li><h2>Our Web Design Services</h2></li>
-                            <li><a class="nav-button" href="#"><span class="icon-pencil"></span> Bespoke Website Design</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-cart"></span> eCommerce Website Design</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-display"></span> Pay Monthly Websites</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-bullhorn"></span> Branding &amp; Design</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-mobile"></span> Mobile App Development</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-cloud"></span> Web Hosting</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="cyber-security">
-                    <a href="#">
-                        <span class="icon-security"></span>
-                        <small>Cyber</small>
-                        Security
-                    </a>
-                    <div class="sub-menu-container">
-                        <ul class="container sub-menu">
-                            <li><h2>Our Cyber Security Services</h2></li>
-                            <li><a class="nav-button" href="#"><span class="icon-clipboard"></span> Cyber Security Assessment</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-clock"></span> Cyber Security Management</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-flask"></span> Cyber Penetration Testing</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-school"></span> Cyber Essentials Certification</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-security"></span> PCI Compliance</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-lock"></span> Hacking Prevention</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="developer-training">
-                    <a href="#">
-                        <span class="icon-school"></span>
-                        <small>Developer</small>
-                        Course
-                    </a>
-                    <div class="sub-menu-container">
-                        <ul class="container sub-menu">
-                            <li><h2>Our Developer Training Services</h2></li>
-                            <li><a class="nav-button" href="#"><span class="icon2-laptop1"></span> Train For A Career In Tech</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-embed"></span> Skills Bootcamp</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-help"></span> Scion Scheme Frequently Asked Questions</a></li>
-                            <li><a class="nav-button" href="#"><span class="icon-handshake"></span> Scion Collaborators</a></li>
-                        </ul>
-                    </div>
-                </li>
+              <li class="bespoke-software">
+                <a href="#">
+                  <span class="bespoke-software icon2-apps"></span>
+                  <small>Bespoke</small>
+                  Software
+                </a>
+                <div class="sub-menu-container">
+                  <ul class="container sub-menu">
+                    <li><h2>Our Bespoke Software Services</h2></li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-cogs"></span> Bespoke CRM</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-briefcase"></span> Business
+                        Automation</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon2-shuffle1"></span> Software
+                        Integrations</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-mobile"></span> Mobile App
+                        Development</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-folder-open"></span> Bespoke
+                        Databases</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="glyphicon-transfer"></span> Sharepoint
+                        Development</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-download"></span> Operational
+                        Systems</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-group"></span> Business Central
+                        Implementation</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon2-laptop1"></span> Internet of Things
+                        (IoT) Software</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-cloud"></span> Intranet
+                        Development</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-cloud-download"></span> Customer
+                        Portal Development</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-earth"></span> Reporting Hub</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="it-support">
+                <a class="it-support" href="#">
+                  <span class="icon-display"></span>
+                  <small>IT</small>
+                  Support
+                </a>
+                <div class="sub-menu-container">
+                  <ul class="container sub-menu">
+                    <li><h2>Our IT Support Services</h2></li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-headphones"></span> Managed IT
+                        Support</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-briefcase"></span> Business IT
+                        Support</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon2-laptop1"></span> Office 365 for
+                        Business</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-school"></span> IT Consultancy</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-cloud"></span> Cloud Service
+                        Provider</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-drive"></span> Data Backup &amp;
+                        Disaster Recovery</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="digital-marketing">
+                <a class="digital-marketing" href="#">
+                  <span class="icon-bar-graph"></span>
+                  <small>Digital</small>
+                  Marketing
+                </a>
+                <div class="sub-menu-container">
+                  <ul class="container sub-menu">
+                    <li><h2>Our Digital Marketing Services</h2></li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-search"></span> Search Engine
+                        Optimisation (SEO)</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-money"></span> Pay Per Click
+                        Advertising (PPC)</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-trending_up"></span> Conversion Rate
+                        Optimisation (CRO)</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-envelope"></span> Email Marketing</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-group"></span> Social Media
+                        Marketing</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-pencil"></span> Content Marketing</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="telecoms-services">
+                <a href="#">
+                  <span class="icon2-phone_in_talk"></span>
+                  <small>Telecoms</small>
+                  Services
+                </a>
+                <div class="sub-menu-container">
+                  <ul class="container sub-menu">
+                    <li><h2>Our Telecoms Services</h2></li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-ticket"></span> Business Mobile</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-phone"></span> Hosted VoIP
+                        Provider</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-phone-square"></span> Business VoIP
+                        Systems</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-dashboard"></span> Business
+                        Broadband</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-handshake"></span> Leased Lines
+                        Provider</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon2-phone_in_talk"></span> 3CX
+                        Systems</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="web-design">
+                <a class="web-design" href="#">
+                  <span class="icon-embed"></span>
+                  <small>Web</small>
+                  Design
+                </a>
+                <div class="sub-menu-container">
+                  <ul class="container sub-menu">
+                    <li><h2>Our Web Design Services</h2></li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-pencil"></span> Bespoke Website
+                        Design</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-cart"></span> eCommerce Website
+                        Design</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-display"></span> Pay Monthly
+                        Websites</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-bullhorn"></span> Branding &amp;
+                        Design</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-mobile"></span> Mobile App
+                        Development</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-cloud"></span> Web Hosting</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="cyber-security">
+                <a href="#">
+                  <span class="icon-security"></span>
+                  <small>Cyber</small>
+                  Security
+                </a>
+                <div class="sub-menu-container">
+                  <ul class="container sub-menu">
+                    <li><h2>Our Cyber Security Services</h2></li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-clipboard"></span> Cyber Security
+                        Assessment</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-clock"></span> Cyber Security
+                        Management</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-flask"></span> Cyber Penetration
+                        Testing</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-school"></span> Cyber Essentials
+                        Certification</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-security"></span> PCI Compliance</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-lock"></span> Hacking Prevention</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="developer-training">
+                <a href="#">
+                  <span class="icon-school"></span>
+                  <small>Developer</small>
+                  Course
+                </a>
+                <div class="sub-menu-container">
+                  <ul class="container sub-menu">
+                    <li><h2>Our Developer Training Services</h2></li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon2-laptop1"></span> Train For A Career
+                        In Tech</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-embed"></span> Skills Bootcamp</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-help"></span> Scion Scheme Frequently
+                        Asked Questions</a
+                      >
+                    </li>
+                    <li>
+                      <a class="nav-button" href="#"
+                        ><span class="icon-handshake"></span> Scion
+                        Collaborators</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </ul>
-        </nav>
-    </header>
-    <div class="banner" id="banner">
-        <div class="banner-image banner-image-effect">
-            <img src="./assets/img/banner/banner1.png" alt="The East of England's Leading Technology Company">
-        </div>
-        <div class="container banner-content">
-            <h1 class="banner-heading">The East of England's Leading Technology Company</h1>
+          </nav>
+        </header>
+        <div class="banner" id="banner">
+          <div class="banner-image banner-image-effect">
+            <img
+              src="./assets/img/banner/banner1.png"
+              alt="The East of England's Leading Technology Company"
+            />
+          </div>
+          <div class="container banner-content">
+            <h1 class="banner-heading">
+              The East of England's Leading Technology Company
+            </h1>
             <p class="banner-caption">
-                Performance-driven digital and technology services
-                <br>
-                with complete transparency.
+              Performance-driven digital and technology services
+              <br />
+              with complete transparency.
             </p>
-            <a class="btn-web-design-lg" href="#">Why choose us&quest; <span class="icon-arrow-right"></span></a>
+            <a class="btn-web-design-lg" href="#"
+              >Why choose us&quest; <span class="icon-arrow-right"></span
+            ></a>
+          </div>
         </div>
-    </div>
-    <div class="container section" id="services">
-        <div class="flex justify-space-between">
+        <div class="container section" id="services">
+          <div class="flex justify-space-between">
             <h1 class="heading">Our Services</h1>
-            <h3 class="section-heading appear-md"><a href="#">View Our Work <span class="icon-arrow-right"></span></a></h3>
-        </div>
-        <!-- The Services Grid-->
-        <div class="" id="services-grid">
+            <h3 class="section-heading appear-md">
+              <a href="#"
+                >View Our Work <span class="icon-arrow-right"></span
+              ></a>
+            </h3>
+          </div>
+          <!-- The Services Grid-->
+          <div class="" id="services-grid">
             <div class="grid grid-3">
-                <a class="grid-item grid-bespoke-software" href="#">
-                    <div class="card card-service bespoke-software">
-                            <span class="card-icon bespoke-software"><span class="icon2-apps"></span></span>
-                            <h2>Bespoke Software</h2>
-                            <p>Bespoke software solutions for all your business needs including integrations and reporting.</p>
-                            <span class="card-button btn-bespoke-software">Read More</span>
-                    </div>
-                </a>
-                <a class="grid-item grid-it-support" href="#">
-                    <div class="card card-service it-support">
-                        <span class="card-icon it-support"><span class="icon-display"></span></span>
-                        <h2>IT Support</h2>
-                        <p>Fully managed IT support and consultancy packages tailored to meet your exact business needs.
-                        </p>
-                        <span class="card-button btn-it-support">Read More</span>
-                    </div>
-                </a>
-                <a class="grid-item grid-digital-marketing" href="#">
-                    <div class="card card-service digital-marketing">
-                        <span class="card-icon digital-marketing"><span class="icon-bar-graph"></span></span>
-                        <h2>Digital Marketing</h2>
-                        <p>Driven brand awareness &amp; ROI through creative digital marketing campaigns.</p>
-                        <span class="card-button btn-digital-marketing">Read More</span>
-                    </div>
-                </a>
+              <a class="grid-item grid-bespoke-software" href="#">
+                <div class="card card-service bespoke-software">
+                  <span class="card-icon bespoke-software"
+                    ><span class="icon2-apps"></span
+                  ></span>
+                  <h2>Bespoke Software</h2>
+                  <p>
+                    Bespoke software solutions for all your business needs
+                    including integrations and reporting.
+                  </p>
+                  <span class="card-button btn-bespoke-software"
+                    >Read More</span
+                  >
+                </div>
+              </a>
+              <a class="grid-item grid-it-support" href="#">
+                <div class="card card-service it-support">
+                  <span class="card-icon it-support"
+                    ><span class="icon-display"></span
+                  ></span>
+                  <h2>IT Support</h2>
+                  <p>
+                    Fully managed IT support and consultancy packages tailored
+                    to meet your exact business needs.
+                  </p>
+                  <span class="card-button btn-it-support">Read More</span>
+                </div>
+              </a>
+              <a class="grid-item grid-digital-marketing" href="#">
+                <div class="card card-service digital-marketing">
+                  <span class="card-icon digital-marketing"
+                    ><span class="icon-bar-graph"></span
+                  ></span>
+                  <h2>Digital Marketing</h2>
+                  <p>
+                    Driven brand awareness &amp; ROI through creative digital
+                    marketing campaigns.
+                  </p>
+                  <span class="card-button btn-digital-marketing"
+                    >Read More</span
+                  >
+                </div>
+              </a>
             </div>
             <div class="grid grid-4">
-                <a class="grid-item grid-telecoms-services" href="#">
-                    <div class="card card-service telecoms-services">
-                        <span class="card-icon telecoms-services"><span class="icon-phone"></span></span>
-                        <h2>Telecoms Services</h2>
-                        <p>Business telephony solutions including mobile &amp; connectivity solutions.
-                        </p>
-                        <span class="card-button btn-telecoms-services">Read More</span>
-                    </div>
-                </a>
-                <a class="grid-item grid-web-design" href="#">
-                    <div class="card card-service web-design">
-                        <span class="card-icon web-design"><span class="icon-embed"></span></span>
-                        <h2>Web Design</h2>
-                        <p>User-centric design for businesses looking to make a lasting impression.</p>
-                        <span class="card-button btn-web-design">Read More</span>
-                    </div>
-                </a>
-                <a class="grid-item grid-cyber-security" href="#">
-                    <div class="card card-service cyber-security">
-                        <span class="card-icon cyber-security"><span class="icon-security"></span></span>
-                        <h2>Cyber Security</h2>
-                        <p>Prevention, testing, consultancy &amp; breach management services.</p>
-                        <span class="card-button btn-cyber-security">Read More</span>
-                    </div>
-                </a>
-                <a class="grid-item grid-developer-training" href="#">
-                    <div class="card card-service developer-training">
-                        <span class="card-icon developer-training"><span class="icon-school"></span></span>
-                        <h2>Developer Training</h2>
-                        <p>Web design &amp; software training courses designed to secure a job in tech.</p>
-                        <span class="card-button btn-developer-training">Read More</span>
-                    </div>
-                </a>
+              <a class="grid-item grid-telecoms-services" href="#">
+                <div class="card card-service telecoms-services">
+                  <span class="card-icon telecoms-services"
+                    ><span class="icon-phone"></span
+                  ></span>
+                  <h2>Telecoms Services</h2>
+                  <p>
+                    Business telephony solutions including mobile &amp;
+                    connectivity solutions.
+                  </p>
+                  <span class="card-button btn-telecoms-services"
+                    >Read More</span
+                  >
+                </div>
+              </a>
+              <a class="grid-item grid-web-design" href="#">
+                <div class="card card-service web-design">
+                  <span class="card-icon web-design"
+                    ><span class="icon-embed"></span
+                  ></span>
+                  <h2>Web Design</h2>
+                  <p>
+                    User-centric design for businesses looking to make a lasting
+                    impression.
+                  </p>
+                  <span class="card-button btn-web-design">Read More</span>
+                </div>
+              </a>
+              <a class="grid-item grid-cyber-security" href="#">
+                <div class="card card-service cyber-security">
+                  <span class="card-icon cyber-security"
+                    ><span class="icon-security"></span
+                  ></span>
+                  <h2>Cyber Security</h2>
+                  <p>
+                    Prevention, testing, consultancy &amp; breach management
+                    services.
+                  </p>
+                  <span class="card-button btn-cyber-security">Read More</span>
+                </div>
+              </a>
+              <a class="grid-item grid-developer-training" href="#">
+                <div class="card card-service developer-training">
+                  <span class="card-icon developer-training"
+                    ><span class="icon-school"></span
+                  ></span>
+                  <h2>Developer Training</h2>
+                  <p>
+                    Web design &amp; software training courses designed to
+                    secure a job in tech.
+                  </p>
+                  <span class="card-button btn-developer-training"
+                    >Read More</span
+                  >
+                </div>
+              </a>
             </div>
+          </div>
+          <h3 class="section-heading view-all hidden-md">
+            <a href="#">View Our Work <span class="icon-arrow-right"></span></a>
+          </h3>
         </div>
-        <h3 class="section-heading view-all hidden-md"><a href="#">View Our Work <span class="icon-arrow-right"></span></a></h3>
-    </div>
-    <div class="container" id="partners">
-        <div class="section">
+        <div class="container" id="partners">
+          <div class="section">
             <div class="slideshow">
-                <div class="slideshow-stage">
-                    <div class="slideshow-item">
-                        <img src="./assets/img/partners/partner1.jpg" alt="">
-                    </div>
-                    <div class="slideshow-item">
-                        <img src="./assets/img/partners/partner2.jpg" alt="">
-                    </div>
-                    <div class="slideshow-item">
-                        <img src="./assets/img/partners/partner3.jpg" alt="">
-                    </div>
-                    <div class="slideshow-item">
-                        <img src="./assets/img/partners/partner4.jpg" alt="">
-                    </div>
-                    <div class="slideshow-item">
-                        <img src="./assets/img/partners/partner5.jpg" alt="">
-                    </div>
-                    <div class="slideshow-item">
-                        <img src="./assets/img/partners/partner6.webp" alt="">
-                    </div>
-                    <div class="slideshow-item">
-                        <img src="./assets/img/partners/partner7.webp" alt="">
-                    </div>
-                    <div class="slideshow-item">
-                        <img src="./assets/img/partners/partner8.webp" alt="">
-                    </div>
-                    <div class="slideshow-item">
-                        <img src="./assets/img/partners/partner9.webp" alt="">
-                    </div>
-                    <div class="slideshow-item">
-                        <img src="./assets/img/partners/partner10.webp" alt="">
-                    </div>
-                    <div class="slideshow-item">
-                        <img src="./assets/img/partners/partner11.webp" alt="">
-                    </div>
+              <div class="slideshow-stage">
+                <div class="slideshow-item">
+                  <img src="./assets/img/partners/partner1.jpg" alt="" />
                 </div>
+                <div class="slideshow-item">
+                  <img src="./assets/img/partners/partner2.jpg" alt="" />
+                </div>
+                <div class="slideshow-item">
+                  <img src="./assets/img/partners/partner3.jpg" alt="" />
+                </div>
+                <div class="slideshow-item">
+                  <img src="./assets/img/partners/partner4.jpg" alt="" />
+                </div>
+                <div class="slideshow-item">
+                  <img src="./assets/img/partners/partner5.jpg" alt="" />
+                </div>
+                <div class="slideshow-item">
+                  <img src="./assets/img/partners/partner6.webp" alt="" />
+                </div>
+                <div class="slideshow-item">
+                  <img src="./assets/img/partners/partner7.webp" alt="" />
+                </div>
+                <div class="slideshow-item">
+                  <img src="./assets/img/partners/partner8.webp" alt="" />
+                </div>
+                <div class="slideshow-item">
+                  <img src="./assets/img/partners/partner9.webp" alt="" />
+                </div>
+                <div class="slideshow-item">
+                  <img src="./assets/img/partners/partner10.webp" alt="" />
+                </div>
+                <div class="slideshow-item">
+                  <img src="./assets/img/partners/partner11.webp" alt="" />
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="container-dark">
-        <div class="container" id="welcome">
+        <div class="container-dark">
+          <div class="container" id="welcome">
             <div class="section">
-                <div class="grid-2">
-                    <div>
-                        <h2>Welcome to Netmatters</h2>
-                        <p><strong>Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in the East of England with offices in London, Cambridge, Wymondham, and Great Yarmouth.</strong></p>
-                        <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.</p>
-                        <p>We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
-                        <div class="btn-group">
-                            <a class="btn-dark-lg" href="#">Why choose us? <span class="icon-arrow-right"></span></a>
-                            <a class="btn-dark-lg" href="#">Our Culture <span class="icon-arrow-right"></span></a>
-                        </div>
-                    </div>
-                    <div>
-                        <h2>What Our Clients Think</h2>
-                        <div class="rating">
-                            <span class="icon2-star"></span><span class="icon2-star"></span><span class="icon2-star"></span><span class="icon2-star"></span><span class="icon2-star"></span>
-                        </div>
-                        <p class="quote">Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</p>
-                        <p class="author">Eleanor Bishop, Head of Marketing - <a href="#">Ashcroft Partnership LLP</a></p>
-                        <div class="btn-group">
-                            <a class="btn-google-lg" href="#">Google Reviews <span class="icon-arrow-right"></span></a>
-                            <a class="btn-trustpilot-lg" href="#">Trustpilot Reviews <span class="icon-arrow-right"></span></a>
-                        </div>
-                    </div>
+              <div class="grid-2">
+                <div>
+                  <h2>Welcome to Netmatters</h2>
+                  <p>
+                    <strong
+                      >Netmatters is a leading Bespoke Software, IT Support, and
+                      Digital Marketing company based in the East of England
+                      with offices in London, Cambridge, Wymondham, and Great
+                      Yarmouth.</strong
+                    >
+                  </p>
+                  <p>
+                    We aren't tied into contracts with third-party providers, so
+                    you know that our recommendations for your business are
+                    based purely with one benefit in mind: to help improve your
+                    business with the most appropriate solutions.
+                  </p>
+                  <p>
+                    We pride ourselves on being an ethical business and have a
+                    unique business offering and cost model that ensures you get
+                    the most from our relationship in an upfront manner.
+                  </p>
+                  <div class="btn-group">
+                    <a class="btn-dark-lg" href="#"
+                      >Why choose us? <span class="icon-arrow-right"></span
+                    ></a>
+                    <a class="btn-dark-lg" href="#"
+                      >Our Culture <span class="icon-arrow-right"></span
+                    ></a>
+                  </div>
                 </div>
+                <div>
+                  <h2>What Our Clients Think</h2>
+                  <div class="rating">
+                    <span class="icon2-star"></span
+                    ><span class="icon2-star"></span
+                    ><span class="icon2-star"></span
+                    ><span class="icon2-star"></span
+                    ><span class="icon2-star"></span>
+                  </div>
+                  <p class="quote">
+                    Netmatters stood out from the start. Great guys and very
+                    easy to work with. Both the build and digital marketing
+                    teams are clearly skilled -they know their stuff! They
+                    delivered a website to our (high!) expectations and went
+                    over and above to ensure we were satisfied clients - and we
+                    are!
+                  </p>
+                  <p class="author">
+                    Eleanor Bishop, Head of Marketing -
+                    <a href="#">Ashcroft Partnership LLP</a>
+                  </p>
+                  <div class="btn-group">
+                    <a class="btn-google-lg" href="#"
+                      >Google Reviews <span class="icon-arrow-right"></span
+                    ></a>
+                    <a class="btn-trustpilot-lg" href="#"
+                      >Trustpilot Reviews <span class="icon-arrow-right"></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="container" id="news">
-        <div class="flex justify-space-between">
+        <div class="container" id="news">
+          <div class="flex justify-space-between">
             <h2 class="heading">Latest News</h2>
-            <h3 class="section-heading appear-md"><a href="#">View All <span class="icon-arrow-right"></span></a></h3>
-        </div>
-        <div class="flex grid-news"> <!-- News Grid -->
-            <div class="card card-post"><!-- News Card-->
-                <a href="#">
-                    <div class="cover">
-                        <div class="tag tag-digital-marketing">News</div>
-                        <img src="./assets/img/news/nm-news1.png" alt="News Cover">
+            <h3 class="section-heading appear-md">
+              <a href="#">View All <span class="icon-arrow-right"></span></a>
+            </h3>
+          </div>
+          <div class="flex grid-news">
+            <!-- News Grid -->
+            <div class="card card-post">
+              <!-- News Card-->
+              <a href="#">
+                <div class="cover">
+                  <div class="tag tag-digital-marketing">News</div>
+                  <img src="./assets/img/news/nm-news1.png" alt="News Cover" />
+                </div>
+                <div class="content content-digital-marketing">
+                  <!-- Card Content -->
+                  <h3 class="headline headline-digital-marketing">
+                    The Data Dilemma: The Power BI Tool from Micr...
+                    <small class="read">- 4 Minute Read</small>
+                  </h3>
+                  <p class="snippet">
+                    The Data Dilemma: The Power BI Tool from Microsoft In
+                    today’s fast-paced business environment, effec...
+                  </p>
+                  <span class="btn btn-digital-marketing">Read more</span>
+                  <div class="post-details">
+                    <div class="avatar">
+                      <img src="./assets/img/nm-logo.png" alt="NM Logo" />
                     </div>
-                    <div class="content content-digital-marketing"> <!-- Card Content -->
-                        <h3 class="headline headline-digital-marketing">The Data Dilemma: The Power BI Tool from Micr...
-                            <small class="read">- 4 Minute Read</small></h3>
-                        <p class="snippet">The Data Dilemma: The Power BI Tool from Microsoft In today’s fast-paced business environment, effec...</p>
-                        <span class="btn btn-digital-marketing">Read more</span>
-                        <div class="post-details">
-                            <div class="avatar">
-                                <img src="./assets/img/nm-logo.png" alt="NM Logo">
-                            </div>
-                            <div class="post-text">
-                                <p class="post-author"><b>Posted by Netmatters</b></p>
-                                <p class="post-date">20th November 2023</p>
-                            </div>
-                        </div>
+                    <div class="post-text">
+                      <p class="post-author"><b>Posted by Netmatters</b></p>
+                      <p class="post-date">20th November 2023</p>
                     </div>
-                </a>
+                  </div>
+                </div>
+              </a>
             </div>
-            <div class="card card-post"><!-- News Card-->
-                <a href="#">
-                    <div class="cover">
-                        <img src="./assets/img/news/nm-news2.jpg" alt="News Cover">
-                        <div class="tag tag-bespoke-software">News</div>
+            <div class="card card-post">
+              <!-- News Card-->
+              <a href="#">
+                <div class="cover">
+                  <img src="./assets/img/news/nm-news2.jpg" alt="News Cover" />
+                  <div class="tag tag-bespoke-software">News</div>
+                </div>
+                <div class="content content-bespoke-software">
+                  <!-- Card Content -->
+                  <h3 class="headline headline-bespoke-software">
+                    5 Characteristics of a Good IT Support Partne...
+                    <small class="read">- 3 Minute Read</small>
+                  </h3>
+                  <p class="snippet">
+                    In the modern interconnected world, one of the most
+                    important decisions you’ll make is choosing the...
+                  </p>
+                  <span class="btn btn-bespoke-software">Read more</span>
+                  <div class="post-details">
+                    <div class="avatar">
+                      <img src="./assets/img/nm-logo.png" alt="NM Logo" />
                     </div>
-                    <div class="content content-bespoke-software"> <!-- Card Content -->
-                        <h3 class="headline headline-bespoke-software">5 Characteristics of a Good IT Support Partne...
-                            <small class="read">- 3 Minute Read</small></h3>
-                        <p class="snippet">In the modern interconnected world, one of the most important decisions you’ll make is choosing the...</p>
-                        <span class="btn btn-bespoke-software">Read more</span>
-                        <div class="post-details">
-                            <div class="avatar">
-                                <img src="./assets/img/nm-logo.png" alt="NM Logo">
-                            </div>
-                            <div class="post-text">
-                                <p class="post-author"><b>Posted by Netmatters</b></p>
-                                <p class="post-date">16th November 2023</p>
-                            </div>
-                        </div>
+                    <div class="post-text">
+                      <p class="post-author"><b>Posted by Netmatters</b></p>
+                      <p class="post-date">16th November 2023</p>
                     </div>
-                </a>
+                  </div>
+                </div>
+              </a>
             </div>
 
-            <div class="card card-post"><!-- News Card-->
-                <a href="#">
-                    <div class="cover">
-                        <img src="./assets/img/news/nm-news3.png" alt="News Cover">
-                        <div class="tag tag-it-support">News</div>
-                    </div>
-                    <div class="content content-it-support"> <!-- Card Content -->
-                        <h3 class="headline headline-it-support">Kayleigh Hall’s Inspiring Journey: Winner of...
-                            <small class="read">- 3 Minute Read</small></h3>
-                        <p class="snippet">Here at Netmatters, we’re thrilled to announce that our very own Kayleigh Hall has won the Unsung He...</p>
-                        <span class="btn btn-it-support">Read more</span>
-                        <div class="post-details">
-                            <div class="avatar">
-                                <img src="./assets/img/nm-logo.png" alt="NM Logo">
-                            </div>
-                            <div class="post-text">
-                                <p class="post-author"><b>Posted by Netmatters</b></p>
-                                <p class="post-date">10th November 2023</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <h3 class="section-heading view-all hidden-md"><a href="#">View all <span class="icon-arrow-right"></span></a></h3>
-    </div>
-    <div class="container">
-        <div class="section">
-            <div class="slideshow">
-                <div class="slideshow-stage">
-                    <div class="slideshow-item">
-                        <div class="slideshow-tooltip">
-                            <div class="slideshow-tooltip-box">
-                                <h3>Sweetzy</h3>
-                                <p>Sweetzy are an online sweets retailer, based in Wymondham.</p>
-                                <a class="btn-digital-marketing" href="#">View Our Case Study <span class="icon-arrow-right"></span> </a>
-                                <div class="tooltip-pointer"></div>
-                            </div>
-                        </div>
-                        <a>
-                            <img src="./assets/img/case-studies/1.webp" alt="Sweetzy">
-                        </a>
-                    </div>
-                    <div class="slideshow-item">
-                        <div class="slideshow-tooltip">
-                            <div class="slideshow-tooltip-box">
-                                <h3>Howes Percival</h3>
-                                <p>Howes Percival.</p>
-                                <div class="tooltip-pointer"></div>
-                            </div>
-                    </div>
-                        <a><img src="./assets/img/case-studies/2.webp" alt="Howes Percival"></a>
-                    </div>
-                    <div class="slideshow-item">
-                        <div class="slideshow-tooltip">
-                            <div class="slideshow-tooltip-box">
-                                <h3>GDST</h3>
-                                <p>The <a href="#">Girls' Day School Trust (GDST)</a> is the UK's leading family of 25 independent girls' schools.</p>
-                                <a class="btn-digital-marketing" href="#">View Our Case Study <span class="icon-arrow-right"></span> </a>
-                                <div class="tooltip-pointer"></div>
-                            </div>
-                        </div>
-                        <a><img src="./assets/img/case-studies/3.webp" alt="Girls Day School Trust"></a>
-                    </div>
-                    <div class="slideshow-item">
-                        <div class="slideshow-tooltip">
-                            <div class="slideshow-tooltip-box">
-                                <h3>Ashcroft Partnership LLP</h3>
-                                <p>
-                                    Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and
-                                    are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and
-                                    families.
-                                </p>
-                                <a class="btn btn-web-design" href="#">View Our Case Study <span class="icon-arrow-right"></span></a>
-                                <div class="tooltip-pointer"></div>
-                            </div>
-                        </div>
-                        <a><img src="./assets/img/case-studies/4.webp" alt="Ashcroft Partnership LLP"></a>
-                    </div>
-                    <div class="slideshow-item">
-                        <div class="slideshow-tooltip">
-                            <div class="slideshow-tooltip-box">
-                                <h3>One Traveller</h3>
-                                <p><a href="#">One Traveller</a>, founded in 2007, is a leading provider of solo holidays for over 50s.</p>
-                                <div class="tooltip-pointer"></div>
-                            </div>
-                        </div>
-                        <a><img src="./assets/img/case-studies/5.webp" alt="One Traveller"></a>
-                    </div>
-                    <div class="slideshow-item">
-                        <div class="slideshow-tooltip">
-                            <div class="slideshow-tooltip-box">
-                                <h3>Searles Leisure Resort</h3>
-                                <p>
-                                    Searles Leisure Resort, on the beautiful North Norfolk coast, is an award-winning UK holiday
-                                    resort for families.
-                                </p>
-                                <a class="btn btn-digital-marketing" href="#">View Our Case Study <span class="icon-arrow-right"></span></a>
-                                <div class="tooltip-pointer"></div>
-                            </div>
-                        </div>
-                        <a><img src="./assets/img/case-studies/12.webp" alt="Searles Leisure Resort Hunstanton"></a>
-                    </div>
-                    <div class="slideshow-item">
-                        <div class="slideshow-tooltip">
-                            <div class="slideshow-tooltip-box">
-                                <h3>Busseys</h3>
-                                <p>One of the UK's leading Ford dealerships.</p>
-                                <div class="tooltip-pointer"></div>
-                            </div>
-                        </div>
-                        <a><img src="./assets/img/case-studies/6.webp" alt="Busseys"></a>
-                    </div>
-                    <div class="slideshow-item">
-                        <div class="slideshow-tooltip">
-                            <div class="slideshow-tooltip-box">
-                                <h3>Crane Garden Buildings</h3>
-                                <p>
-                                    Leading manufacturer and supplier of high-end garden rooms, summerhouses, workshops and sheds in
-                                    the UK.
-                                </p>
-                                <div class="tooltip-pointer"></div>
-                            </div>
-                        </div>
-                        <a><img src="./assets/img/case-studies/7.webp" alt="Crane Garden Buildings"></a>
-                    </div>
-                    <div class="slideshow-item">
-                        <div class="slideshow-tooltip">
-                            <div class="slideshow-tooltip-box">
-                                <h3>Black Swan Care Group</h3>
-                                <p>
-                                    Black Swan Care Group own and manage 21 high-quality care and residential homes with a focus on
-                                    putting the needs of their residents first.
-                                </p>
-                                <div class="tooltip-pointer"></div>
-                            </div>
-                        </div>
-                        <a><img src="./assets/img/case-studies/8.webp" alt="Black Swan Care Group"></a>
-                    </div>
-                    <div class="slideshow-item">
-                        <div class="slideshow-tooltip">
-                            <div class="slideshow-tooltip-box">
-                                <h3>Xupes</h3>
-                                <div class="tooltip-pointer"></div>
-                            </div>
-                        </div>
-                        <a><img src="./assets/img/case-studies/9.webp" alt="Xupes"></a>
-                    </div>
-                    <div class="slideshow-item">
-                        <div class="slideshow-tooltip">
-                            <div class="slideshow-tooltip-box">
-                                <h3>BEAT</h3>
-                                <p>The UK's eating disorder charity founded in 1989.</p>
-                                <div class="tooltip-pointer"></div>
-                            </div>
-                        </div>
-                        <a><img src="./assets/img/case-studies/11.webp" alt="Beat Eating Disorders"></a>
-                    </div>
-                    <div class="slideshow-item">
-                        <div class="slideshow-tooltip">
-                            <div class="slideshow-tooltip-box">
-                                <h3>Survey Solutions</h3>
-                                <div class="tooltip-pointer"></div>
-                            </div>
-                        </div>
-                        <a><img src="./assets/img/case-studies/10.webp" alt="Survey Solutions"></a>
-                    </div>
-                    <div class="slideshow-item">
-                        <div class="slideshow-tooltip">
-                            <div class="slideshow-tooltip-box">
-                                <h3>Girl Guiding Anglia</h3>
-                                <p>
-                                    Girl Guiding Anglia is part of Girlguiding, the UK's leading charity for girls and young women in
-                                    the UK.
-                                </p>
-                                <a class="btn-it-support" href="#">View Our Case Study <span class="icon-arrow-right"></span> </a>
-                                <div class="tooltip-pointer"></div>
-                            </div>
-                        </div>
-                        <a><img src="./assets/img/case-studies/13.webp" alt="Girl Guiding Anglia"></a>
-                    </div>
+            <div class="card card-post">
+              <!-- News Card-->
+              <a href="#">
+                <div class="cover">
+                  <img src="./assets/img/news/nm-news3.png" alt="News Cover" />
+                  <div class="tag tag-it-support">News</div>
                 </div>
+                <div class="content content-it-support">
+                  <!-- Card Content -->
+                  <h3 class="headline headline-it-support">
+                    Kayleigh Hall’s Inspiring Journey: Winner of...
+                    <small class="read">- 3 Minute Read</small>
+                  </h3>
+                  <p class="snippet">
+                    Here at Netmatters, we’re thrilled to announce that our very
+                    own Kayleigh Hall has won the Unsung He...
+                  </p>
+                  <span class="btn btn-it-support">Read more</span>
+                  <div class="post-details">
+                    <div class="avatar">
+                      <img src="./assets/img/nm-logo.png" alt="NM Logo" />
+                    </div>
+                    <div class="post-text">
+                      <p class="post-author"><b>Posted by Netmatters</b></p>
+                      <p class="post-date">10th November 2023</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
+          </div>
+          <h3 class="section-heading view-all hidden-md">
+            <a href="#">View all <span class="icon-arrow-right"></span></a>
+          </h3>
         </div>
-    </div>
-    <div class="newsletter">
         <div class="container">
-            <div class="section">
-                <h2>Email Newsletter Sign-up</h2>
-                <form class="form form-newsletter">
-                    <div class="form-text-group">
-                        <div class="form-group">
-                            <label class="required" for="name">Your Name</label>
-                            <input type="text" name="name" id="name">
-                        </div>
-                        <div class="form-group">
-                            <label class="required" for="email">Your Email</label>
-                            <input type="email" name="email" id="email">
-                        </div>
+          <div class="section">
+            <div class="slideshow">
+              <div class="slideshow-stage">
+                <div class="slideshow-item">
+                  <div class="slideshow-tooltip">
+                    <div class="slideshow-tooltip-box">
+                      <h3>Sweetzy</h3>
+                      <p>
+                        Sweetzy are an online sweets retailer, based in
+                        Wymondham.
+                      </p>
+                      <a class="btn-digital-marketing" href="#"
+                        >View Our Case Study
+                        <span class="icon-arrow-right"></span>
+                      </a>
+                      <div class="tooltip-pointer"></div>
                     </div>
-                    <div class="form-group form-checkbox">
-                        <input class="form-checkbox-input" type="checkbox" name="marketing" id="marketing">
-                        <label class="form-checkbox-label" for="marketing">
-                            <span class="media-left">
-                                <span class="form-checkbox-button">
-                                    <span class="form-checkbox-icon"></span>
-                                </span>
-                            </span>
-                            <span class="form-checkbox-label-text">
-                                Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a>  for more information on how we keep your data safe.
-                            </span>
-                        </label>
-                    </div>
-                    <button class="btn btn-dark" type="submit">Subscribe</button>
-                </form>
-            </div>
-        </div>
-    </div>
-    <footer class="footer container-dark"> <!-- Footer -->
-        <div class="container footer-content">
-            <div class="social-media-section">
-                <div class="company-info">
-                    <img class="logo" src="./assets/img/nm-company-white.webp" alt="Netmatters">
-                    <h4>Follow us on:</h4>
-                    <div class="social-media">
-                        <a class="btn-social-media-facebook" href="#"><span class="icon-facebook"></span></a>
-                        <a class="btn-social-media-linkedin" href="#"><span class="icon-linkedin"></span></a>
-                        <a class="btn-social-media-twitter" href="#"><span class="icon-twitter"></span></a>
-                        <a class="btn-social-media-instagram" href="#"><span class="icon-instagram"></span></a>
-                    </div>
+                  </div>
+                  <a>
+                    <img src="./assets/img/case-studies/1.webp" alt="Sweetzy" />
+                  </a>
                 </div>
+                <div class="slideshow-item">
+                  <div class="slideshow-tooltip">
+                    <div class="slideshow-tooltip-box">
+                      <h3>Howes Percival</h3>
+                      <p>Howes Percival.</p>
+                      <div class="tooltip-pointer"></div>
+                    </div>
+                  </div>
+                  <a
+                    ><img
+                      src="./assets/img/case-studies/2.webp"
+                      alt="Howes Percival"
+                  /></a>
+                </div>
+                <div class="slideshow-item">
+                  <div class="slideshow-tooltip">
+                    <div class="slideshow-tooltip-box">
+                      <h3>GDST</h3>
+                      <p>
+                        The <a href="#">Girls' Day School Trust (GDST)</a> is
+                        the UK's leading family of 25 independent girls'
+                        schools.
+                      </p>
+                      <a class="btn-digital-marketing" href="#"
+                        >View Our Case Study
+                        <span class="icon-arrow-right"></span>
+                      </a>
+                      <div class="tooltip-pointer"></div>
+                    </div>
+                  </div>
+                  <a
+                    ><img
+                      src="./assets/img/case-studies/3.webp"
+                      alt="Girls Day School Trust"
+                  /></a>
+                </div>
+                <div class="slideshow-item">
+                  <div class="slideshow-tooltip">
+                    <div class="slideshow-tooltip-box">
+                      <h3>Ashcroft Partnership LLP</h3>
+                      <p>
+                        Originally founded in 2006 as Ashcroft Anthony, they
+                        became Ashcroft Partnership LLP in 2020 and are one of
+                        the top chartered accountancy firms in Cambridge,
+                        advising entrepreneurs and families.
+                      </p>
+                      <a class="btn btn-web-design" href="#"
+                        >View Our Case Study
+                        <span class="icon-arrow-right"></span
+                      ></a>
+                      <div class="tooltip-pointer"></div>
+                    </div>
+                  </div>
+                  <a
+                    ><img
+                      src="./assets/img/case-studies/4.webp"
+                      alt="Ashcroft Partnership LLP"
+                  /></a>
+                </div>
+                <div class="slideshow-item">
+                  <div class="slideshow-tooltip">
+                    <div class="slideshow-tooltip-box">
+                      <h3>One Traveller</h3>
+                      <p>
+                        <a href="#">One Traveller</a>, founded in 2007, is a
+                        leading provider of solo holidays for over 50s.
+                      </p>
+                      <div class="tooltip-pointer"></div>
+                    </div>
+                  </div>
+                  <a
+                    ><img
+                      src="./assets/img/case-studies/5.webp"
+                      alt="One Traveller"
+                  /></a>
+                </div>
+                <div class="slideshow-item">
+                  <div class="slideshow-tooltip">
+                    <div class="slideshow-tooltip-box">
+                      <h3>Searles Leisure Resort</h3>
+                      <p>
+                        Searles Leisure Resort, on the beautiful North Norfolk
+                        coast, is an award-winning UK holiday resort for
+                        families.
+                      </p>
+                      <a class="btn btn-digital-marketing" href="#"
+                        >View Our Case Study
+                        <span class="icon-arrow-right"></span
+                      ></a>
+                      <div class="tooltip-pointer"></div>
+                    </div>
+                  </div>
+                  <a
+                    ><img
+                      src="./assets/img/case-studies/12.webp"
+                      alt="Searles Leisure Resort Hunstanton"
+                  /></a>
+                </div>
+                <div class="slideshow-item">
+                  <div class="slideshow-tooltip">
+                    <div class="slideshow-tooltip-box">
+                      <h3>Busseys</h3>
+                      <p>One of the UK's leading Ford dealerships.</p>
+                      <div class="tooltip-pointer"></div>
+                    </div>
+                  </div>
+                  <a
+                    ><img src="./assets/img/case-studies/6.webp" alt="Busseys"
+                  /></a>
+                </div>
+                <div class="slideshow-item">
+                  <div class="slideshow-tooltip">
+                    <div class="slideshow-tooltip-box">
+                      <h3>Crane Garden Buildings</h3>
+                      <p>
+                        Leading manufacturer and supplier of high-end garden
+                        rooms, summerhouses, workshops and sheds in the UK.
+                      </p>
+                      <div class="tooltip-pointer"></div>
+                    </div>
+                  </div>
+                  <a
+                    ><img
+                      src="./assets/img/case-studies/7.webp"
+                      alt="Crane Garden Buildings"
+                  /></a>
+                </div>
+                <div class="slideshow-item">
+                  <div class="slideshow-tooltip">
+                    <div class="slideshow-tooltip-box">
+                      <h3>Black Swan Care Group</h3>
+                      <p>
+                        Black Swan Care Group own and manage 21 high-quality
+                        care and residential homes with a focus on putting the
+                        needs of their residents first.
+                      </p>
+                      <div class="tooltip-pointer"></div>
+                    </div>
+                  </div>
+                  <a
+                    ><img
+                      src="./assets/img/case-studies/8.webp"
+                      alt="Black Swan Care Group"
+                  /></a>
+                </div>
+                <div class="slideshow-item">
+                  <div class="slideshow-tooltip">
+                    <div class="slideshow-tooltip-box">
+                      <h3>Xupes</h3>
+                      <div class="tooltip-pointer"></div>
+                    </div>
+                  </div>
+                  <a
+                    ><img src="./assets/img/case-studies/9.webp" alt="Xupes"
+                  /></a>
+                </div>
+                <div class="slideshow-item">
+                  <div class="slideshow-tooltip">
+                    <div class="slideshow-tooltip-box">
+                      <h3>BEAT</h3>
+                      <p>The UK's eating disorder charity founded in 1989.</p>
+                      <div class="tooltip-pointer"></div>
+                    </div>
+                  </div>
+                  <a
+                    ><img
+                      src="./assets/img/case-studies/11.webp"
+                      alt="Beat Eating Disorders"
+                  /></a>
+                </div>
+                <div class="slideshow-item">
+                  <div class="slideshow-tooltip">
+                    <div class="slideshow-tooltip-box">
+                      <h3>Survey Solutions</h3>
+                      <div class="tooltip-pointer"></div>
+                    </div>
+                  </div>
+                  <a
+                    ><img
+                      src="./assets/img/case-studies/10.webp"
+                      alt="Survey Solutions"
+                  /></a>
+                </div>
+                <div class="slideshow-item">
+                  <div class="slideshow-tooltip">
+                    <div class="slideshow-tooltip-box">
+                      <h3>Girl Guiding Anglia</h3>
+                      <p>
+                        Girl Guiding Anglia is part of Girlguiding, the UK's
+                        leading charity for girls and young women in the UK.
+                      </p>
+                      <a class="btn-it-support" href="#"
+                        >View Our Case Study
+                        <span class="icon-arrow-right"></span>
+                      </a>
+                      <div class="tooltip-pointer"></div>
+                    </div>
+                  </div>
+                  <a
+                    ><img
+                      src="./assets/img/case-studies/13.webp"
+                      alt="Girl Guiding Anglia"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="newsletter">
+          <div class="container">
+            <div class="section">
+              <h2>Email Newsletter Sign-up</h2>
+              <form class="form form-newsletter">
+                <div class="form-text-group">
+                  <div class="form-group">
+                    <label class="required" for="name">Your Name</label>
+                    <input type="text" name="name" id="name" />
+                  </div>
+                  <div class="form-group">
+                    <label class="required" for="email">Your Email</label>
+                    <input type="email" name="email" id="email" />
+                  </div>
+                </div>
+                <div class="form-group form-checkbox">
+                  <input
+                    class="form-checkbox-input"
+                    type="checkbox"
+                    name="marketing"
+                    id="marketing"
+                  />
+                  <label class="form-checkbox-label" for="marketing">
+                    <span class="media-left">
+                      <span class="form-checkbox-button">
+                        <span class="form-checkbox-icon"></span>
+                      </span>
+                    </span>
+                    <span class="form-checkbox-label-text">
+                      Please tick this box if you wish to receive marketing
+                      information from us. Please see our
+                      <a href="#">Privacy Policy</a> for more information on how
+                      we keep your data safe.
+                    </span>
+                  </label>
+                </div>
+                <button class="btn btn-dark" type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <footer class="footer container-dark">
+          <!-- Footer -->
+          <div class="container footer-content">
+            <div class="social-media-section">
+              <div class="company-info">
+                <img
+                  class="logo"
+                  src="./assets/img/nm-company-white.webp"
+                  alt="Netmatters"
+                />
+                <h4>Follow us on:</h4>
+                <div class="social-media">
+                  <a class="btn-social-media-facebook" href="#"
+                    ><span class="icon-facebook"></span
+                  ></a>
+                  <a class="btn-social-media-linkedin" href="#"
+                    ><span class="icon-linkedin"></span
+                  ></a>
+                  <a class="btn-social-media-twitter" href="#"
+                    ><span class="icon-twitter"></span
+                  ></a>
+                  <a class="btn-social-media-instagram" href="#"
+                    ><span class="icon-instagram"></span
+                  ></a>
+                </div>
+              </div>
             </div>
             <div class="grid-4 site-links">
-                <div>
-                    <h4>About Netmatters</h4>
-                    <ul>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Our Careers</a></li>
-                        <li><a href="#">Our Team</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Cookie Policy</a></li>
-                        <li><a href="#">Data Retention &amp; Disposal Policy</a></li>
-                        <li><a href="#">CCTV Policy</a></li>
-                        <li><a href="#">Environmental Policy</a></li>
-                        <li><a href="#">Terms &amp; Conditions</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><a href="#">Bespoke Software</a></li>
-                        <li><a href="#">IT Support</a></li>
-                        <li><a href="#">Digital Marketing</a></li>
-                        <li><a href="#">Telecoms Services</a></li>
-                        <li><a href="#">Web Design</a></li>
-                        <li><a href="#">Cyber Security</a></li>
-                        <li><a href="#">Developer Training</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Our Industries</h4>
-                    <ul>
-                        <li><a href="#">Financial Services</a></li>
-                        <li><a href="#">Construction</a></li>
-                        <li><a href="#">Retail &amp; E-Commerce</a></li>
-                        <li><a href="#">Non-Profits</a></li>
-                        <li><a href="#">SME's</a></li>
-                        <li><a href="#">Healthcare</a></li>
-                        <li><a href="#">Education &amp; Training</a></li>
-                        <li><a href="#">Travel &amp; Leisure</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Locations</h4>
-                    <ul>
-                        <li><a href="#">London Office</a></li>
-                        <li><a href="#">Cambridge Office</a></li>
-                        <li><a href="#">Wymondham Office</a></li>
-                        <li><a href="#">Great Yarmouth Office</a></li>
-                    </ul>
-                </div>
+              <div>
+                <h4>About Netmatters</h4>
+                <ul>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Our Careers</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Cookie Policy</a></li>
+                  <li><a href="#">Data Retention &amp; Disposal Policy</a></li>
+                  <li><a href="#">CCTV Policy</a></li>
+                  <li><a href="#">Environmental Policy</a></li>
+                  <li><a href="#">Terms &amp; Conditions</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4>Our Services</h4>
+                <ul>
+                  <li><a href="#">Bespoke Software</a></li>
+                  <li><a href="#">IT Support</a></li>
+                  <li><a href="#">Digital Marketing</a></li>
+                  <li><a href="#">Telecoms Services</a></li>
+                  <li><a href="#">Web Design</a></li>
+                  <li><a href="#">Cyber Security</a></li>
+                  <li><a href="#">Developer Training</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4>Our Industries</h4>
+                <ul>
+                  <li><a href="#">Financial Services</a></li>
+                  <li><a href="#">Construction</a></li>
+                  <li><a href="#">Retail &amp; E-Commerce</a></li>
+                  <li><a href="#">Non-Profits</a></li>
+                  <li><a href="#">SME's</a></li>
+                  <li><a href="#">Healthcare</a></li>
+                  <li><a href="#">Education &amp; Training</a></li>
+                  <li><a href="#">Travel &amp; Leisure</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4>Locations</h4>
+                <ul>
+                  <li><a href="#">London Office</a></li>
+                  <li><a href="#">Cambridge Office</a></li>
+                  <li><a href="#">Wymondham Office</a></li>
+                  <li><a href="#">Great Yarmouth Office</a></li>
+                </ul>
+              </div>
             </div>
-        </div>
-        <div class="license">
+          </div>
+          <div class="license">
             <div class="container">
-                © Copyright Netmatters 2023.<br class="hidden-md"> All rights reserved. <span class="hidden-sm visible-md">&dash;</span> <br class="hidden-md"><a href="#">Sitemap</a>
+              © Copyright Netmatters 2023.<br class="hidden-md" />
+              All rights reserved.
+              <span class="hidden-sm visible-md">&dash;</span>
+              <br class="hidden-md" /><a href="#">Sitemap</a>
             </div>
-        </div>
-    </footer>
-</div>
-<script src="./js/jquery/jquery.min.js"></script>
-<script src="./js/jquery/plugins/jquery.sticky.js"></script>
-<script src="./js/app.js" type="module"></script>
-</body>
-</html>
+          </div>
+        </footer>
+      </div>
+      <div class="sidebar">
+        <div class="side-menu hidden-lg">
+          <ul class="side-menu-container">
+            <li class="visible-xs visible-sm">
+              <a class="side-menu-button"> Contact Us </a>
+            </li>
+            <li class="bespoke-software">
+              <a class="side-menu-title">
+                <span class="icon2-apps"></span>
+                <small>Bespoke</small>
+                Software
+              </a>
+              <ul class="sub-menu">
+                <li class="nav-item">
+                  <a>Bespoke CRM</a>
+                </li>
+                <li class="nav-item">
+                  <a>Business Automation</a>
+                </li>
+                <li class="nav-item">
+                  <a>Software Integrations</a>
+                </li>
+                <li class="nav-item">
+                  <a>Mobile App Development</a>
+                </li>
+                <li class="nav-item">
+                  <a>Bespoke Databases</a>
+                </li>
+                <li class="nav-item">
+                  <a>Sharepoint Development</a>
+                </li>
+                <li class="nav-item">
+                  <a>Operational Systems</a>
+                </li>
+                <li class="nav-item">
+                  <a>Business Central Implementation</a>
+                </li>
+                <li class="nav-item">
+                  <a>Internet of Things (IoT) Software</a>
+                </li>
+                <li class="nav-item">
+                  <a>Intranet Development</a>
+                </li>
+                <li class="nav-item">
+                  <a>Customer Portal Development</a>
+                </li>
+                <li class="nav-item">
+                  <a>Reporting Hub</a>
+                </li>
+              </ul>
+            </li>
 
+            <li class="it-support">
+              <a class="side-menu-title">
+                <span class="icon-display"></span>
+                <small>IT</small>
+                Support
+              </a>
+              <ul class="sub-menu">
+                <li class="nav-item">
+                  <a>Managed IT Support</a>
+                </li>
+                <li class="nav-item">
+                  <a>Business IT Support</a>
+                </li>
+                <li class="nav-item">
+                  <a>Office 365 for Business</a>
+                </li>
+                <li class="nav-item">
+                  <a>IT Consultancy</a>
+                </li>
+                <li class="nav-item">
+                  <a>Cloud Service Provider</a>
+                </li>
+                <li class="nav-item">
+                  <a>Data Backup &amp; Disaster Recovery</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="digital-marketing">
+              <a class="side-menu-title">
+                <span class="icon-bar-graph"></span>
+                <small>Digital</small>
+                Marketing
+              </a>
+              <ul class="sub-menu">
+                <li class="nav-item">
+                  <a>Search Engine Optimisation (SEO)</a>
+                </li>
+                <li class="nav-item">
+                  <a>Pay Per Click Advertising (PPC)</a>
+                </li>
+                <li class="nav-item">
+                  <a>Conversion Rate Optimisation (CRO)</a>
+                </li>
+                <li class="nav-item">
+                  <a>Email Marketing</a>
+                </li>
+                <li class="nav-item">
+                  <a>Social Media Marketing</a>
+                </li>
+                <li class="nav-item">
+                  <a>Content Marketing</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="telecoms-services">
+              <a class="side-menu-title">
+                <span class="icon-phone_in_talk"></span>
+                <small>Telecoms</small>
+                Services
+              </a>
+              <ul class="sub-menu">
+                <li class="nav-item">
+                  <a>Business Mobile</a>
+                </li>
+                <li class="nav-item">
+                  <a>Hosted VoIP Provider</a>
+                </li>
+                <li class="nav-item">
+                  <a>Business VoIP Systems</a>
+                </li>
+                <li class="nav-item">
+                  <a>Business Broadband</a>
+                </li>
+                <li class="nav-item">
+                  <a>Leased Lines Provider</a>
+                </li>
+                <li class="nav-item">
+                  <a>3CX Systems</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="web-design">
+              <a class="side-menu-title">
+                <span class="icon-embed"></span>
+                <small>Web</small>
+                Design
+              </a>
+              <ul class="sub-menu">
+                <li class="nav-item">
+                  <a>Bespoke Website Design</a>
+                </li>
+                <li class="nav-item">
+                  <a>eCommerce Website Design</a>
+                </li>
+                <li class="nav-item">
+                  <a>Pay Monthly Websites</a>
+                </li>
+                <li class="nav-item">
+                  <a>Branding &amp; Design</a>
+                </li>
+                <li class="nav-item">
+                  <a>Mobile App Development</a>
+                </li>
+                <li class="nav-item">
+                  <a>Web Hosting</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="cyber-security">
+              <a class="side-menu-title">
+                <span class="icon-security"></span>
+                <small>Cyber</small>
+                Security
+              </a>
+              <ul class="sub-menu">
+                <li class="nav-item">
+                  <a>Cyber Security Assessment</a>
+                </li>
+                <li class="nav-item">
+                  <a>Cyber Security Management</a>
+                </li>
+                <li class="nav-item">
+                  <a>Cyber Penetration Testing</a>
+                </li>
+                <li class="nav-item">
+                  <a>Cyber Essentials Certification</a>
+                </li>
+                <li class="nav-item">
+                  <a>PCI Compliance</a>
+                </li>
+                <li class="nav-item">
+                  <a>Hacking Prevention</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="developer-training">
+              <a class="side-menu-title">
+                <span class="icon-school"></span>
+                <small>Developer</small>
+                Course
+              </a>
+              <ul class="sub-menu">
+                <li class="nav-item">
+                  <a>Train For A Career In Tech</a>
+                </li>
+                <li class="nav-item">
+                  <a>Skills Bootcamp</a>
+                </li>
+                <li class="nav-item">
+                  <a>Scion Scheme Frequently Asked Questions</a>
+                </li>
+                <li class="nav-item">
+                  <a>Scion Collaborators</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="side-menu-secondary">
+          <ul class="side-menu-container">
+            <li class="active menu-item">
+              <a> Services </a>
+
+              <div class="sub-menu-banner">
+                <ul class="sub-menu">
+                  <li class="nav-item">
+                    <a>Bespoke Software</a>
+                  </li>
+                  <li class="nav-item">
+                    <a>IT Support</a>
+                  </li>
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>Digital Marketing</a>
+                  </li>
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>Telecoms Services</a>
+                  </li>
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>Web Design</a>
+                  </li>
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>Cyber Security</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-item">
+              <a> Our Work </a>
+              <div class="sub-menu-banner">
+                <ul class="sub-menu">
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>Case Studies</a>
+                  </li>
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>Our Digital Marketing Clients</a>
+                  </li>
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>Our Website Clients</a>
+                  </li>
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>Our IT Clients</a>
+                  </li>
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>Our Bespoke Software Clients</a>
+                  </li>
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>Our Telecoms Clients</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-item">
+              <a> Our Knowledge </a>
+
+              <div class="sub-menu-banner">
+                <ul class="sub-menu">
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>Technologies</a>
+                  </li>
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>Industries</a>
+                  </li>
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>News</a>
+                  </li>
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>Insights</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-item">
+              <a> Training </a>
+
+              <div class="sub-menu-banner">
+                <ul class="sub-menu">
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>Train For A Career In Tech</a>
+                  </li>
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>Skills Bootcamp</a>
+                  </li>
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>SCS Frequently Asked Questions</a>
+                  </li>
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>Scion Collaborators</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-item">
+              <a> Our Company </a>
+
+              <div class="sub-menu-banner">
+                <ul class="sub-menu">
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>Why Choose Us?</a>
+                  </li>
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>Our Culture</a>
+                  </li>
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>Our Team</a>
+                  </li>
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>Our Careers</a>
+                  </li>
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>Our Benefits</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-item">
+              <a> Contact Us </a>
+
+              <div class="sub-menu-banner">
+                <ul class="sub-menu">
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>London Office</a>
+                  </li>
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>Cambridge Office</a>
+                  </li>
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>Wymondham Office</a>
+                  </li>
+                  <li class="nav-item nav-item--sub-menu">
+                    <a>Great Yarmouth Office</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-item">
+              <a> COVID Risk Assessments </a>
+            </li>
+            <li class="menu-item hidden-lg">
+              <a> Support </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./js/jquery/jquery.min.js"></script>
+    <script src="./js/jquery/plugins/jquery.sticky.js"></script>
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>
