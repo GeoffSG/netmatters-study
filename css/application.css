@@ -3089,6 +3089,9 @@ footer {
   min-height: 550px;
   margin-bottom: 30px;
 }
+.banner .banner-box {
+  position: relative;
+}
 .banner-image img {
   position: absolute;
   margin: 0 auto;
@@ -3120,7 +3123,7 @@ footer {
   margin: auto auto;
   text-align: center;
   color: #ffffff;
-  padding: 60px 15px;
+  padding: 60px 30px;
 }
 .banner-content h1 {
   color: #ffffff;
@@ -3154,6 +3157,43 @@ footer {
     font-size: 1.625rem;
     line-height: 2.5rem;
   }
+}
+.banner .slick-dots {
+  bottom: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .slick-dots li {
+  width: 22px;
+  height: 22px;
+  margin: 0 8px;
+}
+.banner .slick-dots li button {
+  border-radius: 50%;
+  padding: 0px;
+  margin: 0;
+}
+.banner .slick-dots li button:before {
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.5;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+.banner .slick-dots li.slick-active {
+  color: #ffffff;
+}
+.banner .slick-dots li.slick-active button:before {
+  opacity: 1;
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  border: 2px solid #fff;
 }
 
 .btn, .btn-social-media-instagram, .btn-social-media-twitter, .btn-social-media-linkedin, .btn-social-media-facebook, .btn-trustpilot-lg, .btn-trustpilot, .btn-google-lg, .btn-google, .btn-developer-training-lg, .btn-developer-training, .btn-cyber-security-lg, .btn-cyber-security, .btn-web-design-lg, .btn-web-design, .btn-telecoms-services-lg, .btn-telecoms-services, .btn-digital-marketing-lg, .btn-digital-marketing, .btn-it-support-lg, .btn-it-support, .btn-bespoke-software-lg, .btn-bespoke-software, .btn-light-lg, .btn-light, .btn-dark-lg, .btn-dark, .btn-lg {
