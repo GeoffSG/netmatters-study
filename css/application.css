@@ -2635,6 +2635,7 @@ footer {
   height: 100%;
   z-index: 9999;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 .main.opened {
   left: -275px;
@@ -4007,34 +4008,38 @@ footer {
 
 .slideshow {
   position: relative;
+  width: 100%;
+  height: 70px;
+  max-height: 70px;
 }
-.slideshow-stage {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: end;
-  gap: 70px;
+.slideshow.clients .owl-stage-outer {
+  overflow: inherit;
 }
-.slideshow-stage .slideshow-item {
+.slideshow .slideshow-item {
   display: flex;
-  flex-direction: column;
   align-items: center;
   position: relative;
+  padding: 0px 20px;
+  height: 70px;
+  max-height: 70px;
+  width: auto;
 }
-.slideshow-stage .slideshow-item a {
+.slideshow .slideshow-item a {
   display: block;
 }
-.slideshow-stage .slideshow-item:hover .slideshow-tooltip, .slideshow-stage .slideshow-item:focus .slideshow-tooltip, .slideshow-stage .slideshow-item:active .slideshow-tooltip {
+.slideshow .slideshow-item:hover .slideshow-tooltip, .slideshow .slideshow-item:focus .slideshow-tooltip, .slideshow .slideshow-item:active .slideshow-tooltip {
   display: block;
 }
-.slideshow-stage .slideshow-item .slideshow-tooltip {
+.slideshow .slideshow-item .slideshow-tooltip {
   display: none;
   position: absolute;
   bottom: 100%;
-  margin: 0 auto 2.25rem;
+  margin: 0 auto 50px;
   max-width: 280px;
+  left: -200px;
+  right: -200px;
 }
-.slideshow-stage .slideshow-item .slideshow-tooltip-box {
+.slideshow .slideshow-item .slideshow-tooltip-box {
   width: 17.5rem;
   padding: 20px;
   background-color: #333645;
@@ -4042,24 +4047,24 @@ footer {
   font-size: 0.875rem;
   text-align: center;
 }
-.slideshow-stage .slideshow-item .slideshow-tooltip-box p {
+.slideshow .slideshow-item .slideshow-tooltip-box p {
   color: #ffffff;
   font-size: 0.8125rem;
   line-height: 1.375;
   margin-top: 0;
   margin-bottom: 0;
 }
-.slideshow-stage .slideshow-item .slideshow-tooltip-box p a {
+.slideshow .slideshow-item .slideshow-tooltip-box p a {
   display: inline;
 }
-.slideshow-stage .slideshow-item .slideshow-tooltip-box h3 {
+.slideshow .slideshow-item .slideshow-tooltip-box h3 {
   position: relative;
   color: #ffffff;
   font-size: 1.125rem;
   padding-bottom: 17px;
   margin: 0;
 }
-.slideshow-stage .slideshow-item .slideshow-tooltip-box a {
+.slideshow .slideshow-item .slideshow-tooltip-box a {
   margin-top: 11px;
   display: flex;
   justify-content: space-between;
@@ -4067,20 +4072,20 @@ footer {
   font-weight: 600;
   color: #ffffff;
 }
-.slideshow-stage .slideshow-item .slideshow-tooltip-box .btn, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-lg, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-dark, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-dark-lg, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-light, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-light-lg, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-bespoke-software, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-bespoke-software-lg, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-it-support, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-it-support-lg, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-digital-marketing, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-digital-marketing-lg, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-telecoms-services, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-telecoms-services-lg, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-web-design, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-web-design-lg, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-cyber-security, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-cyber-security-lg, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-developer-training, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-developer-training-lg, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-google, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-google-lg, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-trustpilot, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-trustpilot-lg, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-social-media-facebook, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-social-media-linkedin, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-social-media-twitter, .slideshow-stage .slideshow-item .slideshow-tooltip-box .btn-social-media-instagram {
+.slideshow .slideshow-item .slideshow-tooltip-box .btn, .slideshow .slideshow-item .slideshow-tooltip-box .btn-lg, .slideshow .slideshow-item .slideshow-tooltip-box .btn-dark, .slideshow .slideshow-item .slideshow-tooltip-box .btn-dark-lg, .slideshow .slideshow-item .slideshow-tooltip-box .btn-light, .slideshow .slideshow-item .slideshow-tooltip-box .btn-light-lg, .slideshow .slideshow-item .slideshow-tooltip-box .btn-bespoke-software, .slideshow .slideshow-item .slideshow-tooltip-box .btn-bespoke-software-lg, .slideshow .slideshow-item .slideshow-tooltip-box .btn-it-support, .slideshow .slideshow-item .slideshow-tooltip-box .btn-it-support-lg, .slideshow .slideshow-item .slideshow-tooltip-box .btn-digital-marketing, .slideshow .slideshow-item .slideshow-tooltip-box .btn-digital-marketing-lg, .slideshow .slideshow-item .slideshow-tooltip-box .btn-telecoms-services, .slideshow .slideshow-item .slideshow-tooltip-box .btn-telecoms-services-lg, .slideshow .slideshow-item .slideshow-tooltip-box .btn-web-design, .slideshow .slideshow-item .slideshow-tooltip-box .btn-web-design-lg, .slideshow .slideshow-item .slideshow-tooltip-box .btn-cyber-security, .slideshow .slideshow-item .slideshow-tooltip-box .btn-cyber-security-lg, .slideshow .slideshow-item .slideshow-tooltip-box .btn-developer-training, .slideshow .slideshow-item .slideshow-tooltip-box .btn-developer-training-lg, .slideshow .slideshow-item .slideshow-tooltip-box .btn-google, .slideshow .slideshow-item .slideshow-tooltip-box .btn-google-lg, .slideshow .slideshow-item .slideshow-tooltip-box .btn-trustpilot, .slideshow .slideshow-item .slideshow-tooltip-box .btn-trustpilot-lg, .slideshow .slideshow-item .slideshow-tooltip-box .btn-social-media-facebook, .slideshow .slideshow-item .slideshow-tooltip-box .btn-social-media-linkedin, .slideshow .slideshow-item .slideshow-tooltip-box .btn-social-media-twitter, .slideshow .slideshow-item .slideshow-tooltip-box .btn-social-media-instagram {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
   line-height: 1.375;
   margin-bottom: 0;
 }
-.slideshow-stage .slideshow-item .slideshow-tooltip-box .tooltip-pointer {
+.slideshow .slideshow-item .slideshow-tooltip-box .tooltip-pointer {
   position: absolute;
   bottom: -38px;
   left: 50%;
   margin-left: -36px;
 }
-.slideshow-stage .slideshow-item .slideshow-tooltip-box .tooltip-pointer::after {
+.slideshow .slideshow-item .slideshow-tooltip-box .tooltip-pointer::after {
   content: "";
   margin: auto;
   display: inline-block;
@@ -4088,13 +4093,13 @@ footer {
   border-style: solid;
   border-width: 35px 36px 0;
 }
-.slideshow-stage .slideshow-item img {
+.slideshow .slideshow-item img {
   position: relative;
   width: auto;
-  height: 58px;
+  height: auto;
   filter: grayscale(1);
 }
-.slideshow-stage .slideshow-item img:hover {
+.slideshow .slideshow-item img:hover {
   filter: grayscale(0);
 }
 

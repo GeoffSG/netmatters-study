@@ -1,13 +1,19 @@
 .slideshow {
-    
+    &.clients .owl-stage-outer {
+        overflow: inherit;
+    }
     position: relative;
+    width: 100%;
     
-    &-stage {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: end;
-        gap: 70px;
+    height: 70px;
+    max-height: 70px;
+
+    // &-stage {
+        // display: flex;
+        // flex-direction: row;
+        // flex-wrap: nowrap;
+        // align-items: end;
+        // gap: 70px;
         
         // overflow-x: hidden;
 
@@ -15,9 +21,13 @@
             // padding: 0 20px;
             
             display: flex;
-            flex-direction: column;
             align-items: center;
             position: relative;
+
+            padding: 0px 20px;
+            height: 70px;
+            max-height: 70px;
+            width: auto;
 
             a {
                 display: block;
@@ -34,8 +44,11 @@
 
                 position: absolute;
                 bottom: 100%;
-                margin: 0 auto 2.25rem;
-                max-width: 280px;
+                margin: 0 auto 50px;
+                max-width: 280px;  
+                
+                left: -200px;
+                right: -200px;
                 
                 &-box{
                     width: 17.5rem;
@@ -97,11 +110,10 @@
                 }
             }
     
-                
             img {
                 position: relative;
                 width: auto;
-                height: 58px;
+                height: auto;
                 // max-height: 70px;
                 filter: grayscale(1);
                 &:hover{
@@ -109,5 +121,5 @@
                 }
             }
         }    
-    }
+    //}
 }
