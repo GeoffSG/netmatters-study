@@ -2630,7 +2630,29 @@ footer {
 }
 
 .main {
-  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #ffffff;
+}
+.main.opened {
+  left: -275px;
+  overflow-y: hidden;
+}
+.main.opened::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+@media (min-width: 990px) {
+  .main.opened {
+    left: -350px;
+  }
 }
 
 .card {
@@ -4167,12 +4189,4 @@ footer {
 }
 .sidebar .developer-training span {
   color: #ce4125;
-}
-
-/* Main when it's moved to the side - to be done with JS */
-.main {
-  position: relative;
-  left: -275px;
-  width: 100vw;
-  overflow-y: scroll;
 }/*# sourceMappingURL=application.css.map */

@@ -1,3 +1,24 @@
 .main {
-    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: $white;
+    &.opened {
+        left: -275px;
+        overflow-y: hidden;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,.4);
+            z-index: 10;
+        }
+
+        @include mq('lg') {
+            left: -350px;
+        }
+    }
 }
