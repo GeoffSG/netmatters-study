@@ -9,15 +9,14 @@ function stickyHeader(header) {
       //  Scrolled down
       if (header.parent().hasClass("sticky-wrapper")) {
         //  Deactivate/hide header
-        if(window.scrollY > header.height())
-            header.css("top", -header.height());
-        else
-            header.unstick();
+        if (window.scrollY > header.height())
+          header.css("top", -header.height());
+        else header.unstick();
       }
     } else {
       //  Scrolled up
       if (!header.parent().hasClass("sticky-wrapper")) {
-        header.sticky();
+        header.sticky({ responsiveWidth: true });
         header.css("top", -header.height());
       } else {
         header.css("top", 0);

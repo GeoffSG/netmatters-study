@@ -1,6 +1,6 @@
 .section {
     padding-top: 50px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     position: relative;
     & .section-heading {
         text-align: center;
@@ -26,6 +26,10 @@
     }
 }
 
+.bar {
+    padding-top: 50px;
+}
+
 .container {
 
     &::after{
@@ -34,7 +38,8 @@
 
     margin-left: auto;
     margin-right: auto;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     @include mq('md') {
         width: 750px;

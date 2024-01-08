@@ -2285,6 +2285,10 @@ footer {
   padding: 47px 0 0;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .flex {
   display: flex;
   flex-direction: column;
@@ -3011,7 +3015,7 @@ footer {
 
 .section {
   padding-top: 50px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   position: relative;
 }
 .section .section-heading {
@@ -3036,10 +3040,15 @@ footer {
   text-decoration: underline;
 }
 
+.bar {
+  padding-top: 50px;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .container::after {
   clear: both;
@@ -3088,7 +3097,6 @@ footer {
 .banner {
   position: relative;
   min-height: 550px;
-  margin-bottom: 30px;
 }
 .banner .banner-box {
   position: relative;
@@ -3624,15 +3632,18 @@ footer {
 }
 
 .modal {
-  position: fixed;
-  display: flex;
   display: none;
-  justify-content: center;
-  align-items: center;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   z-index: 90;
+  padding: 30px;
   background-color: rgba(0, 0, 0, 0.7);
+}
+.modal.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .modal .modal-box {
   width: 600px;
@@ -3660,11 +3671,17 @@ footer {
 }
 .modal .modal-box .modal-footer .modal-button-group {
   display: flex;
+  flex-direction: column;
   gap: 30px;
 }
 .modal .modal-box .modal-footer .modal-button-group > * {
   flex: 1;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .modal .modal-box .modal-footer .modal-button-group {
+    flex-direction: row;
+  }
 }
 
 .nav-bar {

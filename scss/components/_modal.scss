@@ -1,12 +1,15 @@
 .modal {
-    position: fixed;
-    display: flex;
+    &.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     display: none;
-    justify-content: center;
-    align-items: center;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     z-index: 90;
+    padding: 30px;
 
     background-color: rgba(0,0,0,.7);
 
@@ -40,10 +43,15 @@
 
             & .modal-button-group {
                 display: flex;
+                flex-direction: column;
                 gap: 30px;
                 & > * {
                     flex: 1;
                     text-align: center;
+                }
+
+                @include mq('md') {
+                    flex-direction: row;
                 }
             }
         }
