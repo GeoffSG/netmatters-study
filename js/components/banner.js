@@ -6,6 +6,7 @@ function banner() {
         dotsEach: true,
         // autoWidth: true,
         autoplay: true,
+        autoplayHoverPause: true,
         center: true,
     });
 }

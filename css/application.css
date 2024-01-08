@@ -4028,8 +4028,6 @@ footer {
 .slideshow {
   position: relative;
   width: 100%;
-  height: 70px;
-  max-height: 70px;
 }
 .slideshow.clients .owl-stage-outer {
   overflow: inherit;
@@ -4053,15 +4051,15 @@ footer {
   display: none;
   position: absolute;
   bottom: 100%;
-  margin: 0 auto 50px;
-  max-width: 280px;
   left: -200px;
   right: -200px;
 }
 .slideshow .slideshow-item .slideshow-tooltip-box {
   width: 17.5rem;
+  max-width: 280px;
   padding: 20px;
   background-color: #333645;
+  margin: 0 auto 50px;
   color: #ffffff;
   font-size: 0.875rem;
   text-align: center;
@@ -4095,12 +4093,13 @@ footer {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  line-height: 1.375;
+  height: 47px;
+  line-height: 35px;
   margin-bottom: 0;
 }
 .slideshow .slideshow-item .slideshow-tooltip-box .tooltip-pointer {
   position: absolute;
-  bottom: -38px;
+  bottom: 12px;
   left: 50%;
   margin-left: -36px;
 }
@@ -4116,10 +4115,13 @@ footer {
   position: relative;
   width: auto;
   height: auto;
+  max-height: 70px;
+  max-width: 200px;
   filter: grayscale(1);
 }
 .slideshow .slideshow-item img:hover {
   filter: grayscale(0);
+  cursor: default;
 }
 
 .sidebar {

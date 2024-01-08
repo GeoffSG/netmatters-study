@@ -7,6 +7,7 @@ function scrollers() {
             touchDrag: false,
             dots: false,
             autoplay: true,
+            autoplayHoverPause: true,
             nav: false,
             autoWidth: true,
             margin: 50,
