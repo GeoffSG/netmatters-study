@@ -2636,14 +2636,13 @@ footer {
 .main {
   position: relative;
   width: 100%;
-  height: 100%;
   z-index: 9999;
   background-color: #ffffff;
   overflow-x: hidden;
 }
 .main.opened {
   left: -275px;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 .main.opened::after {
   content: "";
@@ -3141,7 +3140,7 @@ footer {
   margin: auto auto;
   text-align: center;
   color: #ffffff;
-  padding: 60px 30px;
+  padding: 60px 15px;
 }
 .banner-content h1 {
   color: #ffffff;
@@ -3166,6 +3165,7 @@ footer {
     text-align: left;
     align-content: start;
     align-items: start;
+    width: 970px;
   }
   .banner-content h1 {
     font-size: 4rem;
@@ -3984,7 +3984,6 @@ footer {
     background-color: #ffffff;
     border: 1px solid #e5e5e5;
     border-color: #ccc;
-    border-radius: 2px;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     padding: 5px 15px;
     line-height: 22.85px;
@@ -3995,6 +3994,17 @@ footer {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
   }
 }
+@media (min-width: 1024px) {
+  .form-search-input {
+    display: none;
+  }
+}
+@media (min-width: 1260px) {
+  .form-search-input {
+    display: block;
+    width: 240px;
+  }
+}
 .form-search-button {
   position: relative;
   right: 0;
@@ -4002,8 +4012,8 @@ footer {
   padding: 5px 20px;
   height: 56px;
   font-size: 1.063rem;
-  border-radius: 3px;
   border: none;
+  border-radius: 0 3px 3px 0;
   vertical-align: bottom;
   background-color: #999aa2;
   color: #ffffff;
@@ -4011,6 +4021,11 @@ footer {
 }
 .form-search-button:hover {
   background-color: #7e808a;
+}
+@media (min-width: 1024px) {
+  .form-search-button {
+    border-radius: 3px;
+  }
 }
 .form-search-button-mob {
   position: absolute;

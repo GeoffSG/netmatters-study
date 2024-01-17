@@ -52,7 +52,7 @@
         margin: auto auto;
         text-align: center;
         color: $text-dark;
-        padding: 60px 30px;
+        padding: 60px 15px;
 
         // background-color: rgba(1,1,1,.5);
 
@@ -80,6 +80,8 @@
             text-align: left;
             align-content: start;
             align-items: start;
+            width: 970px;
+
             h1 {
                 font-size: 4rem;
                 line-height: 5rem;
