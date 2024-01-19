@@ -2386,7 +2386,7 @@ footer {
 
 .header {
   background: #ffffff;
-  z-index: 10;
+  z-index: 11;
   transition: 0.25s;
 }
 .header .header-menu {
@@ -2639,6 +2639,19 @@ footer {
   z-index: 9999;
   background-color: #ffffff;
   overflow-x: hidden;
+  transition: all 0.5s;
+  left: 0;
+}
+.main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
 }
 .main.opened {
   left: -275px;
@@ -2652,6 +2665,8 @@ footer {
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
   z-index: 10;
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 @media (min-width: 990px) {
   .main.opened {
@@ -2659,6 +2674,12 @@ footer {
   }
 }
 
+@-moz-document url-prefix() {
+  #container > .main,
+  .sticky {
+    transition: none;
+  }
+}
 .card {
   border: solid 1px #dddddd;
   border-bottom-left-radius: 3px;
