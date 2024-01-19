@@ -2393,6 +2393,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 70px;
 }
 .header .header-menu .company-logo {
   vertical-align: middle;
@@ -2550,7 +2551,7 @@ footer {
   color: #fff;
   display: block;
 }
-.newsletter .form-newsletter .form-checkbox .form-checkbox-label .form-checkbox-button a {
+.newsletter .form-newsletter .form-checkbox .form-checkbox-label-text a {
   color: #121318;
   text-decoration: underline;
 }
@@ -3048,6 +3049,9 @@ footer {
 .section .section-heading a:hover {
   text-decoration: underline;
 }
+.section h2 {
+  font-size: 2.25rem;
+}
 
 .section-heading {
   text-align: center;
@@ -3090,7 +3094,7 @@ footer {
 }
 .container .heading {
   font-weight: 600;
-  font-size: 2.25rem;
+  font-size: 43.2px;
   align-self: flex-start;
   text-align: left;
   margin: 0 0 28px;
@@ -3568,6 +3572,7 @@ footer {
 .hamburger {
   padding: 15px 15px;
   display: inline-block;
+  height: 56px;
   cursor: pointer;
   transition-property: opacity, filter;
   transition-duration: 0.15s;
@@ -3575,16 +3580,19 @@ footer {
   font: inherit;
   color: inherit;
   text-transform: none;
-  background-color: #22242e;
+  background-color: #333645;
   border: 0;
   border-radius: 3px;
   margin: 0;
   overflow: visible;
 }
+.hamburger:hover {
+  background-color: #22242e;
+}
 
 .hamburger-box {
   width: 33px;
-  height: 24px;
+  height: 19px;
   display: inline-block;
   position: relative;
 }

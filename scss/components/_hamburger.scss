@@ -1,6 +1,7 @@
 .hamburger {
     padding: 15px 15px;
     display: inline-block;
+    height: 56px;
     cursor: pointer;
     transition-property: opacity, filter;
     transition-duration: 0.15s;
@@ -8,16 +9,19 @@
     font: inherit;
     color: inherit;
     text-transform: none;
-    background-color: #22242e;
+    background-color: #333645;
     border: 0;
     border-radius: 3px;
     margin: 0;
     overflow: visible;
+    &:hover {
+        background-color: #22242e;
+    }
 }
-
+//#999aa2
 .hamburger-box {
     width: 33px;
-    height: 24px;
+    height: 19px;
     display: inline-block;
     position: relative;
 }
