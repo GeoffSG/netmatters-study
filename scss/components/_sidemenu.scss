@@ -116,6 +116,11 @@
                 padding-left: $sidebar-padding;
                 padding-right: $sidebar-padding;
             }
+            &:hover {
+                &>a{
+                    background-color: hsla(0,0%,100%,.05);
+                }
+            }
         }
         .nav-item {
             background-color: #262934;

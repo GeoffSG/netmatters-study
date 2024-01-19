@@ -4268,6 +4268,9 @@ footer {
   padding-left: 21px;
   padding-right: 21px;
 }
+.sidebar .side-menu-secondary .menu-item:hover > a {
+  background-color: hsla(0, 0%, 100%, 0.05);
+}
 .sidebar .side-menu-secondary .nav-item {
   background-color: #262934;
 }
