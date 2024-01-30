@@ -16,9 +16,4 @@
     <link rel="stylesheet" href="/css/application.css" />
 </head>
 <?php include 'body.php'; ?>
-<script src="/js/jquery/jquery.min.js"></script>
-    <script src="/js/jquery/plugins/jquery.sticky.js"></script>
-    <script src="/js/jquery/plugins/owl/owl.carousel.min.js"></script>
-    <script src="/js/app.js" type="module"></script>
-  </body>
 </html>
