@@ -1,0 +1,32 @@
+.contact-us{
+    
+    @include mq('xl') {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-info {
+        padding-left: 15px;
+        padding-right: 15px;
+        
+        @include mq('xl') {
+            order: 1;
+            width: 33.33333333%;
+        }
+        strong {
+            color: #333645;
+        }
+    }
+
+    .contact-form {
+        padding-left: 15px;
+        padding-right: 15px;
+        @include mq('xl') {
+            width: 66.66666667%;
+        }
+    }
+}
+
+.tel {
+    margin-bottom: 15px;
+}

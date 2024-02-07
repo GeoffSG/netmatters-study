@@ -1,0 +1,25 @@
+.breadcrumb {
+    color: #333645;
+    font-size: 0.8125rem;
+
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+    padding: 14px 15px 13px;
+
+    a {
+        color: #333645;
+    }
+
+    ul {
+        margin: 0;
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+        &:last-child::before {
+            content: "/\A0";
+            padding: 0 5px;
+            color: #333645;
+        }
+    }
+}

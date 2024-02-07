@@ -1,0 +1,13 @@
+.drop-down {
+    &-button {
+        font-weight: 600;
+        color: #333645;
+        line-height: 1.875rem;
+        margin-bottom: 25px;
+        em {
+            display: inline-block;
+            line-height: 1;
+            font-weight: 400;
+        }
+    }
+}

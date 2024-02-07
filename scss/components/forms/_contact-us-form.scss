@@ -1,0 +1,46 @@
+.contact-form {
+    background-color: $grey-xl;
+    padding: 30px;
+    border-radius: 10px;
+
+    textarea {
+        width: 100%;
+        height: 100px;
+        padding: 5px 15px;
+        color: #888;
+        font-size: 14px;
+        border: solid 1px #ccc;
+    }
+
+    input {
+        color: #888;
+        font-size: 14px;
+    }
+
+    .group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .required-notice {
+            color: #333645;
+            font-size: 14px;
+            span {
+                color: $red;
+            }
+        }
+    }
+
+    .recaptcha {
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 1.42857143;
+        color: #333645;
+        a {
+            color: #333645;
+            text-decoration: underline;
+            &:hover {
+                color: #121419;
+            }
+        }
+    }
+}

@@ -114,3 +114,12 @@ $themes : (
         }
     }
 }
+
+@mixin service-themes-style($base) {
+    @each $service, $color in $service-colors {
+        .#{$base}-#{$service} {
+            @content;
+        }
+    }
+}
+

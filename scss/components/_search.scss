@@ -56,9 +56,6 @@
         &:hover {
             background-color: darken($grey-l, 10%);
         }
-        @include mq('1024') {
-            border-radius: 3px;
-        }
     }
 
     &-button-mob {

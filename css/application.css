@@ -2489,72 +2489,6 @@ footer {
   margin: 0 0 15px;
   color: #333645;
 }
-.newsletter .form-newsletter .form-text-group {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-left: -15px;
-  margin-right: -15px;
-}
-.newsletter .form-newsletter .form-text-group .form-group {
-  flex: 1 1 450px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.newsletter .form-newsletter .form-text-group input {
-  width: 100%;
-  height: 47px;
-  padding: 5px 15px;
-  background-color: #fff;
-  border: 1px solid #e5e5e5;
-  border-radius: 2px;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  border-color: #ccc;
-}
-.newsletter .form-newsletter .form-text-group input:focus {
-  border-color: #5bc0de;
-  outline: 0;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
-}
-.newsletter .form-newsletter .form-checkbox .form-checkbox-input {
-  display: none;
-}
-.newsletter .form-newsletter .form-checkbox .form-checkbox-input:checked + .form-checkbox-label .form-checkbox-icon::before {
-  font-family: "icomoon";
-  content: "\e918";
-}
-.newsletter .form-newsletter .form-checkbox .form-checkbox-input:checked + .form-checkbox-label .form-checkbox-button {
-  background-color: #333645;
-}
-.newsletter .form-newsletter .form-checkbox .form-checkbox-label {
-  cursor: pointer;
-}
-.newsletter .form-newsletter .form-checkbox .form-checkbox-label .media-left {
-  display: table-cell;
-  vertical-align: top;
-}
-.newsletter .form-newsletter .form-checkbox .form-checkbox-label .form-checkbox-button {
-  border-radius: 3px;
-  border: 3px solid #333645;
-  height: 32px;
-  width: 32px;
-  position: relative;
-  float: left;
-  margin-right: 20px;
-}
-.newsletter .form-newsletter .form-checkbox .form-checkbox-label .form-checkbox-button .form-checkbox-icon {
-  font-weight: 400;
-  line-height: 26px;
-  text-align: center;
-  font-size: 22px;
-  color: #fff;
-  display: block;
-}
-.newsletter .form-newsletter .form-checkbox .form-checkbox-label-text a {
-  color: #121318;
-  text-decoration: underline;
-}
 
 @media (min-width: 1260px) {
   .footer .footer-content {
@@ -2681,443 +2615,6 @@ footer {
     transition: none;
   }
 }
-.card {
-  border: solid 1px #dddddd;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
-  position: relative;
-  top: 0;
-  transition: 0.5s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-}
-.card p {
-  color: #121318;
-  line-height: 1.375rem;
-  font-size: 0.8125rem;
-}
-.card:hover {
-  top: -10px;
-  transition: 0.5s ease;
-}
-.card .card-button {
-  margin: auto auto 0;
-}
-.card-icon {
-  display: block;
-  height: 65px;
-  width: 65px;
-  margin: 0 auto 17px;
-  background-color: #333645;
-  color: #fff;
-  border-radius: 50%;
-  line-height: 62px;
-}
-.card-icon span {
-  font-size: 2rem;
-  line-height: 62px;
-}
-.card-icon.bespoke-software {
-  color: #ffffff;
-  background-color: #67809f;
-}
-.card-icon.it-support {
-  color: #ffffff;
-  background-color: #4183d7;
-}
-.card-icon.digital-marketing {
-  color: #ffffff;
-  background-color: #2ecc71;
-}
-.card-icon.telecoms-services {
-  color: #ffffff;
-  background-color: #d64541;
-}
-.card-icon.web-design {
-  color: #ffffff;
-  background-color: #926fb1;
-}
-.card-icon.cyber-security {
-  color: #ffffff;
-  background-color: #f62459;
-}
-.card-icon.developer-training {
-  color: #ffffff;
-  background-color: #ce4125;
-}
-.card.bespoke-software p, .card.bespoke-software h2 {
-  font-size: 0.8125rem;
-  line-height: 1.375rem;
-  margin-bottom: 13px;
-  font-weight: 400;
-}
-.card.bespoke-software h2 {
-  font-size: 1.3rem;
-  padding-bottom: 10px;
-  margin: 0 0 11px;
-}
-.card.bespoke-software:hover {
-  background-color: #67809f;
-}
-.card.bespoke-software:hover p, .card.bespoke-software:hover h2 {
-  color: #ffffff;
-}
-.card.bespoke-software:hover > .btn, .card.bespoke-software:hover > .btn-social-media-instagram, .card.bespoke-software:hover > .btn-social-media-twitter, .card.bespoke-software:hover > .btn-social-media-linkedin, .card.bespoke-software:hover > .btn-social-media-facebook, .card.bespoke-software:hover > .btn-trustpilot-lg, .card.bespoke-software:hover > .btn-trustpilot, .card.bespoke-software:hover > .btn-google-lg, .card.bespoke-software:hover > .btn-google, .card.bespoke-software:hover > .btn-developer-training-lg, .card.bespoke-software:hover > .btn-developer-training, .card.bespoke-software:hover > .btn-cyber-security-lg, .card.bespoke-software:hover > .btn-cyber-security, .card.bespoke-software:hover > .btn-web-design-lg, .card.bespoke-software:hover > .btn-web-design, .card.bespoke-software:hover > .btn-telecoms-services-lg, .card.bespoke-software:hover > .btn-telecoms-services, .card.bespoke-software:hover > .btn-digital-marketing-lg, .card.bespoke-software:hover > .btn-digital-marketing, .card.bespoke-software:hover > .btn-it-support-lg, .card.bespoke-software:hover > .btn-it-support, .card.bespoke-software:hover > .btn-bespoke-software-lg, .card.bespoke-software:hover > .btn-bespoke-software, .card.bespoke-software:hover > .btn-light-lg, .card.bespoke-software:hover > .btn-light, .card.bespoke-software:hover > .btn-dark-lg, .card.bespoke-software:hover > .btn-dark, .card.bespoke-software:hover > .btn-lg {
-  background-color: #ffffff;
-  color: #67809f;
-}
-.card.bespoke-software:hover > .card-icon.bespoke-software {
-  background-color: #ffffff;
-  color: #67809f;
-}
-.card.it-support p, .card.it-support h2 {
-  font-size: 0.8125rem;
-  line-height: 1.375rem;
-  margin-bottom: 13px;
-  font-weight: 400;
-}
-.card.it-support h2 {
-  font-size: 1.3rem;
-  padding-bottom: 10px;
-  margin: 0 0 11px;
-}
-.card.it-support:hover {
-  background-color: #4183d7;
-}
-.card.it-support:hover p, .card.it-support:hover h2 {
-  color: #ffffff;
-}
-.card.it-support:hover > .btn, .card.it-support:hover > .btn-social-media-instagram, .card.it-support:hover > .btn-social-media-twitter, .card.it-support:hover > .btn-social-media-linkedin, .card.it-support:hover > .btn-social-media-facebook, .card.it-support:hover > .btn-trustpilot-lg, .card.it-support:hover > .btn-trustpilot, .card.it-support:hover > .btn-google-lg, .card.it-support:hover > .btn-google, .card.it-support:hover > .btn-developer-training-lg, .card.it-support:hover > .btn-developer-training, .card.it-support:hover > .btn-cyber-security-lg, .card.it-support:hover > .btn-cyber-security, .card.it-support:hover > .btn-web-design-lg, .card.it-support:hover > .btn-web-design, .card.it-support:hover > .btn-telecoms-services-lg, .card.it-support:hover > .btn-telecoms-services, .card.it-support:hover > .btn-digital-marketing-lg, .card.it-support:hover > .btn-digital-marketing, .card.it-support:hover > .btn-it-support-lg, .card.it-support:hover > .btn-it-support, .card.it-support:hover > .btn-bespoke-software-lg, .card.it-support:hover > .btn-bespoke-software, .card.it-support:hover > .btn-light-lg, .card.it-support:hover > .btn-light, .card.it-support:hover > .btn-dark-lg, .card.it-support:hover > .btn-dark, .card.it-support:hover > .btn-lg {
-  background-color: #ffffff;
-  color: #4183d7;
-}
-.card.it-support:hover > .card-icon.it-support {
-  background-color: #ffffff;
-  color: #4183d7;
-}
-.card.digital-marketing p, .card.digital-marketing h2 {
-  font-size: 0.8125rem;
-  line-height: 1.375rem;
-  margin-bottom: 13px;
-  font-weight: 400;
-}
-.card.digital-marketing h2 {
-  font-size: 1.3rem;
-  padding-bottom: 10px;
-  margin: 0 0 11px;
-}
-.card.digital-marketing:hover {
-  background-color: #2ecc71;
-}
-.card.digital-marketing:hover p, .card.digital-marketing:hover h2 {
-  color: #ffffff;
-}
-.card.digital-marketing:hover > .btn, .card.digital-marketing:hover > .btn-social-media-instagram, .card.digital-marketing:hover > .btn-social-media-twitter, .card.digital-marketing:hover > .btn-social-media-linkedin, .card.digital-marketing:hover > .btn-social-media-facebook, .card.digital-marketing:hover > .btn-trustpilot-lg, .card.digital-marketing:hover > .btn-trustpilot, .card.digital-marketing:hover > .btn-google-lg, .card.digital-marketing:hover > .btn-google, .card.digital-marketing:hover > .btn-developer-training-lg, .card.digital-marketing:hover > .btn-developer-training, .card.digital-marketing:hover > .btn-cyber-security-lg, .card.digital-marketing:hover > .btn-cyber-security, .card.digital-marketing:hover > .btn-web-design-lg, .card.digital-marketing:hover > .btn-web-design, .card.digital-marketing:hover > .btn-telecoms-services-lg, .card.digital-marketing:hover > .btn-telecoms-services, .card.digital-marketing:hover > .btn-digital-marketing-lg, .card.digital-marketing:hover > .btn-digital-marketing, .card.digital-marketing:hover > .btn-it-support-lg, .card.digital-marketing:hover > .btn-it-support, .card.digital-marketing:hover > .btn-bespoke-software-lg, .card.digital-marketing:hover > .btn-bespoke-software, .card.digital-marketing:hover > .btn-light-lg, .card.digital-marketing:hover > .btn-light, .card.digital-marketing:hover > .btn-dark-lg, .card.digital-marketing:hover > .btn-dark, .card.digital-marketing:hover > .btn-lg {
-  background-color: #ffffff;
-  color: #2ecc71;
-}
-.card.digital-marketing:hover > .card-icon.digital-marketing {
-  background-color: #ffffff;
-  color: #2ecc71;
-}
-.card.telecoms-services p, .card.telecoms-services h2 {
-  font-size: 0.8125rem;
-  line-height: 1.375rem;
-  margin-bottom: 13px;
-  font-weight: 400;
-}
-.card.telecoms-services h2 {
-  font-size: 1.3rem;
-  padding-bottom: 10px;
-  margin: 0 0 11px;
-}
-.card.telecoms-services:hover {
-  background-color: #d64541;
-}
-.card.telecoms-services:hover p, .card.telecoms-services:hover h2 {
-  color: #ffffff;
-}
-.card.telecoms-services:hover > .btn, .card.telecoms-services:hover > .btn-social-media-instagram, .card.telecoms-services:hover > .btn-social-media-twitter, .card.telecoms-services:hover > .btn-social-media-linkedin, .card.telecoms-services:hover > .btn-social-media-facebook, .card.telecoms-services:hover > .btn-trustpilot-lg, .card.telecoms-services:hover > .btn-trustpilot, .card.telecoms-services:hover > .btn-google-lg, .card.telecoms-services:hover > .btn-google, .card.telecoms-services:hover > .btn-developer-training-lg, .card.telecoms-services:hover > .btn-developer-training, .card.telecoms-services:hover > .btn-cyber-security-lg, .card.telecoms-services:hover > .btn-cyber-security, .card.telecoms-services:hover > .btn-web-design-lg, .card.telecoms-services:hover > .btn-web-design, .card.telecoms-services:hover > .btn-telecoms-services-lg, .card.telecoms-services:hover > .btn-telecoms-services, .card.telecoms-services:hover > .btn-digital-marketing-lg, .card.telecoms-services:hover > .btn-digital-marketing, .card.telecoms-services:hover > .btn-it-support-lg, .card.telecoms-services:hover > .btn-it-support, .card.telecoms-services:hover > .btn-bespoke-software-lg, .card.telecoms-services:hover > .btn-bespoke-software, .card.telecoms-services:hover > .btn-light-lg, .card.telecoms-services:hover > .btn-light, .card.telecoms-services:hover > .btn-dark-lg, .card.telecoms-services:hover > .btn-dark, .card.telecoms-services:hover > .btn-lg {
-  background-color: #ffffff;
-  color: #d64541;
-}
-.card.telecoms-services:hover > .card-icon.telecoms-services {
-  background-color: #ffffff;
-  color: #d64541;
-}
-.card.web-design p, .card.web-design h2 {
-  font-size: 0.8125rem;
-  line-height: 1.375rem;
-  margin-bottom: 13px;
-  font-weight: 400;
-}
-.card.web-design h2 {
-  font-size: 1.3rem;
-  padding-bottom: 10px;
-  margin: 0 0 11px;
-}
-.card.web-design:hover {
-  background-color: #926fb1;
-}
-.card.web-design:hover p, .card.web-design:hover h2 {
-  color: #ffffff;
-}
-.card.web-design:hover > .btn, .card.web-design:hover > .btn-social-media-instagram, .card.web-design:hover > .btn-social-media-twitter, .card.web-design:hover > .btn-social-media-linkedin, .card.web-design:hover > .btn-social-media-facebook, .card.web-design:hover > .btn-trustpilot-lg, .card.web-design:hover > .btn-trustpilot, .card.web-design:hover > .btn-google-lg, .card.web-design:hover > .btn-google, .card.web-design:hover > .btn-developer-training-lg, .card.web-design:hover > .btn-developer-training, .card.web-design:hover > .btn-cyber-security-lg, .card.web-design:hover > .btn-cyber-security, .card.web-design:hover > .btn-web-design-lg, .card.web-design:hover > .btn-web-design, .card.web-design:hover > .btn-telecoms-services-lg, .card.web-design:hover > .btn-telecoms-services, .card.web-design:hover > .btn-digital-marketing-lg, .card.web-design:hover > .btn-digital-marketing, .card.web-design:hover > .btn-it-support-lg, .card.web-design:hover > .btn-it-support, .card.web-design:hover > .btn-bespoke-software-lg, .card.web-design:hover > .btn-bespoke-software, .card.web-design:hover > .btn-light-lg, .card.web-design:hover > .btn-light, .card.web-design:hover > .btn-dark-lg, .card.web-design:hover > .btn-dark, .card.web-design:hover > .btn-lg {
-  background-color: #ffffff;
-  color: #926fb1;
-}
-.card.web-design:hover > .card-icon.web-design {
-  background-color: #ffffff;
-  color: #926fb1;
-}
-.card.cyber-security p, .card.cyber-security h2 {
-  font-size: 0.8125rem;
-  line-height: 1.375rem;
-  margin-bottom: 13px;
-  font-weight: 400;
-}
-.card.cyber-security h2 {
-  font-size: 1.3rem;
-  padding-bottom: 10px;
-  margin: 0 0 11px;
-}
-.card.cyber-security:hover {
-  background-color: #f62459;
-}
-.card.cyber-security:hover p, .card.cyber-security:hover h2 {
-  color: #ffffff;
-}
-.card.cyber-security:hover > .btn, .card.cyber-security:hover > .btn-social-media-instagram, .card.cyber-security:hover > .btn-social-media-twitter, .card.cyber-security:hover > .btn-social-media-linkedin, .card.cyber-security:hover > .btn-social-media-facebook, .card.cyber-security:hover > .btn-trustpilot-lg, .card.cyber-security:hover > .btn-trustpilot, .card.cyber-security:hover > .btn-google-lg, .card.cyber-security:hover > .btn-google, .card.cyber-security:hover > .btn-developer-training-lg, .card.cyber-security:hover > .btn-developer-training, .card.cyber-security:hover > .btn-cyber-security-lg, .card.cyber-security:hover > .btn-cyber-security, .card.cyber-security:hover > .btn-web-design-lg, .card.cyber-security:hover > .btn-web-design, .card.cyber-security:hover > .btn-telecoms-services-lg, .card.cyber-security:hover > .btn-telecoms-services, .card.cyber-security:hover > .btn-digital-marketing-lg, .card.cyber-security:hover > .btn-digital-marketing, .card.cyber-security:hover > .btn-it-support-lg, .card.cyber-security:hover > .btn-it-support, .card.cyber-security:hover > .btn-bespoke-software-lg, .card.cyber-security:hover > .btn-bespoke-software, .card.cyber-security:hover > .btn-light-lg, .card.cyber-security:hover > .btn-light, .card.cyber-security:hover > .btn-dark-lg, .card.cyber-security:hover > .btn-dark, .card.cyber-security:hover > .btn-lg {
-  background-color: #ffffff;
-  color: #f62459;
-}
-.card.cyber-security:hover > .card-icon.cyber-security {
-  background-color: #ffffff;
-  color: #f62459;
-}
-.card.developer-training p, .card.developer-training h2 {
-  font-size: 0.8125rem;
-  line-height: 1.375rem;
-  margin-bottom: 13px;
-  font-weight: 400;
-}
-.card.developer-training h2 {
-  font-size: 1.3rem;
-  padding-bottom: 10px;
-  margin: 0 0 11px;
-}
-.card.developer-training:hover {
-  background-color: #ce4125;
-}
-.card.developer-training:hover p, .card.developer-training:hover h2 {
-  color: #ffffff;
-}
-.card.developer-training:hover > .btn, .card.developer-training:hover > .btn-social-media-instagram, .card.developer-training:hover > .btn-social-media-twitter, .card.developer-training:hover > .btn-social-media-linkedin, .card.developer-training:hover > .btn-social-media-facebook, .card.developer-training:hover > .btn-trustpilot-lg, .card.developer-training:hover > .btn-trustpilot, .card.developer-training:hover > .btn-google-lg, .card.developer-training:hover > .btn-google, .card.developer-training:hover > .btn-developer-training-lg, .card.developer-training:hover > .btn-developer-training, .card.developer-training:hover > .btn-cyber-security-lg, .card.developer-training:hover > .btn-cyber-security, .card.developer-training:hover > .btn-web-design-lg, .card.developer-training:hover > .btn-web-design, .card.developer-training:hover > .btn-telecoms-services-lg, .card.developer-training:hover > .btn-telecoms-services, .card.developer-training:hover > .btn-digital-marketing-lg, .card.developer-training:hover > .btn-digital-marketing, .card.developer-training:hover > .btn-it-support-lg, .card.developer-training:hover > .btn-it-support, .card.developer-training:hover > .btn-bespoke-software-lg, .card.developer-training:hover > .btn-bespoke-software, .card.developer-training:hover > .btn-light-lg, .card.developer-training:hover > .btn-light, .card.developer-training:hover > .btn-dark-lg, .card.developer-training:hover > .btn-dark, .card.developer-training:hover > .btn-lg {
-  background-color: #ffffff;
-  color: #ce4125;
-}
-.card.developer-training:hover > .card-icon.developer-training {
-  background-color: #ffffff;
-  color: #ce4125;
-}
-.card-service {
-  padding: 30px;
-  border-radius: 15px;
-  margin-top: 30px;
-  text-align: center;
-}
-.card-post .cover {
-  position: relative;
-}
-.card-post .cover .tag {
-  position: absolute;
-  top: 10px;
-  right: 0;
-  font-size: 0.75rem;
-  font-weight: 600;
-  padding: 0 10px;
-  line-height: 1.438rem;
-  z-index: 1;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-.card-post .cover .tag-bespoke-software {
-  background-color: #67809f;
-}
-.card-post .cover .tag-it-support {
-  background-color: #4183d7;
-}
-.card-post .cover .tag-digital-marketing {
-  background-color: #2ecc71;
-}
-.card-post .cover .tag-telecoms-services {
-  background-color: #d64541;
-}
-.card-post .cover .tag-web-design {
-  background-color: #926fb1;
-}
-.card-post .cover .tag-cyber-security {
-  background-color: #f62459;
-}
-.card-post .cover .tag-developer-training {
-  background-color: #ce4125;
-}
-.card-post .cover img {
-  position: relative;
-}
-.card-post .content {
-  padding: 30px;
-}
-.card-post .content .headline {
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.5rem;
-}
-.card-post .content .headline-bespoke-software {
-  color: #67809f;
-}
-.card-post .content .headline-it-support {
-  color: #4183d7;
-}
-.card-post .content .headline-digital-marketing {
-  color: #2ecc71;
-}
-.card-post .content .headline-telecoms-services {
-  color: #d64541;
-}
-.card-post .content .headline-web-design {
-  color: #926fb1;
-}
-.card-post .content .headline-cyber-security {
-  color: #f62459;
-}
-.card-post .content .headline-developer-training {
-  color: #ce4125;
-}
-.card-post .content .headline small {
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #999aa2;
-}
-.card-post .content p {
-  color: #666;
-  line-height: 1.375rem;
-  font-size: 0.8125rem;
-}
-.card-post .post-details {
-  display: table;
-  width: 100%;
-  font-size: 0.875rem;
-  padding-top: 30px;
-  margin-top: 30px;
-  border-top: 1px solid #ccc;
-}
-.card-post .post-details > * {
-  display: table-cell;
-  vertical-align: middle;
-}
-.card-post .post-details .avatar {
-  height: auto;
-}
-.card-post .post-details .avatar img {
-  border-radius: 50%;
-  max-width: 47px;
-}
-.card-post .post-details .post-text .post-author {
-  color: #121318;
-}
-.card-post .post-details .post-text p {
-  line-height: 1.375rem;
-  margin: 0;
-}
-
-.section {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  position: relative;
-}
-.section .section-heading {
-  text-align: center;
-  font-weight: 600;
-}
-.section .section-heading a {
-  color: #121318;
-}
-.section .section-heading a:hover {
-  text-decoration: underline;
-}
-.section h2 {
-  font-size: 2.25rem;
-}
-
-.section-heading {
-  text-align: center;
-  font-weight: 600;
-}
-.section-heading a {
-  color: #333645;
-}
-.section-heading a:hover {
-  text-decoration: underline;
-}
-
-.bar {
-  padding-top: 50px;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.container::after {
-  clear: both;
-}
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 990px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1260px) {
-  .container {
-    width: 1200px;
-  }
-}
-.container .heading {
-  font-weight: 600;
-  font-size: 43.2px;
-  align-self: flex-start;
-  text-align: left;
-  margin: 0 0 28px;
-}
-.container-footer {
-  padding-bottom: 27px;
-}
-.container-dark {
-  background-color: #333645;
-  color: #ffffff;
-}
-.container-dark h2 {
-  color: #ffffff;
-}
-.container .rating {
-  font-size: 48px;
-  color: #ffa500;
-}
-
-.inner {
-  padding: 20px 0;
-}
-
 .banner {
   position: relative;
   min-height: 550px;
@@ -3230,6 +2727,28 @@ footer {
   height: 19px;
   border-radius: 50%;
   border: 2px solid #fff;
+}
+
+.breadcrumb {
+  color: #333645;
+  font-size: 0.8125rem;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+  padding: 14px 15px 13px;
+}
+.breadcrumb a {
+  color: #333645;
+}
+.breadcrumb ul {
+  margin: 0;
+}
+.breadcrumb li {
+  list-style: none;
+  display: inline-block;
+}
+.breadcrumb li:last-child::before {
+  content: "/ ";
+  padding: 0 5px;
+  color: #333645;
 }
 
 .btn, .btn-social-media-instagram, .btn-social-media-twitter, .btn-social-media-linkedin, .btn-social-media-facebook, .btn-trustpilot-lg, .btn-trustpilot, .btn-google-lg, .btn-google, .btn-developer-training-lg, .btn-developer-training, .btn-cyber-security-lg, .btn-cyber-security, .btn-web-design-lg, .btn-web-design, .btn-telecoms-services-lg, .btn-telecoms-services, .btn-digital-marketing-lg, .btn-digital-marketing, .btn-it-support-lg, .btn-it-support, .btn-bespoke-software-lg, .btn-bespoke-software, .btn-light-lg, .btn-light, .btn-dark-lg, .btn-dark, .btn-lg {
@@ -3553,6 +3072,491 @@ footer {
   cursor: pointer;
 }
 
+.card {
+  border: solid 1px #dddddd;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 0;
+  transition: 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.card p {
+  color: #121318;
+  line-height: 1.375rem;
+  font-size: 0.8125rem;
+}
+.card:hover {
+  top: -10px;
+  transition: 0.5s ease;
+}
+.card .card-button {
+  margin: auto auto 0;
+}
+.card-icon {
+  display: block;
+  height: 65px;
+  width: 65px;
+  margin: 0 auto 17px;
+  background-color: #333645;
+  color: #fff;
+  border-radius: 50%;
+  line-height: 62px;
+}
+.card-icon span {
+  font-size: 2rem;
+  line-height: 62px;
+}
+.card-icon.bespoke-software {
+  color: #ffffff;
+  background-color: #67809f;
+}
+.card-icon.it-support {
+  color: #ffffff;
+  background-color: #4183d7;
+}
+.card-icon.digital-marketing {
+  color: #ffffff;
+  background-color: #2ecc71;
+}
+.card-icon.telecoms-services {
+  color: #ffffff;
+  background-color: #d64541;
+}
+.card-icon.web-design {
+  color: #ffffff;
+  background-color: #926fb1;
+}
+.card-icon.cyber-security {
+  color: #ffffff;
+  background-color: #f62459;
+}
+.card-icon.developer-training {
+  color: #ffffff;
+  background-color: #ce4125;
+}
+.card.bespoke-software p, .card.bespoke-software h2 {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  margin-bottom: 13px;
+  font-weight: 400;
+}
+.card.bespoke-software h2 {
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+  margin: 0 0 11px;
+}
+.card.bespoke-software:hover {
+  background-color: #67809f;
+}
+.card.bespoke-software:hover p, .card.bespoke-software:hover h2 {
+  color: #ffffff;
+}
+.card.bespoke-software:hover > .btn, .card.bespoke-software:hover > .btn-lg, .card.bespoke-software:hover > .btn-dark, .card.bespoke-software:hover > .btn-dark-lg, .card.bespoke-software:hover > .btn-light, .card.bespoke-software:hover > .btn-light-lg, .card.bespoke-software:hover > .btn-bespoke-software, .card.bespoke-software:hover > .btn-bespoke-software-lg, .card.bespoke-software:hover > .btn-it-support, .card.bespoke-software:hover > .btn-it-support-lg, .card.bespoke-software:hover > .btn-digital-marketing, .card.bespoke-software:hover > .btn-digital-marketing-lg, .card.bespoke-software:hover > .btn-telecoms-services, .card.bespoke-software:hover > .btn-telecoms-services-lg, .card.bespoke-software:hover > .btn-web-design, .card.bespoke-software:hover > .btn-web-design-lg, .card.bespoke-software:hover > .btn-cyber-security, .card.bespoke-software:hover > .btn-cyber-security-lg, .card.bespoke-software:hover > .btn-developer-training, .card.bespoke-software:hover > .btn-developer-training-lg, .card.bespoke-software:hover > .btn-google, .card.bespoke-software:hover > .btn-google-lg, .card.bespoke-software:hover > .btn-trustpilot, .card.bespoke-software:hover > .btn-trustpilot-lg, .card.bespoke-software:hover > .btn-social-media-facebook, .card.bespoke-software:hover > .btn-social-media-linkedin, .card.bespoke-software:hover > .btn-social-media-twitter, .card.bespoke-software:hover > .btn-social-media-instagram {
+  background-color: #ffffff;
+  color: #67809f;
+}
+.card.bespoke-software:hover > .card-icon.bespoke-software {
+  background-color: #ffffff;
+  color: #67809f;
+}
+.card.it-support p, .card.it-support h2 {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  margin-bottom: 13px;
+  font-weight: 400;
+}
+.card.it-support h2 {
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+  margin: 0 0 11px;
+}
+.card.it-support:hover {
+  background-color: #4183d7;
+}
+.card.it-support:hover p, .card.it-support:hover h2 {
+  color: #ffffff;
+}
+.card.it-support:hover > .btn, .card.it-support:hover > .btn-lg, .card.it-support:hover > .btn-dark, .card.it-support:hover > .btn-dark-lg, .card.it-support:hover > .btn-light, .card.it-support:hover > .btn-light-lg, .card.it-support:hover > .btn-bespoke-software, .card.it-support:hover > .btn-bespoke-software-lg, .card.it-support:hover > .btn-it-support, .card.it-support:hover > .btn-it-support-lg, .card.it-support:hover > .btn-digital-marketing, .card.it-support:hover > .btn-digital-marketing-lg, .card.it-support:hover > .btn-telecoms-services, .card.it-support:hover > .btn-telecoms-services-lg, .card.it-support:hover > .btn-web-design, .card.it-support:hover > .btn-web-design-lg, .card.it-support:hover > .btn-cyber-security, .card.it-support:hover > .btn-cyber-security-lg, .card.it-support:hover > .btn-developer-training, .card.it-support:hover > .btn-developer-training-lg, .card.it-support:hover > .btn-google, .card.it-support:hover > .btn-google-lg, .card.it-support:hover > .btn-trustpilot, .card.it-support:hover > .btn-trustpilot-lg, .card.it-support:hover > .btn-social-media-facebook, .card.it-support:hover > .btn-social-media-linkedin, .card.it-support:hover > .btn-social-media-twitter, .card.it-support:hover > .btn-social-media-instagram {
+  background-color: #ffffff;
+  color: #4183d7;
+}
+.card.it-support:hover > .card-icon.it-support {
+  background-color: #ffffff;
+  color: #4183d7;
+}
+.card.digital-marketing p, .card.digital-marketing h2 {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  margin-bottom: 13px;
+  font-weight: 400;
+}
+.card.digital-marketing h2 {
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+  margin: 0 0 11px;
+}
+.card.digital-marketing:hover {
+  background-color: #2ecc71;
+}
+.card.digital-marketing:hover p, .card.digital-marketing:hover h2 {
+  color: #ffffff;
+}
+.card.digital-marketing:hover > .btn, .card.digital-marketing:hover > .btn-lg, .card.digital-marketing:hover > .btn-dark, .card.digital-marketing:hover > .btn-dark-lg, .card.digital-marketing:hover > .btn-light, .card.digital-marketing:hover > .btn-light-lg, .card.digital-marketing:hover > .btn-bespoke-software, .card.digital-marketing:hover > .btn-bespoke-software-lg, .card.digital-marketing:hover > .btn-it-support, .card.digital-marketing:hover > .btn-it-support-lg, .card.digital-marketing:hover > .btn-digital-marketing, .card.digital-marketing:hover > .btn-digital-marketing-lg, .card.digital-marketing:hover > .btn-telecoms-services, .card.digital-marketing:hover > .btn-telecoms-services-lg, .card.digital-marketing:hover > .btn-web-design, .card.digital-marketing:hover > .btn-web-design-lg, .card.digital-marketing:hover > .btn-cyber-security, .card.digital-marketing:hover > .btn-cyber-security-lg, .card.digital-marketing:hover > .btn-developer-training, .card.digital-marketing:hover > .btn-developer-training-lg, .card.digital-marketing:hover > .btn-google, .card.digital-marketing:hover > .btn-google-lg, .card.digital-marketing:hover > .btn-trustpilot, .card.digital-marketing:hover > .btn-trustpilot-lg, .card.digital-marketing:hover > .btn-social-media-facebook, .card.digital-marketing:hover > .btn-social-media-linkedin, .card.digital-marketing:hover > .btn-social-media-twitter, .card.digital-marketing:hover > .btn-social-media-instagram {
+  background-color: #ffffff;
+  color: #2ecc71;
+}
+.card.digital-marketing:hover > .card-icon.digital-marketing {
+  background-color: #ffffff;
+  color: #2ecc71;
+}
+.card.telecoms-services p, .card.telecoms-services h2 {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  margin-bottom: 13px;
+  font-weight: 400;
+}
+.card.telecoms-services h2 {
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+  margin: 0 0 11px;
+}
+.card.telecoms-services:hover {
+  background-color: #d64541;
+}
+.card.telecoms-services:hover p, .card.telecoms-services:hover h2 {
+  color: #ffffff;
+}
+.card.telecoms-services:hover > .btn, .card.telecoms-services:hover > .btn-lg, .card.telecoms-services:hover > .btn-dark, .card.telecoms-services:hover > .btn-dark-lg, .card.telecoms-services:hover > .btn-light, .card.telecoms-services:hover > .btn-light-lg, .card.telecoms-services:hover > .btn-bespoke-software, .card.telecoms-services:hover > .btn-bespoke-software-lg, .card.telecoms-services:hover > .btn-it-support, .card.telecoms-services:hover > .btn-it-support-lg, .card.telecoms-services:hover > .btn-digital-marketing, .card.telecoms-services:hover > .btn-digital-marketing-lg, .card.telecoms-services:hover > .btn-telecoms-services, .card.telecoms-services:hover > .btn-telecoms-services-lg, .card.telecoms-services:hover > .btn-web-design, .card.telecoms-services:hover > .btn-web-design-lg, .card.telecoms-services:hover > .btn-cyber-security, .card.telecoms-services:hover > .btn-cyber-security-lg, .card.telecoms-services:hover > .btn-developer-training, .card.telecoms-services:hover > .btn-developer-training-lg, .card.telecoms-services:hover > .btn-google, .card.telecoms-services:hover > .btn-google-lg, .card.telecoms-services:hover > .btn-trustpilot, .card.telecoms-services:hover > .btn-trustpilot-lg, .card.telecoms-services:hover > .btn-social-media-facebook, .card.telecoms-services:hover > .btn-social-media-linkedin, .card.telecoms-services:hover > .btn-social-media-twitter, .card.telecoms-services:hover > .btn-social-media-instagram {
+  background-color: #ffffff;
+  color: #d64541;
+}
+.card.telecoms-services:hover > .card-icon.telecoms-services {
+  background-color: #ffffff;
+  color: #d64541;
+}
+.card.web-design p, .card.web-design h2 {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  margin-bottom: 13px;
+  font-weight: 400;
+}
+.card.web-design h2 {
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+  margin: 0 0 11px;
+}
+.card.web-design:hover {
+  background-color: #926fb1;
+}
+.card.web-design:hover p, .card.web-design:hover h2 {
+  color: #ffffff;
+}
+.card.web-design:hover > .btn, .card.web-design:hover > .btn-lg, .card.web-design:hover > .btn-dark, .card.web-design:hover > .btn-dark-lg, .card.web-design:hover > .btn-light, .card.web-design:hover > .btn-light-lg, .card.web-design:hover > .btn-bespoke-software, .card.web-design:hover > .btn-bespoke-software-lg, .card.web-design:hover > .btn-it-support, .card.web-design:hover > .btn-it-support-lg, .card.web-design:hover > .btn-digital-marketing, .card.web-design:hover > .btn-digital-marketing-lg, .card.web-design:hover > .btn-telecoms-services, .card.web-design:hover > .btn-telecoms-services-lg, .card.web-design:hover > .btn-web-design, .card.web-design:hover > .btn-web-design-lg, .card.web-design:hover > .btn-cyber-security, .card.web-design:hover > .btn-cyber-security-lg, .card.web-design:hover > .btn-developer-training, .card.web-design:hover > .btn-developer-training-lg, .card.web-design:hover > .btn-google, .card.web-design:hover > .btn-google-lg, .card.web-design:hover > .btn-trustpilot, .card.web-design:hover > .btn-trustpilot-lg, .card.web-design:hover > .btn-social-media-facebook, .card.web-design:hover > .btn-social-media-linkedin, .card.web-design:hover > .btn-social-media-twitter, .card.web-design:hover > .btn-social-media-instagram {
+  background-color: #ffffff;
+  color: #926fb1;
+}
+.card.web-design:hover > .card-icon.web-design {
+  background-color: #ffffff;
+  color: #926fb1;
+}
+.card.cyber-security p, .card.cyber-security h2 {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  margin-bottom: 13px;
+  font-weight: 400;
+}
+.card.cyber-security h2 {
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+  margin: 0 0 11px;
+}
+.card.cyber-security:hover {
+  background-color: #f62459;
+}
+.card.cyber-security:hover p, .card.cyber-security:hover h2 {
+  color: #ffffff;
+}
+.card.cyber-security:hover > .btn, .card.cyber-security:hover > .btn-lg, .card.cyber-security:hover > .btn-dark, .card.cyber-security:hover > .btn-dark-lg, .card.cyber-security:hover > .btn-light, .card.cyber-security:hover > .btn-light-lg, .card.cyber-security:hover > .btn-bespoke-software, .card.cyber-security:hover > .btn-bespoke-software-lg, .card.cyber-security:hover > .btn-it-support, .card.cyber-security:hover > .btn-it-support-lg, .card.cyber-security:hover > .btn-digital-marketing, .card.cyber-security:hover > .btn-digital-marketing-lg, .card.cyber-security:hover > .btn-telecoms-services, .card.cyber-security:hover > .btn-telecoms-services-lg, .card.cyber-security:hover > .btn-web-design, .card.cyber-security:hover > .btn-web-design-lg, .card.cyber-security:hover > .btn-cyber-security, .card.cyber-security:hover > .btn-cyber-security-lg, .card.cyber-security:hover > .btn-developer-training, .card.cyber-security:hover > .btn-developer-training-lg, .card.cyber-security:hover > .btn-google, .card.cyber-security:hover > .btn-google-lg, .card.cyber-security:hover > .btn-trustpilot, .card.cyber-security:hover > .btn-trustpilot-lg, .card.cyber-security:hover > .btn-social-media-facebook, .card.cyber-security:hover > .btn-social-media-linkedin, .card.cyber-security:hover > .btn-social-media-twitter, .card.cyber-security:hover > .btn-social-media-instagram {
+  background-color: #ffffff;
+  color: #f62459;
+}
+.card.cyber-security:hover > .card-icon.cyber-security {
+  background-color: #ffffff;
+  color: #f62459;
+}
+.card.developer-training p, .card.developer-training h2 {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  margin-bottom: 13px;
+  font-weight: 400;
+}
+.card.developer-training h2 {
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+  margin: 0 0 11px;
+}
+.card.developer-training:hover {
+  background-color: #ce4125;
+}
+.card.developer-training:hover p, .card.developer-training:hover h2 {
+  color: #ffffff;
+}
+.card.developer-training:hover > .btn, .card.developer-training:hover > .btn-lg, .card.developer-training:hover > .btn-dark, .card.developer-training:hover > .btn-dark-lg, .card.developer-training:hover > .btn-light, .card.developer-training:hover > .btn-light-lg, .card.developer-training:hover > .btn-bespoke-software, .card.developer-training:hover > .btn-bespoke-software-lg, .card.developer-training:hover > .btn-it-support, .card.developer-training:hover > .btn-it-support-lg, .card.developer-training:hover > .btn-digital-marketing, .card.developer-training:hover > .btn-digital-marketing-lg, .card.developer-training:hover > .btn-telecoms-services, .card.developer-training:hover > .btn-telecoms-services-lg, .card.developer-training:hover > .btn-web-design, .card.developer-training:hover > .btn-web-design-lg, .card.developer-training:hover > .btn-cyber-security, .card.developer-training:hover > .btn-cyber-security-lg, .card.developer-training:hover > .btn-developer-training, .card.developer-training:hover > .btn-developer-training-lg, .card.developer-training:hover > .btn-google, .card.developer-training:hover > .btn-google-lg, .card.developer-training:hover > .btn-trustpilot, .card.developer-training:hover > .btn-trustpilot-lg, .card.developer-training:hover > .btn-social-media-facebook, .card.developer-training:hover > .btn-social-media-linkedin, .card.developer-training:hover > .btn-social-media-twitter, .card.developer-training:hover > .btn-social-media-instagram {
+  background-color: #ffffff;
+  color: #ce4125;
+}
+.card.developer-training:hover > .card-icon.developer-training {
+  background-color: #ffffff;
+  color: #ce4125;
+}
+.card-service {
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 30px;
+  text-align: center;
+}
+.card-post .cover {
+  position: relative;
+}
+.card-post .cover .tag {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0 10px;
+  line-height: 1.438rem;
+  z-index: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.card-post .cover .tag-bespoke-software {
+  background-color: #67809f;
+}
+.card-post .cover .tag-it-support {
+  background-color: #4183d7;
+}
+.card-post .cover .tag-digital-marketing {
+  background-color: #2ecc71;
+}
+.card-post .cover .tag-telecoms-services {
+  background-color: #d64541;
+}
+.card-post .cover .tag-web-design {
+  background-color: #926fb1;
+}
+.card-post .cover .tag-cyber-security {
+  background-color: #f62459;
+}
+.card-post .cover .tag-developer-training {
+  background-color: #ce4125;
+}
+.card-post .cover img {
+  position: relative;
+}
+.card-post .content {
+  padding: 30px;
+}
+.card-post .content .headline {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+.card-post .content .headline-bespoke-software {
+  color: #67809f;
+}
+.card-post .content .headline-it-support {
+  color: #4183d7;
+}
+.card-post .content .headline-digital-marketing {
+  color: #2ecc71;
+}
+.card-post .content .headline-telecoms-services {
+  color: #d64541;
+}
+.card-post .content .headline-web-design {
+  color: #926fb1;
+}
+.card-post .content .headline-cyber-security {
+  color: #f62459;
+}
+.card-post .content .headline-developer-training {
+  color: #ce4125;
+}
+.card-post .content .headline small {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #999aa2;
+}
+.card-post .content p {
+  color: #666;
+  line-height: 1.375rem;
+  font-size: 0.8125rem;
+}
+.card-post .post-details {
+  display: table;
+  width: 100%;
+  font-size: 0.875rem;
+  padding-top: 30px;
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+}
+.card-post .post-details > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+.card-post .post-details .avatar {
+  height: auto;
+}
+.card-post .post-details .avatar img {
+  border-radius: 50%;
+  max-width: 47px;
+}
+.card-post .post-details .post-text .post-author {
+  color: #121318;
+}
+.card-post .post-details .post-text p {
+  line-height: 1.375rem;
+  margin: 0;
+}
+
+@media (min-width: 1260px) {
+  .contact-us {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.contact-us .contact-info {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 1260px) {
+  .contact-us .contact-info {
+    order: 1;
+    width: 33.33333333%;
+  }
+}
+.contact-us .contact-info strong {
+  color: #333645;
+}
+.contact-us .contact-form {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 1260px) {
+  .contact-us .contact-form {
+    width: 66.66666667%;
+  }
+}
+
+.tel {
+  margin-bottom: 15px;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+.section.bottom {
+  padding-top: 0;
+}
+.section .section-heading {
+  text-align: center;
+  font-weight: 600;
+}
+.section .section-heading a {
+  color: #121318;
+}
+.section .section-heading a:hover {
+  text-decoration: underline;
+}
+.section h2 {
+  font-size: 2.25rem;
+}
+
+.section-heading {
+  text-align: center;
+  font-weight: 600;
+}
+.section-heading a {
+  color: #333645;
+}
+.section-heading a:hover {
+  text-decoration: underline;
+}
+
+.bar {
+  padding-top: 50px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container::after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 990px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1260px) {
+  .container {
+    width: 1200px;
+  }
+}
+.container .heading {
+  font-weight: 600;
+  font-size: 43.2px;
+  align-self: flex-start;
+  text-align: left;
+  margin: 0 0 28px;
+}
+.container-footer {
+  padding-bottom: 27px;
+}
+.container-dark {
+  background-color: #333645;
+  color: #ffffff;
+}
+.container-dark h2 {
+  color: #ffffff;
+}
+.container .rating {
+  font-size: 48px;
+  color: #ffa500;
+}
+
+.inner {
+  padding: 20px 0;
+}
+
+.drop-down-button {
+  font-weight: 600;
+  color: #333645;
+  line-height: 1.875rem;
+  margin-bottom: 25px;
+}
+.drop-down-button em {
+  display: inline-block;
+  line-height: 1;
+  font-weight: 400;
+}
+
 .form .form-group {
   margin-bottom: 15px;
   line-height: 2;
@@ -3565,8 +3569,115 @@ footer {
   content: " *";
   color: #d64541;
 }
-.form-checkbox-label {
+.form .form-group input {
+  width: 100%;
+  height: 47px;
+  padding: 5px 15px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-color: #ccc;
+}
+.form .form-group input:focus {
+  border-color: #5bc0de;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+.form .form-text-group {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.form .form-text-group .form-group {
+  flex: 1 1 450px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.form .form-checkbox .form-checkbox-input {
+  display: none;
+}
+.form .form-checkbox .form-checkbox-input:checked + .form-checkbox-label .form-checkbox-icon::before {
+  font-family: "icomoon";
+  content: "\e918";
+}
+.form .form-checkbox .form-checkbox-input:checked + .form-checkbox-label .form-checkbox-button {
+  background-color: #333645;
+}
+.form .form-checkbox .form-checkbox-label {
+  display: flex;
+  cursor: pointer;
+}
+.form .form-checkbox .form-checkbox-label .media-left {
+  display: table-cell;
+  vertical-align: top;
+}
+.form .form-checkbox .form-checkbox-label .form-checkbox-button {
+  border-radius: 3px;
+  border: 3px solid #333645;
+  height: 32px;
+  width: 32px;
+  position: relative;
+  float: left;
+  margin-right: 20px;
+}
+.form .form-checkbox .form-checkbox-label .form-checkbox-button .form-checkbox-icon {
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  display: block;
+}
+.form .form-checkbox .form-checkbox-label-text a {
+  color: #121318;
+  text-decoration: underline;
+}
+
+.contact-form {
+  background-color: #dddddd;
+  padding: 30px;
+  border-radius: 10px;
+}
+.contact-form textarea {
+  width: 100%;
+  height: 100px;
+  padding: 5px 15px;
+  color: #888;
+  font-size: 14px;
+  border: solid 1px #ccc;
+}
+.contact-form input {
+  color: #888;
+  font-size: 14px;
+}
+.contact-form .group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-form .group .required-notice {
+  color: #333645;
+  font-size: 14px;
+}
+.contact-form .group .required-notice span {
+  color: #d64541;
+}
+.contact-form .recaptcha {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.42857143;
+  color: #333645;
+}
+.contact-form .recaptcha a {
+  color: #333645;
+  text-decoration: underline;
+}
+.contact-form .recaptcha a:hover {
+  color: #121419;
 }
 
 .hamburger {
@@ -3992,6 +4103,36 @@ footer {
   font-size: 1.438rem;
 }
 
+.panel {
+  border-radius: 20px;
+}
+.panel-body {
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+.panel .content {
+  padding: 30px;
+}
+.panel .content h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 0;
+}
+.panel .content p {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+}
+
+.office .map {
+  height: 250px;
+  overflow: hidden;
+}
+.office .map img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .form-search {
   position: relative;
   margin-top: 25px;
@@ -4050,11 +4191,6 @@ footer {
 }
 .form-search-button:hover {
   background-color: #7e808a;
-}
-@media (min-width: 1024px) {
-  .form-search-button {
-    border-radius: 3px;
-  }
 }
 .form-search-button-mob {
   position: absolute;
@@ -4302,4 +4438,60 @@ footer {
 }
 .sidebar .developer-training span {
   color: #ce4125;
+}
+
+.text-bespoke-software, .text-bespoke-software-lg {
+  font-weight: 700;
+  color: #67809f;
+}
+.text-bespoke-software-lg {
+  font-size: 1.625rem;
+}
+
+.text-it-support, .text-it-support-lg {
+  font-weight: 700;
+  color: #4183d7;
+}
+.text-it-support-lg {
+  font-size: 1.625rem;
+}
+
+.text-digital-marketing, .text-digital-marketing-lg {
+  font-weight: 700;
+  color: #2ecc71;
+}
+.text-digital-marketing-lg {
+  font-size: 1.625rem;
+}
+
+.text-telecoms-services, .text-telecoms-services-lg {
+  font-weight: 700;
+  color: #d64541;
+}
+.text-telecoms-services-lg {
+  font-size: 1.625rem;
+}
+
+.text-web-design, .text-web-design-lg {
+  font-weight: 700;
+  color: #926fb1;
+}
+.text-web-design-lg {
+  font-size: 1.625rem;
+}
+
+.text-cyber-security, .text-cyber-security-lg {
+  font-weight: 700;
+  color: #f62459;
+}
+.text-cyber-security-lg {
+  font-size: 1.625rem;
+}
+
+.text-developer-training, .text-developer-training-lg {
+  font-weight: 700;
+  color: #ce4125;
+}
+.text-developer-training-lg {
+  font-size: 1.625rem;
 }/*# sourceMappingURL=application.css.map */

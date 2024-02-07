@@ -1,0 +1,10 @@
+@each $service, $color in $service-colors {
+    .text-#{$service} {
+        font-weight: 700;
+        color: map-get($color, 'base');
+        &-lg{
+            @extend .text-#{$service};
+            font-size: 1.625rem;
+        }
+    }
+}

@@ -2,6 +2,10 @@
     padding-top: 50px;
     padding-bottom: 50px;
     position: relative;
+    &.bottom {
+        padding-top: 0;
+    }
+
     & .section-heading {
         text-align: center;
         font-weight: $font-bold;

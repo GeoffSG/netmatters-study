@@ -1,0 +1,28 @@
+.panel {
+    border-radius: 20px;
+    
+    &-body {
+        box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ccc;
+        
+    }
+
+    .content {
+        padding: 30px;
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        p {
+            font-size: 0.8125rem;
+            line-height: 1.375rem;
+        }
+
+        
+    }
+}
+
+@import "panels/office";
