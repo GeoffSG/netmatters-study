@@ -9,32 +9,14 @@
         <h1>Our Offices</h1>
     </div>
     <div class="offices grid-2">
-        <?php foreach ($offices as $office) { ?>
-            <div class="office">
-                <div class="panel">
-                    <div class="panel-body">
-                        <a class="office-cover" href="">
-                            <img src="<?php echo $office->getCoverImage(); ?>" alt="<?php echo $office->getAddressPart('town'); ?> cover">
-                        </a>
-                        <div class="content">
-                            <h2 class="location"><?php echo $office->getAddressPart('town'); ?> Office</h2>
-                            <p class="address">
-                                <?php echo $office->getFormattedAddress(); ?>
-                            </p>
-                            <div class="tel"> <a class="text-web-design-lg" href="tel:<?php echo $office->getTelephone(true); ?>">
-                                <?php echo $office->getTelephone(false); ?></a>
-                            </div>
-                            <div class="view-more">
-                                <a href="" class="btn btn-web-design">View More</a>
-                            </div>
-                        </div>
-                    </div>
-                        <div class="map">
-                            <img src="<?php echo $office->getMap(); ?>" alt="<?php echo $office->getAddressPart('town'); ?> map">
-                        </div>
-                </div>
-            </div>
-        <?php } ?>
+        <?php
+        OfficeData::init();
+        $offices = OfficeData::$offices;
+        
+        foreach ($offices as $office) {
+            include 'components/office.php';    
+        } 
+        ?>
     </div>
     <div class="section bottom contact-us">
         <div class="contact-info">
@@ -59,7 +41,7 @@
             </div>
         </div>
         <div class="contact-form">
-            <?php include 'components/contactUsForm.php'; ?>
+            <?php include 'components/contact-us-form.php'; ?>
         </div>
     </div>
 </div>

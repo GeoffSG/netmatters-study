@@ -38,7 +38,6 @@ class DatabaseController {
             $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return true;
         } catch (PDOException $e) {
-            echo "Connection failed: " . $e->getMessage();
             return false;
         }
     }
@@ -48,16 +47,15 @@ class DatabaseController {
      */
     public function disconnect() {
         $this->connection = null;
-        echo "Disconnected from MySQL database successfully!";
     }
 
     /**
-     * Executes a SELECT query on the database.
+     * Executes a query on the database.
      *
-     * @param string $query The SELECT query to be executed.
+     * @param string $query The query to be executed.
      * @return mixed The result of the query execution.
      */
-    public function select($query) {
+    public function query($query) {
         try {
             $statement = $this->connection->prepare($query);
             $statement->execute();

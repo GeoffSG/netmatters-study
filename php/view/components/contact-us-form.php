@@ -1,10 +1,46 @@
-<form class="form" action="" method="post">
+<?php
+$formValid = false;
+$errorMessage = '';
+
+$db = new DatabaseController(
+    $_ENV['DB_HOST'],
+    $_ENV['DB_USERNAME'],
+    $_ENV['DB_PASSWORD'],
+    $_ENV['DB_DATABASE']
+);
+$formController = new ContactUsController($db);
+
+if (isset($_SERVER['REQUEST_METHOD'])) {
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        try {
+            $formController->send();
+            $formValid = true;
+        } catch (Exception $e) {
+            $errorMessage = $e->getMessage();
+            echo $errorMessage;
+        }
+    } else {
+        echo 'GET request received!';
+    }
+} else {
+    echo 'No request received!';
+}
+
+?>
+
+<?php if ($formValid) : ?>
+    <div class="alert alert-success" role="alert">
+        Your message has been sent successfully!
+    </div>
+<?php endif ?>
+
+<form class="form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
     <div class="form-group">
         <label class="required" for="name">Your Name</label>
         <input type="text" name="name" id="name">
     </div>
     <div class="form-group">
-        <label for="company">Name Company</label>
+        <label for="company">Company Name</label>
         <input type="text" name="company" id="company">
     </div>
     <div class="form-group">
