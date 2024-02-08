@@ -1,22 +1,33 @@
 <?php
+require_once __DIR__.'/php/autoload.php';
+require_once realpath(__DIR__ . "/vendor/autoload.php");
+use Dotenv\Dotenv;
 
-function autoloader($class_name) {
-    foreach(glob(__DIR__ . '/*', GLOB_ONLYDIR) as $dir) {
-        if (file_exists("$dir/" . $class_name . '.php')) {
-            require_once "$dir/" . $class_name . '.php';
-            break;
-        } 
-    }
+//  Load environment variables
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+$db = new DatabaseController(
+    $_ENV['DB_HOST'],
+    $_ENV['DB_USERNAME'],
+    $_ENV['DB_PASSWORD'],
+    $_ENV['DB_DATABASE']
+);
+
+if ($db->connect()) {
+    echo "Connected to MySQL database successfully!";
+} else {
+    echo "Connection failed!";
 }
 
-spl_autoload_register('autoloader');
 
-/*
-Offices Data
-*/
+
+
+//  Directory paths
 $officeMapDir = "/assets/img/offices/maps/";
 $officeCoverDir = "/assets/img/offices/covers/";
 
+//  Office data
 $offices = [
     new Office(
         "Unit G6",

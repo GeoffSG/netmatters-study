@@ -18,6 +18,6 @@
 <div id="container">
     <div class="main">
     <?php
-        include __DIR__.'/../view/components/cookieModal.php';
+        include __DIR__.'/../view/components/cookie-modal.php';
         include __DIR__.'/../view/components/header.php';
     ?>
