@@ -25,7 +25,7 @@
             <p><strong>Business Hours:</strong></p>
             <p><strong>Monday - Friday 07:00 - 18:00</strong></p>
             <div class="drop-down">
-                <a href="" class="drop-down-button">Out of Hours IT Support <em class="glyphicon-chevron-down"></em> </a>
+                <a class="drop-down-button">Out of Hours IT Support <em class="glyphicon-chevron-down"></em> </a>
                 <div class="drop-down-content">
                     <p>
                         Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.

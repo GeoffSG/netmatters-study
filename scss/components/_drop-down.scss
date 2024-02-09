@@ -1,4 +1,6 @@
 .drop-down {
+    overflow: hidden;
+
     &-button {
         font-weight: 600;
         color: #333645;
@@ -8,6 +10,13 @@
             display: inline-block;
             line-height: 1;
             font-weight: 400;
+        }
+    }
+
+    & &-content {
+        display: none;
+        &.active {
+            display: block;
         }
     }
 }

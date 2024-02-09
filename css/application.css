@@ -3545,6 +3545,9 @@ footer {
   padding: 20px 0;
 }
 
+.drop-down {
+  overflow: hidden;
+}
 .drop-down-button {
   font-weight: 600;
   color: #333645;
@@ -3555,6 +3558,12 @@ footer {
   display: inline-block;
   line-height: 1;
   font-weight: 400;
+}
+.drop-down .drop-down-content {
+  display: none;
+}
+.drop-down .drop-down-content.active {
+  display: block;
 }
 
 .form .form-group {
@@ -3584,6 +3593,9 @@ footer {
   border-color: #5bc0de;
   outline: 0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+.form .form-group input.error, .form .form-group textarea.error {
+  border: 1px solid #d64541;
 }
 .form .form-text-group {
   display: flex;
@@ -4122,12 +4134,11 @@ footer {
   font-size: 0.8125rem;
   line-height: 1.375rem;
 }
-
-.office .map {
+.panel .office .map {
   height: 250px;
   overflow: hidden;
 }
-.office .map img {
+.panel .office .map img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
