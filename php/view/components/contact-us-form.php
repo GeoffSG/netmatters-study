@@ -2,12 +2,7 @@
 $formValid = false;
 $errorMessage = '';
 
-$db = new DatabaseController(
-    $_ENV['DB_HOST'],
-    $_ENV['DB_USERNAME'],
-    $_ENV['DB_PASSWORD'],
-    $_ENV['DB_DATABASE']
-);
+$db = new DatabaseController();
 $formController = new ContactUsController($db);
 
 if (isset($_SERVER['REQUEST_METHOD'])) {
