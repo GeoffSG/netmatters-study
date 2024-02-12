@@ -8,4 +8,3 @@ include 'php/view/contact-us.php';
 
 //  Common footer elements
 include 'php/inc/tail.php';
-?>
