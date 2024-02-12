@@ -14,11 +14,7 @@ if (isset($_SERVER['REQUEST_METHOD'])) {
             $errorMessage = $e->getMessage();
             echo $errorMessage;
         }
-    } else {
-        echo 'GET request received!';
     }
-} else {
-    echo 'No request received!';
 }
 
 ?>
@@ -30,21 +26,25 @@ if (isset($_SERVER['REQUEST_METHOD'])) {
 <?php endif ?>
 
 <form class="form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-    <div class="form-group">
-        <label class="required" for="name">Your Name</label>
-        <input type="text" name="name" id="name">
+    <div class="grid-2">
+        <div class="form-group">
+            <label class="required" for="name">Your Name</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="form-group">
+            <label for="company">Company Name</label>
+            <input type="text" name="company" id="company">
+        </div>
     </div>
-    <div class="form-group">
-        <label for="company">Company Name</label>
-        <input type="text" name="company" id="company">
-    </div>
-    <div class="form-group">
-        <label class="required" for="email">Your Email</label>
-        <input type="text" name="email" id="email">
-    </div>
-    <div class="form-group">
-        <label class="required" for="telephone">Your Telephone Number</label>
-        <input type="text" name="telephone" id="telephone">
+    <div class="grid-2">
+        <div class="form-group">
+            <label class="required" for="email">Your Email</label>
+            <input type="text" name="email" id="email">
+        </div>
+        <div class="form-group">
+            <label class="required" for="telephone">Your Telephone Number</label>
+            <input type="text" name="telephone" id="telephone">
+        </div>
     </div>
     <div class="form-group">
         <label class="required" for="message">Message</label>

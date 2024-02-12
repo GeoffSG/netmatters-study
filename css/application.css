@@ -3431,25 +3431,22 @@ footer {
     flex-wrap: wrap;
   }
 }
-.contact-us .contact-info {
-  padding-left: 15px;
-  padding-right: 15px;
+.contact-us .contact-info p {
+  margin-top: 0;
 }
 @media (min-width: 1260px) {
   .contact-us .contact-info {
     order: 1;
+    padding-left: 15px;
     width: 33.33333333%;
   }
 }
 .contact-us .contact-info strong {
   color: #333645;
 }
-.contact-us .contact-form {
-  padding-left: 15px;
-  padding-right: 15px;
-}
 @media (min-width: 1260px) {
   .contact-us .contact-form {
+    padding-right: 15px;
     width: 66.66666667%;
   }
 }
@@ -3547,6 +3544,7 @@ footer {
 
 .drop-down {
   overflow: hidden;
+  margin-bottom: 25px;
 }
 .drop-down-button {
   font-weight: 600;
@@ -3649,12 +3647,12 @@ footer {
   text-decoration: underline;
 }
 
-.contact-form {
+.contact-form form {
   background-color: #dddddd;
   padding: 30px;
   border-radius: 10px;
 }
-.contact-form textarea {
+.contact-form form textarea {
   width: 100%;
   height: 100px;
   padding: 5px 15px;
@@ -3662,33 +3660,33 @@ footer {
   font-size: 14px;
   border: solid 1px #ccc;
 }
-.contact-form input {
+.contact-form form input {
   color: #888;
   font-size: 14px;
 }
-.contact-form .group {
+.contact-form form .group {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.contact-form .group .required-notice {
+.contact-form form .group .required-notice {
   color: #333645;
   font-size: 14px;
 }
-.contact-form .group .required-notice span {
+.contact-form form .group .required-notice span {
   color: #d64541;
 }
-.contact-form .recaptcha {
+.contact-form form .recaptcha {
   font-size: 11px;
   font-weight: 600;
   line-height: 1.42857143;
   color: #333645;
 }
-.contact-form .recaptcha a {
+.contact-form form .recaptcha a {
   color: #333645;
   text-decoration: underline;
 }
-.contact-form .recaptcha a:hover {
+.contact-form form .recaptcha a:hover {
   color: #121419;
 }
 
@@ -4119,8 +4117,11 @@ footer {
   border-radius: 20px;
 }
 .panel-body {
+  overflow: hidden;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   border: 1px solid #ccc;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .panel .content {
   padding: 30px;
@@ -4134,14 +4135,28 @@ footer {
   font-size: 0.8125rem;
   line-height: 1.375rem;
 }
-.panel .office .map {
-  height: 250px;
-  overflow: hidden;
+
+.offices {
+  padding-bottom: 40px;
 }
-.panel .office .map img {
+.offices .office .map {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.offices .office .map img {
+  overflow: hidden;
+  height: auto;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: none;
+     object-fit: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-search {

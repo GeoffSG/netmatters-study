@@ -1,27 +1,32 @@
-.contact-us{
-    
+.contact-us {
+
     @include mq('xl') {
         display: flex;
         flex-wrap: wrap;
     }
 
     .contact-info {
-        padding-left: 15px;
-        padding-right: 15px;
-        
+        // padding-right: 15px;
+        p {
+            margin-top: 0;
+        }
+
         @include mq('xl') {
             order: 1;
+            padding-left: 15px;
             width: 33.33333333%;
         }
+
         strong {
             color: #333645;
         }
     }
 
     .contact-form {
-        padding-left: 15px;
-        padding-right: 15px;
+
+        // padding-left: 15px;
         @include mq('xl') {
+            padding-right: 15px;
             width: 66.66666667%;
         }
     }

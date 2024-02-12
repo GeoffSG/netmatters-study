@@ -2,8 +2,11 @@
     border-radius: 20px;
     
     &-body {
+        overflow: hidden;
         box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
         border: 1px solid #ccc;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
         
     }
 
@@ -23,6 +26,6 @@
 
         
     }
-    @import "panels/office";
 }
 
+@import "panels/office";

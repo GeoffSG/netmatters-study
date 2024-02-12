@@ -21,7 +21,9 @@
     <div class="section bottom contact-us">
         <div class="contact-info">
             <p><strong>Email us on:</strong></p>
-            <a class="email text-web-design-lg">sales@netmatters.com</a>
+            <p>
+                <a class="email text-web-design-lg">sales@netmatters.com</a>
+            </p>
             <p><strong>Business Hours:</strong></p>
             <p><strong>Monday - Friday 07:00 - 18:00</strong></p>
             <div class="drop-down">

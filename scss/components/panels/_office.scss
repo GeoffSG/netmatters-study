@@ -1,10 +1,26 @@
-.office {
-    .map {
-        height: 250px;
-        overflow: hidden;
-        img {
-            width: 100%;
-            object-fit: cover;
+.offices {
+    padding-bottom: 40px;
+
+    .office {
+        .map {
+            height: 250px;
+            // max-width: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            
+            img {
+                overflow: hidden;
+                height: auto;
+                width: 100%;
+                object-fit: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         }
     }
 }

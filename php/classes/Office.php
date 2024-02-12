@@ -36,7 +36,7 @@ class Office
         return 
             $this->address['unit'] . ',<br>' . 
             $this->address['building'] . ',<br>' . 
-            $this->address['street'] . ', ' . $this->address['district'] . ',<br>' . 
+            $this->address['street'] . (!empty($this->address['district']) ? ', ' . $this->address['district'] : '') . ',<br>' .
             $this->address['town'] . (!empty($this->address['county']) ? ', ' . $this->address['county'] : '') . ',<br>' .
             $this->address['postCode'];
     }
