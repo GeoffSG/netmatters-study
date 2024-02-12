@@ -17,10 +17,10 @@
                   <input
                     class="form-checkbox-input"
                     type="checkbox"
-                    name="marketing"
-                    id="marketing"
+                    name="newsletter"
+                    id="newsletter"
                   />
-                  <label class="form-checkbox-label" for="marketing">
+                  <label class="form-checkbox-label" for="newsletter">
                     <span class="media-left">
                       <span class="form-checkbox-button">
                         <span class="form-checkbox-icon"></span>
