@@ -12,36 +12,23 @@ $breakpoints: (
 }
 
 // Media queries
-@mixin mq($break) {
+@mixin mq($break, $max: false) {
 
 	@if $break == "sm" {
 		@media (min-width: get-breakpoint($break)) and (max-width: (get-breakpoint('480'))) {
 			@content;
 		}
 	}
-	@else if $break == "480" {
-		@media (min-width: (get-breakpoint($break))) {
-			@content;
+	@else if $break == "480" or $break == "md" or $break == "lg" or $break == "1024" or $break == "xl" {
+		@if $max {
+			@media (max-width: (get-breakpoint($break))) {
+				@content;
+			}
 		}
-	}
-	@else if $break == "md" {
-		@media (min-width: (get-breakpoint($break))) {
-			@content;
-		}
-	}
-	@else if $break == "lg" {
-		@media (min-width: (get-breakpoint($break))) {
-			@content;
-		}
-	}
-	@else if $break == "1024" {
-		@media (min-width: (get-breakpoint($break))) {
-			@content;
-		}
-	}
-	@else if $break == "xl" {
-		@media (min-width: (get-breakpoint($break))) {
-			@content;
+		@else {
+			@media (min-width: (get-breakpoint($break))) {
+				@content;
+			}
 		}
 	}
 	@else {

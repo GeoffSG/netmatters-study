@@ -3,7 +3,7 @@ function contactUs () {
         "name":{
             name: "Name",
             min: 2,
-            max: 25,
+            max: 50,
             isRequired: true,
             regex: /^[a-zA-Z\s]+$/
         },
@@ -65,7 +65,7 @@ function contactUs () {
         }
     }
 
-    $('.contact-form input, .contact-form textarea').on('input', function() {
+    $('.contact-form input, .contact-form textarea').on('input', function(e) {
         const id = $(this).attr('id');
         const inputValue = $(this).val();
         const error = checkError(id, inputValue);
@@ -78,6 +78,26 @@ function contactUs () {
         }
     });
 
+    $('.contact-form').on('submit', function(e) {
+        let hasError = false;
+        $('.contact-form input, .contact-form textarea').each(function() {
+            const id = $(this).attr('id');
+            const inputValue = $(this).val();
+            const error = checkError(id, inputValue);
+            if(error.hasError) {
+                $(this).addClass('error');
+                hasError = true;
+            } else {
+                $(this).removeClass('error');
+            }
+        });
+        if(hasError) {
+            // e.preventDefault();
+            console.log('Form has errors');
+        } else {
+            console.log('Form has no errors');
+        }
+    });
 }
 
 export default contactUs;

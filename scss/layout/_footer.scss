@@ -86,7 +86,9 @@
             color: $white;
         }
         span {
-            display: inline !important;
+            @include mq('md') {
+                display: inline !important;
+            }
         }
     }
 }

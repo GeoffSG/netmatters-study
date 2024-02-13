@@ -46,6 +46,15 @@
 
     @include button-large();
 
+    &-form {
+        @extend .btn;
+        background-color: #333645;
+        &:hover {
+            background-color: #22242e;
+        }
+        @include button-large('dark');
+    }
+
     &-dark {
         @extend .btn;
         background-color: $btn-dark;

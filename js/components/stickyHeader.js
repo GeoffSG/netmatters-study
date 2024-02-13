@@ -3,20 +3,15 @@ function stickyHeader(header) {
 
   window.addEventListener("scroll", () => {
     const currentScrollY = window.scrollY;
+    const isScrollingDown = currentScrollY > prevScrollY;
 
-    //  Check if the user has scrolled up or down.
-    if (currentScrollY > prevScrollY) {
-      //  Scrolled down
-      if (header.parent().hasClass("sticky-wrapper")) {
-        //  Deactivate/hide header
-        if (window.scrollY < header.height()) {
-          header.unstick();
-        } else {
-          header.css("top", -header.height());
-        }
+    if (isScrollingDown) {
+      if (header.parent().hasClass("sticky-wrapper") && window.scrollY >= header.height()) {
+        header.css("top", -header.height());
+      } else {
+        header.unstick();
       }
     } else {
-      //  Scrolled up
       if (currentScrollY > header.height()) {
         if (!header.parent().hasClass("sticky-wrapper")) {
           header.sticky({ responsiveWidth: true, topSpacing: header.height() });
@@ -25,9 +20,14 @@ function stickyHeader(header) {
           header.css("top", 0);
         }
       }
+      if (currentScrollY === 0) {
+        header.unstick();
+      }
     }
-    prevScrollY = window.scrollY;
+
+    prevScrollY = currentScrollY;
   });
 }
 
 export default stickyHeader;
+

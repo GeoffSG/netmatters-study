@@ -17,11 +17,16 @@ nav {
     display: block;
 }
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
     line-height: 1.1;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
     font-weight: $font-normal;
     margin: 0 0 15px;
     color: $grey;
@@ -47,9 +52,14 @@ h3 {
 h4 {
     font-size: 1rem;
 }
+
 p {
     line-height: 1.875rem;
     margin-bottom: 25px;
+}
+
+strong {
+    font-weight: $font-bold;
 }
 
 a {

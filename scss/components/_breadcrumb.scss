@@ -7,10 +7,14 @@
 
     a {
         color: #333645;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     ul {
         margin: 0;
+        padding: 0;
     }
 
     li {
@@ -21,5 +25,8 @@
             padding: 0 5px;
             color: #333645;
         }
+    }
+    @include mq('md') {
+        border-top: 1px solid #333645;
     }
 }

@@ -13,7 +13,6 @@
       href="/js/jquery/plugins/owl/assets/owl.theme.default.min.css"
     />
     <link rel="stylesheet" href="./css/application.css" />
-    <script async data-id="five-server" src="http://localhost:5500/fiveserver.js"></script>
 </head>
 <body>
 <div id="container">

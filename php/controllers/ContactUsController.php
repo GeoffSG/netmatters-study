@@ -9,6 +9,17 @@ class ContactUsController
     private $message;
     private $marketing;
 
+    private $isValidArray = array(
+        'name' => false,
+        'company' => true,
+        'email' => false,
+        'telephone' => false,
+        'message' => false,
+        'marketing' => true
+    );
+
+    private $errorMessage;
+
     private $db;
 
     public function __construct($db)
@@ -18,30 +29,30 @@ class ContactUsController
 
     public function send()
     {
-        $name = $_POST['name'];
-        $company = $_POST['company'];
-        $email = $_POST['email'];
-        $telephone = $_POST['telephone'];
-        $message = $_POST['message'];
+        $this->name = $_POST['name'];
+        $this->company = $_POST['company'];
+        $this->email = $_POST['email'];
+        $this->telephone = $_POST['telephone'];
+        $this->message = $_POST['message'];
 
-        $name = htmlspecialchars(strip_tags($name), ENT_QUOTES, 'UTF-8');
-        $company = htmlspecialchars(strip_tags($company), ENT_QUOTES, 'UTF-8');
-        $email = htmlspecialchars(strip_tags($email), ENT_QUOTES, 'UTF-8');
-        $telephone = htmlspecialchars(strip_tags($telephone), ENT_QUOTES, 'UTF-8');
-        $message = htmlspecialchars(strip_tags($message), ENT_QUOTES, 'UTF-8');
+        $this->name = htmlspecialchars(strip_tags($this->name), ENT_QUOTES, 'UTF-8');
+        $this->company = htmlspecialchars(strip_tags($this->company), ENT_QUOTES, 'UTF-8');
+        $this->email = htmlspecialchars(strip_tags($this->email), ENT_QUOTES, 'UTF-8');
+        $this->telephone = htmlspecialchars(strip_tags($this->telephone), ENT_QUOTES, 'UTF-8');
+        $this->message = htmlspecialchars(strip_tags($this->message), ENT_QUOTES, 'UTF-8');
 
         if (isset($_POST['marketing'])) {
-            $marketing = true;
+            $this->marketing = true;
         } else {
-            $marketing = false;
+            $this->marketing = false;
         }
 
         try {
-            $this->validate($name, $email, $telephone, $message);
+            $this->validate($this->name, $this->email, $this->telephone, $this->message);
         } catch (Exception $e) {
             throw new Exception($e->getMessage());
         }
-        $sql = "INSERT INTO contact_us (sender, company, email, telephone, message, marketing) VALUES ('$name', '$company', '$email', '$telephone', '$message', '$marketing')";
+        $sql = "INSERT INTO contact_us (sender, company, email, telephone, message, marketing) VALUES ('$this->name', '$this->company', '$this->email', '$this->telephone', '$this->message', '$this->marketing')";
         try {
             $this->db->connect();
             $this->db->query($sql);
@@ -49,33 +60,71 @@ class ContactUsController
         } catch (Exception $e) {
             throw new Exception($e->getMessage());
         }
+
+        return true;
     }
 
     private function validate($name, $email, $telephone, $message)
     {
-        if (!isset($name) || !isset($email) || !isset($telephone) || !isset($message)) {
-            throw new Exception('All fields are required - isset check failed');
-        } elseif (empty($name) || empty($email) || empty($telephone) || empty($message)) {
-            throw new Exception('All fields are required - empty check failed');
+        $this->errorMessage = array();
+
+        if (strlen($name) < 3 || strlen($name) > 50 || !preg_match('/^[a-zA-Z\s]+$/', $name) || empty($name)) {
+            $this->errorMessage['name'] = 'Your name is invalid. It should be between 3 and 50 characters long and contain only letters and spaces.';
+        } else {
+            $this->isValidArray['name'] = true;
         }
 
-        if (strlen($name) < 3) {
-            echo 'Your name must be at least 3 characters long<br>';
-            throw new Exception('Your name must be at least 3 characters long');
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL) || empty($email)) {
+            $this->errorMessage['email'] = 'Your email is invalid. Please provide a valid email address.';
+        } else {
+            $this->isValidArray['email'] = true;
         }
 
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            throw new Exception('Invalid email address');
+        if (!preg_match('/^[0-9\s]+$/', $telephone) || empty($telephone)) {
+            $this->errorMessage['telephone'] = 'Your telephone number is invalid. It should contain only numbers and spaces.';
+        } else {
+            $this->isValidArray['telephone'] = true;
         }
 
-        if (!preg_match('/^[0-9\s]+$/', $telephone)) {
-            throw new Exception('Invalid telephone number');
+        if (strlen($message) < 10 || empty($message)) {
+            $this->errorMessage['message'] = 'Your message is invalid. It should be at least 10 characters long.';
+        } else {
+            $this->isValidArray['message'] = true;
         }
 
-        if (strlen($message) < 10) {
-            throw new Exception('Your message must be at least 10 characters long');
+        if (!empty($this->errorMessage)) {
+            throw new Exception(implode(" - ", $this->errorMessage));
         }
 
+    }
+
+    public function getName()
+    {
+        return $this->name;
+    }
+    public function getEmail()
+    {
+        return $this->email;
+    }
+    public function getTelephone()
+    {
+        return $this->telephone;
+    }
+    public function getMessage()
+    {
+        return $this->message;
+    }
+    public function getMarketing()
+    {
+        return $this->marketing;
+    }
+    public function getCompany()
+    {
+        return $this->company;
+    }
+    public function isValid($key)
+    {
+        return $this->isValidArray[$key];
     }
 
 }

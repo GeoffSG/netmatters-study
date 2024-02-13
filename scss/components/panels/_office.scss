@@ -1,10 +1,21 @@
 .offices {
-    padding-bottom: 40px;
-
+    padding-bottom: 40px !important;
+    
+    &.grid-2 {
+        gap: 0;
+        @include mq('lg') {
+            gap: 30px;
+        }
+    }
+    
     .office {
+        margin-top: 30px;
+        @include mq('lg') {
+            margin-top: 0;
+        }
+        
         .map {
             height: 250px;
-            // max-width: 600px;
             display: flex;
             align-items: center;
             justify-content: center;

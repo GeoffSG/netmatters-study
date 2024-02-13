@@ -10,13 +10,16 @@
     & .section-heading {
         text-align: center;
         font-weight: $font-bold;
+
         a {
             color: $text-light;
+
             &:hover {
                 text-decoration: underline;
             }
         }
     }
+
     h2 {
         font-size: 2.25rem;
     }
@@ -25,9 +28,11 @@
 .section-heading {
     text-align: center;
     font-weight: $font-bold;
+
     a {
-        
+
         color: #333645;
+
         &:hover {
             text-decoration: underline;
         }
@@ -40,7 +45,7 @@
 
 .container {
 
-    &::after{
+    &::after {
         clear: both;
     }
 
@@ -52,9 +57,11 @@
     @include mq('md') {
         width: 750px;
     }
+
     @include mq('lg') {
         width: 970px;
     }
+
     @include mq('xl') {
         width: 1200px;
     }
@@ -66,9 +73,7 @@
         text-align: left;
         margin: 0 0 28px;
 
-        @include mq('md'){
-            
-        }
+        @include mq('md') {}
     }
 
     &-footer {
@@ -80,15 +85,56 @@
     &-dark {
         background-color: $bg-dark;
         color: $text-dark;
+
         h2 {
             color: $text-dark;
         }
     }
 
 
-    .rating{
+    .rating {
         font-size: em(48px);
         color: $gold;
+    }
+
+    &.page-head {
+        background-color: #333645;
+        margin: 0!important;
+        width: auto!important;
+        .section {
+            padding: 24px 0;
+        }
+
+        h1 {
+            color: $text-dark;
+            margin: 0;
+        }
+
+
+        @include mq('lg') {
+            background-color: transparent;
+            margin: 0 auto!important;
+            width: 970px!important;
+            padding-top: 50px;
+            h1 {
+                color: $text-light;
+                margin: 0 0 48px;
+            }
+            .section {
+                padding-top: 0;
+                padding-bottom:  28px;
+            }
+        }
+
+        @include mq('lg', true) {
+            .section {
+                margin-bottom: 50px;
+            }
+        }
+
+        @include mq('xl') {
+            width: 1200px!important;
+        }
     }
 }
 

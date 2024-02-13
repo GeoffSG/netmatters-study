@@ -1,29 +1,26 @@
-<div class="breadcrumb">
-    <ul>
-        <li><a href="/"><strong>Home</strong></a></li>
-        <li>Our Offices</li>
-    </ul>
-</div>
-<div class="container">
+<?php include 'components/breadcrumb.php'; ?>
+<div class="container page-head">
     <div class="section">
         <h1>Our Offices</h1>
     </div>
+</div>
+<div class="container">
     <div class="offices grid-2">
         <?php
         OfficeData::init();
         $offices = OfficeData::$offices;
-        
+
         foreach ($offices as $office) {
-            include 'components/office.php';    
-        } 
+            include 'components/office.php';
+        }
         ?>
     </div>
     <div class="section bottom contact-us">
         <div class="contact-info">
             <p><strong>Email us on:</strong></p>
-            <p>
-                <a class="email text-web-design-lg">sales@netmatters.com</a>
-            </p>
+            <p><strong>
+                    <a class="email text-web-design-lg">sales@netmatters.com</a>
+                </strong></p>
             <p><strong>Business Hours:</strong></p>
             <p><strong>Monday - Friday 07:00 - 18:00</strong></p>
             <div class="drop-down">
@@ -33,11 +30,13 @@
                         Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.
                     </p>
                     <p><strong>
-                        Monday - Friday 18:00 - 22:00 Saturday 08:00 - 16:00<br>
-                        Sunday 10:00 - 18:00
-                    </strong></p>
+                            Monday - Friday 18:00 - 22:00 Saturday 08:00 - 16:00<br>
+                            Sunday 10:00 - 18:00
+                        </strong></p>
                     <p>
-                        To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call.
+                        To log a critical task, you will need to call our main line number and select Option 2 to leave
+                        an Out of Hours voicemail. A technician will contact you on the number provided within 45
+                        minutes of your call.
                     </p>
                 </div>
             </div>

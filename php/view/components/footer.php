@@ -31,7 +31,7 @@
           <li><a href="#">News</a></li>
           <li><a href="#">Our Careers</a></li>
           <li><a href="#">Our Team</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="/contact-us.php">Contact Us</a></li>
           <li><a href="#">Privacy Policy</a></li>
           <li><a href="#">Cookie Policy</a></li>
           <li><a href="#">Data Retention &amp; Disposal Policy</a></li>
@@ -80,7 +80,7 @@
     <div class="container">
       © Copyright Netmatters 2023.<br class="hidden-md" />
       All rights reserved.
-      <span class="hidden-sm visible-md">&dash;</span>
+      <span class="hidden-sm appear-md">&dash;</span>
       <br class="hidden-md" /><a href="#">Sitemap</a>
     </div>
   </div>
